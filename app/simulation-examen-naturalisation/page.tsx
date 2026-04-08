@@ -115,7 +115,7 @@ export default function SimulationPage() {
 
       <section className="container-prose mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {steps.map((s) => (
-          <div key={s.n} className="rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
+          <div key={s.n} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 sm:rounded-[1.6rem] sm:p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
             <span className="text-xs font-bold text-blue-400">Étape {s.n}</span>
             <h3 className="mt-2 text-lg font-semibold text-white">{s.title}</h3>
             <p className="mt-2 text-sm text-slate-400">{s.description}</p>

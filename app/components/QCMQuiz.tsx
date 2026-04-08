@@ -24,12 +24,12 @@ export default function QCMQuiz({
   }
 
   return (
-    <article className="rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.4)] transition-all duration-300 hover:border-blue-400/20">
+    <article className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)] transition-all duration-300 hover:border-blue-400/20 sm:rounded-[1.6rem] sm:p-6">
       <header className="flex items-start gap-3">
         <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border border-blue-400/30 bg-blue-500/15 text-xs font-bold text-blue-300">
           {String(index + 1).padStart(2, "0")}
         </span>
-        <h3 className="text-base font-semibold leading-snug text-white">
+        <h3 className="text-sm font-semibold leading-snug text-white sm:text-base">
           {question.question}
         </h3>
       </header>

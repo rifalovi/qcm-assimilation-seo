@@ -161,7 +161,7 @@ export default function LivretPage() {
         {chapters.map((c) => (
           <article
             key={c.title}
-            className="rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]"
+            className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 sm:rounded-[1.6rem] sm:p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]"
           >
             <h2 className="text-lg font-bold text-white">{c.title}</h2>
             <p className="mt-3 text-sm text-slate-300">{c.summary}</p>

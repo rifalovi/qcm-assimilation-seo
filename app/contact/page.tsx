@@ -33,20 +33,20 @@ export default function ContactPage() {
       />
 
       <section className="container-prose mt-8 grid gap-6 md:grid-cols-2">
-        <div className="rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
+        <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 sm:rounded-[1.6rem] sm:p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
           <h2 className="text-lg font-bold text-white">Email</h2>
           <p className="mt-3 text-sm text-slate-300">
             Envoyez-nous un email à l'adresse :
           </p>
           <a
             href="mailto:contact@qcm-assimilation.fr"
-            className="mt-2 inline-block text-base font-semibold text-blue-300 hover:text-blue-200"
+            className="mt-2 inline-block break-all text-sm font-semibold text-blue-300 hover:text-blue-200 sm:text-base"
           >
             contact@qcm-assimilation.fr
           </a>
         </div>
 
-        <div className="rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
+        <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 sm:rounded-[1.6rem] sm:p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
           <h2 className="text-lg font-bold text-white">Sujets fréquents</h2>
           <ul className="mt-3 space-y-2 text-sm text-slate-300">
             <li>• Signaler une erreur dans une question</li>

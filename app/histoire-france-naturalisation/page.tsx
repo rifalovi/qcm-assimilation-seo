@@ -99,14 +99,14 @@ export default function HistoirePage() {
 
       <section className="container-prose mt-12">
         <SectionTitle eyebrow="Frise" title="17 dates clés à mémoriser" />
-        <ol className="mt-8 relative border-l border-slate-800 pl-6">
+        <ol className="mt-8 relative border-l border-blue-400/20 pl-6 sm:pl-8">
           {dates.map((d) => (
-            <li key={d.y} className="mb-6">
-              <span className="absolute -left-2 flex h-4 w-4 items-center justify-center rounded-full bg-blue-700 ring-4 ring-slate-950">
-                <span className="h-1.5 w-1.5 rounded-full bg-white" aria-hidden />
+            <li key={d.y} className="relative mb-7 last:mb-0">
+              <span className="absolute -left-[31px] top-1 flex h-4 w-4 items-center justify-center rounded-full border-2 border-slate-950 bg-blue-500 shadow-[0_0_12px_rgba(96,165,250,0.5)] sm:-left-[37px]">
+                <span className="h-1 w-1 rounded-full bg-white" aria-hidden />
               </span>
               <h3 className="text-sm font-bold text-blue-300">{d.y}</h3>
-              <p className="mt-1 text-sm text-slate-300">{d.e}</p>
+              <p className="mt-1 text-sm text-slate-300 sm:text-base">{d.e}</p>
             </li>
           ))}
         </ol>

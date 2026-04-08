@@ -213,7 +213,7 @@ export default function HomePage() {
         <div className="mt-12 text-center">
           <Link
             href="/qcm-assimilation-france/"
-            className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-7 py-4 text-base font-bold text-white backdrop-blur transition hover:border-blue-400/40 hover:bg-white/10"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-bold text-white backdrop-blur transition hover:border-blue-400/40 hover:bg-white/10 sm:w-auto sm:px-7 sm:py-4 sm:text-base"
           >
             Voir les 50 questions
             <span aria-hidden>→</span>

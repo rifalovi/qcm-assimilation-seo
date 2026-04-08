@@ -43,17 +43,17 @@ export default function Hero({
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-radial-glow" aria-hidden />
       <div
-        className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-blue-700/20 blur-[120px]"
+        className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-blue-700/20 blur-[100px] sm:-left-40 sm:top-20 sm:h-96 sm:w-96 sm:blur-[120px]"
         aria-hidden
       />
       <div
-        className="absolute -right-40 top-40 h-96 w-96 rounded-full bg-red-700/15 blur-[120px]"
+        className="absolute -right-32 top-20 h-72 w-72 rounded-full bg-red-700/15 blur-[100px] sm:-right-40 sm:top-40 sm:h-96 sm:w-96 sm:blur-[120px]"
         aria-hidden
       />
 
-      <div className="container-prose relative pt-20 pb-16 sm:pt-28 sm:pb-20">
+      <div className="container-prose relative pt-12 pb-12 sm:pt-20 sm:pb-16 lg:pt-28 lg:pb-20">
         {badge && (
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-blue-300">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-blue-300 sm:mb-7 sm:text-xs">
             <span
               className="h-1.5 w-1.5 rounded-full bg-blue-400 shadow-[0_0_8px_rgba(96,165,250,0.8)]"
               aria-hidden
@@ -61,18 +61,18 @@ export default function Hero({
             {badge}
           </div>
         )}
-        <h1 className="max-w-4xl text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+        <h1 className="max-w-4xl text-3xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
           {renderTitle()}
         </h1>
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl">
+        <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 sm:mt-7 sm:text-lg lg:text-xl">
           {subtitle}
         </p>
-        <div className="mt-10 flex flex-wrap items-center gap-4">
+        <div className="mt-7 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
           <a
             href={ctaHref}
             target="_blank"
             rel="noopener"
-            className="group inline-flex items-center justify-center gap-3 rounded-2xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 px-7 py-4 text-base font-bold text-white shadow-[0_12px_32px_rgba(37,99,235,0.45)] transition hover:brightness-110 active:scale-[0.98]"
+            className="group inline-flex w-full items-center justify-center gap-3 rounded-2xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 px-6 py-3.5 text-sm font-bold text-white shadow-[0_12px_32px_rgba(37,99,235,0.45)] transition hover:brightness-110 active:scale-[0.98] sm:w-auto sm:px-7 sm:py-4 sm:text-base"
           >
             {ctaLabel}
             <span
@@ -85,13 +85,13 @@ export default function Hero({
           {secondaryHref && (
             <Link
               href={secondaryHref}
-              className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-7 py-4 text-base font-bold text-white backdrop-blur transition hover:border-blue-400/40 hover:bg-white/10"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-bold text-white backdrop-blur transition hover:border-blue-400/40 hover:bg-white/10 sm:w-auto sm:px-7 sm:py-4 sm:text-base"
             >
               {secondaryLabel}
             </Link>
           )}
         </div>
-        <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-400">
+        <ul className="mt-9 flex flex-col gap-2.5 text-sm text-slate-400 sm:mt-12 sm:flex-row sm:flex-wrap sm:gap-x-8 sm:gap-y-3">
           <li className="flex items-center gap-2">
             <span
               aria-hidden

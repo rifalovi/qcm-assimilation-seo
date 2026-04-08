@@ -111,7 +111,7 @@ export default function TestNaturalisationPage() {
           { n: "02", t: "Simulation chrono", d: "Mode 15 minutes pour reproduire les conditions réelles d'examen." },
           { n: "03", t: "Score & progression", d: "Visualisez vos points faibles et concentrez votre révision dessus." },
         ].map((s) => (
-          <div key={s.n} className="rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
+          <div key={s.n} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 sm:rounded-[1.6rem] sm:p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
             <span className="text-xs font-bold text-blue-400">{s.n}</span>
             <h3 className="mt-2 text-lg font-semibold text-white">{s.t}</h3>
             <p className="mt-2 text-sm text-slate-400">{s.d}</p>
