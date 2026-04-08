@@ -54,7 +54,7 @@ export default function Footer() {
               <span className="text-base font-bold text-white">QCM Assimilation</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
-              Préparer la naturalisation française et l'entretien d'assimilation, gratuitement.
+              Préparer la naturalisation française et l'entretien d'assimilation, en toute sérénité.
             </p>
             <a
               href="https://cap-citoyen.fr/register"

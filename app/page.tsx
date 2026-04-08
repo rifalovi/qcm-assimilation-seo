@@ -10,7 +10,7 @@ import { questions } from "./lib/questions";
 import { faqJsonLd, organizationJsonLd, websiteJsonLd } from "./lib/site";
 
 export const metadata: Metadata = {
-  title: "QCM Assimilation France : tests gratuits pour la naturalisation",
+  title: "QCM Assimilation France : tests pour la naturalisation 2026",
   description:
     "Réussissez l'entretien d'assimilation et la naturalisation française grâce à 500+ questions corrigées, simulations d'examen et fiches sur les valeurs de la République.",
   alternates: { canonical: "/" },
@@ -30,7 +30,7 @@ const faqItems = [
   {
     question: "Faut-il payer pour s'entraîner ?",
     answer:
-      "Non. Tout ce que vous voyez ici est gratuit. Si vous voulez aller plus loin (suivi de progression, mode audio, fiches imprimables), vous pouvez créer un compte gratuit sur cap-citoyen.fr.",
+      "Non. Tout ce que vous voyez ici est en accès libre. Si vous voulez aller plus loin (suivi de progression, mode audio, fiches imprimables), vous pouvez créer un compte sur cap-citoyen.fr en 30 secondes.",
   },
   {
     question: "À qui s'adresse ce site ?",
@@ -125,11 +125,11 @@ export default function HomePage() {
       <JsonLd data={[organizationJsonLd(), websiteJsonLd(), faqJsonLd(faqItems)]} />
 
       <Hero
-        badge="Gratuit · à jour 2026"
+        badge="Préparation · 2026"
         title="Devenez Français, sans stress"
         highlight="Français"
-        subtitle="QCM, fiches et simulations d'examen pour préparer l'entretien d'assimilation à votre rythme. Tout est gratuit, et fait par des gens qui aiment la France."
-        ctaLabel="Commencer gratuitement"
+        subtitle="QCM, fiches et simulations d'examen pour préparer l'entretien d'assimilation à votre rythme. Pas d'inscription, fait par des gens qui aiment la France."
+        ctaLabel="Commencer maintenant"
         secondaryHref="/test-naturalisation-france/"
         secondaryLabel="Faire un test"
       />
@@ -226,7 +226,7 @@ export default function HomePage() {
       <CTA
         variant="register"
         title="On vous accompagne jusqu'au bout"
-        subtitle="Compte gratuit, progression sauvegardée, accès aux fiches. Pas de carte bancaire."
+        subtitle="Compte cap-citoyen.fr, progression sauvegardée, accès aux fiches. Pas de carte bancaire."
       />
 
       <FAQ items={faqItems} />

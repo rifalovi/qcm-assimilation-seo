@@ -17,7 +17,7 @@ export default function Hero({
   highlight,
   subtitle,
   ctaHref = "https://cap-citoyen.fr/register",
-  ctaLabel = "Commencer gratuitement",
+  ctaLabel = "Commencer maintenant",
   secondaryHref,
   secondaryLabel,
 }: HeroProps) {
@@ -93,7 +93,7 @@ export default function Hero({
               <span aria-hidden className="text-emerald-400">
                 ✓
               </span>
-              100 % gratuit
+              Accès offert
             </li>
             <li className="flex items-center gap-1.5">
               <span aria-hidden className="text-emerald-400">

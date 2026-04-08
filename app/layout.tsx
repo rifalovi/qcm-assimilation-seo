@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | QCM Assimilation",
   },
   description:
-    "Préparez gratuitement l'entretien d'assimilation, le QCM de naturalisation et le test de culture française. Questions issues du Livret du citoyen, corrigés et CTA vers l'app cap-citoyen.fr.",
+    "Préparez l'entretien d'assimilation, le QCM de naturalisation et le test de culture française. Questions issues du Livret du citoyen, corrigés et accès à l'app cap-citoyen.fr.",
   keywords: [
     "QCM assimilation",
     "test naturalisation",
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     siteName: "QCM Assimilation",
     title: "QCM Assimilation : réussir l'entretien et la naturalisation française",
     description:
-      "Préparez gratuitement votre entretien d'assimilation et votre QCM de naturalisation. Questions du Livret du citoyen, corrigés détaillés.",
+      "Préparez votre entretien d'assimilation et votre QCM de naturalisation. Questions du Livret du citoyen, corrigés détaillés.",
   },
   twitter: {
     card: "summary_large_image",
     title: "QCM Assimilation : réussir la naturalisation française",
     description:
-      "Tests gratuits, QCM, simulations d'examen et fiches sur les valeurs de la République.",
+      "Tests, QCM, simulations d'examen et fiches sur les valeurs de la République.",
   },
   robots: {
     index: true,

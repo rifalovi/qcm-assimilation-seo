@@ -16,9 +16,9 @@ import {
 } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Test de naturalisation française gratuit, QCM 2026",
+  title: "Test de naturalisation française 2026",
   description:
-    "Faites le test de naturalisation française gratuitement. 50 questions du Livret du citoyen, corrigés détaillés, simulation type entretien préfecture.",
+    "Le test de naturalisation française : 50 questions du Livret du citoyen, corrigés détaillés, mode chrono d'entraînement disponible sur cap-citoyen.fr.",
   alternates: { canonical: "/test-naturalisation-france/" },
 };
 
@@ -31,7 +31,7 @@ const faqItems = [
   {
     question: "Le test est-il chronométré ?",
     answer:
-      "Sur cap-citoyen.fr vous avez le choix : entraînement libre ou mode chrono (15 minutes pour 20 questions, comme à la préfecture).",
+      "Sur ce site, non : prenez votre temps. Sur cap-citoyen.fr, un mode chrono d'entraînement est aussi disponible si vous voulez vous mettre la pression. À noter : l'entretien réel en préfecture, lui, n'est pas un examen chronométré, c'est une discussion qui dure entre 30 et 60 minutes.",
   },
   {
     question: "Quel score viser ?",
@@ -65,7 +65,7 @@ export default function TestNaturalisationPage() {
           quizJsonLd({
             name: "Test de naturalisation française",
             description:
-              "QCM gratuit de préparation à l'entretien d'assimilation et à la naturalisation française.",
+              "QCM de préparation à l'entretien d'assimilation et à la naturalisation française.",
             url,
             numQuestions: 50,
           }),
@@ -76,11 +76,11 @@ export default function TestNaturalisationPage() {
       <Breadcrumb items={[{ href: "/test-naturalisation-france/", label: "Test de naturalisation" }]} />
 
       <Hero
-        badge="Gratuit · 50 questions"
+        badge="8 questions d'échauffement"
         title="Le test pour voir où vous en êtes"
         highlight="test"
-        subtitle="15 minutes pour mesurer votre niveau sur les questions qu'on vous posera en préfecture. Corrigé tout de suite, et on vous explique pourquoi."
-        ctaLabel="Démarrer le test"
+        subtitle="8 questions tirées du Livret du citoyen pour vous mettre en jambe. Le test complet (50 questions et plus) vous attend sur cap-citoyen.fr."
+        ctaLabel="Démarrer le test complet"
         ctaHref="https://cap-citoyen.fr/quiz"
         secondaryHref="/livret-du-citoyen-questions/"
         secondaryLabel="Réviser le Livret"
@@ -107,7 +107,7 @@ export default function TestNaturalisationPage() {
       <section className="container-prose mt-6 sm:mt-8 grid gap-4 md:grid-cols-3">
         {[
           { n: "01", t: "50 questions corrigées", d: "Du drapeau tricolore à la loi de 1905, tout y passe." },
-          { n: "02", t: "Mode chrono", d: "15 minutes top chrono, comme le jour de l'entretien." },
+          { n: "02", t: "Mode chrono d'entraînement", d: "Disponible sur cap-citoyen.fr pour vous mettre en condition." },
           { n: "03", t: "Score et suivi", d: "Vous voyez vos points faibles, vous savez quoi réviser." },
         ].map((s) => (
           <div key={s.n} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
@@ -146,7 +146,7 @@ export default function TestNaturalisationPage() {
           {[
             { href: "/qcm-assimilation-france/", t: "QCM d'assimilation", d: "Les 50 questions complètes." },
             { href: "/livret-du-citoyen-questions/", t: "Livret du citoyen", d: "Toutes les fiches à réviser." },
-            { href: "/simulation-examen-naturalisation/", t: "Simulation d'examen", d: "Mode chronométré type préfecture." },
+            { href: "/simulation-examen-naturalisation/", t: "Simulation d'examen", d: "Mode chrono d'entraînement, sur cap-citoyen.fr." },
           ].map((c) => (
             <Link
               key={c.href}

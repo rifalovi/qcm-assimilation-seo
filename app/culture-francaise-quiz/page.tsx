@@ -10,7 +10,7 @@ import { getQuestionsByCategory } from "../lib/questions";
 import { breadcrumbJsonLd, faqJsonLd, quizJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Quiz culture française gratuit : littérature, art, cinéma",
+  title: "Quiz culture française 2026 : littérature, art, cinéma",
   description:
     "Testez votre culture française : littérature, peinture, cinéma, sciences. Idéal pour la naturalisation et pour les passionnés de la France.",
   alternates: { canonical: "/culture-francaise-quiz/" },
@@ -62,7 +62,7 @@ export default function CultureFrancaisePage() {
           ]),
           quizJsonLd({
             name: "Quiz culture française",
-            description: "Quiz gratuit sur la culture française : littérature, peinture, cinéma, sciences.",
+            description: "Quiz sur la culture française : littérature, peinture, cinéma, sciences.",
             url,
             numQuestions: culture.length,
           }),
@@ -73,7 +73,7 @@ export default function CultureFrancaisePage() {
       <Breadcrumb items={[{ href: "/culture-francaise-quiz/", label: "Culture française" }]} />
 
       <Hero
-        badge="Quiz culture · gratuit"
+        badge="Quiz culture · 2026"
         title="Culture française : littérature, art, sciences"
         highlight="Culture française"
         subtitle="Testez vos connaissances sur les grands noms et les œuvres qui ont fait la France. Pour l'entretien, ou juste pour le plaisir."
@@ -124,7 +124,7 @@ export default function CultureFrancaisePage() {
       <CTA
         variant="quiz"
         title="Plus de questions sur cap-citoyen.fr"
-        subtitle="500+ questions, mode chrono, suivi de votre progression. C'est gratuit."
+        subtitle="500+ questions, mode chrono, suivi de votre progression. Sans carte bancaire."
       />
 
       <FAQ items={faqItems} />

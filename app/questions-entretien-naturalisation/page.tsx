@@ -113,7 +113,7 @@ export default function QuestionsEntretienPage() {
         title="Les questions qui reviennent en entretien"
         highlight="questions"
         subtitle="Quatre familles de questions, plus de 25 exemples concrets pour ne pas être pris au dépourvu devant l'agent."
-        ctaLabel="S'entraîner gratuitement"
+        ctaLabel="S'entraîner maintenant"
       />
 
       <section className="container-prose mt-8">

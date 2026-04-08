@@ -127,7 +127,7 @@ export default function HistoirePage() {
       <CTA
         variant="audio"
         title="L'histoire, lue à voix haute"
-        subtitle="Toutes les fiches du Livret du citoyen en audio gratuit. À écouter quand vous voulez."
+        subtitle="Toutes les fiches du Livret du citoyen en audio. À écouter quand vous voulez."
       />
 
       <FAQ items={faqItems} />

@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "QCM d'assimilation France : 50 questions corrigées",
   description:
-    "Le QCM d'assimilation gratuit pour la naturalisation : 50 questions sur les symboles, l'histoire, les institutions et les valeurs de la République.",
+    "Le QCM d'assimilation 2026 pour la naturalisation : 50 questions sur les symboles, l'histoire, les institutions et les valeurs de la République.",
   alternates: { canonical: "/qcm-assimilation-france/" },
 };
 
@@ -44,7 +44,7 @@ const faqItems = [
   {
     question: "Le QCM en PDF, ça existe ?",
     answer:
-      "Oui. Avec un compte gratuit sur cap-citoyen.fr, vous récupérez les fiches PDF imprimables et le Livret du citoyen complet.",
+      "Oui. Avec un compte sur cap-citoyen.fr, vous récupérez les fiches PDF imprimables et le Livret du citoyen complet.",
   },
 ];
 

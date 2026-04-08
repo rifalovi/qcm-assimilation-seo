@@ -79,7 +79,7 @@ export default function ContactPage() {
       <CTA
         variant="register"
         title="Plus rapide qu'un email : créez votre compte"
-        subtitle="Sur cap-citoyen.fr, vous accédez tout de suite à toutes les ressources, gratuitement."
+        subtitle="Sur cap-citoyen.fr, vous accédez tout de suite à toutes les ressources."
       />
     </>
   );

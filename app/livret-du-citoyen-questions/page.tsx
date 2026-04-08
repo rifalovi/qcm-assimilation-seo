@@ -106,7 +106,7 @@ const faqItems = [
   {
     question: "Une version audio existe ?",
     answer:
-      "Oui, sur cap-citoyen.fr/audio, gratuite. Idéale pour réviser pendant les trajets ou en faisant du sport.",
+      "Oui, sur cap-citoyen.fr/audio. Idéale pour réviser pendant les trajets ou en faisant du sport.",
   },
   {
     question: "Combien de chapitres ?",
@@ -180,7 +180,7 @@ export default function LivretPage() {
       <CTA
         variant="audio"
         title="Le Livret, lu à voix haute"
-        subtitle="Pour réviser pendant les trajets ou en faisant la cuisine. Version audio gratuite sur cap-citoyen.fr."
+        subtitle="Pour réviser pendant les trajets ou en faisant la cuisine. Version audio sur cap-citoyen.fr."
       />
 
       <FAQ items={faqItems} />

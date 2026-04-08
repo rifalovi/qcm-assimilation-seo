@@ -8,7 +8,7 @@ import { breadcrumbJsonLd, SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title: "À propos : la mission de QCM Assimilation",
   description:
-    "QCM Assimilation aide gratuitement les candidats à la naturalisation française à préparer leur entretien d'assimilation. Notre mission, notre méthode, nos valeurs.",
+    "QCM Assimilation accompagne les candidats à la naturalisation française dans la préparation de leur entretien d'assimilation. Notre mission, notre méthode, nos valeurs.",
   alternates: { canonical: "/a-propos/" },
 };
 
@@ -28,7 +28,7 @@ export default function AProposPage() {
         badge="Notre mission"
         title="Vous aider à devenir Français sereinement"
         highlight="Français"
-        subtitle="QCM Assimilation, c'est une initiative indépendante qui rassemble gratuitement les meilleures ressources pour préparer la naturalisation."
+        subtitle="QCM Assimilation, c'est une initiative indépendante qui rassemble en accès libre les meilleures ressources pour préparer la naturalisation."
         ctaLabel="Aller sur cap-citoyen.fr"
       />
 
@@ -44,7 +44,7 @@ export default function AProposPage() {
           <p className="mt-3 text-slate-300">
             L'idée : rassembler au même endroit tout ce qu'il faut savoir sur le
             Livret du citoyen, les valeurs de la République, l'histoire et les
-            institutions. Et rendre tout ça gratuit.
+            institutions. Et le rendre accessible à tous.
           </p>
 
           <h2 className="mt-8 text-lg font-bold text-white sm:text-xl">Notre méthode</h2>
@@ -58,8 +58,8 @@ export default function AProposPage() {
           <p className="mt-4 text-slate-300">
             QCM Assimilation est la vitrine SEO de cap-citoyen.fr, une appli web
             avec suivi de progression, fiches imprimables et version audio du
-            Livret du citoyen. Tout est gratuit. Si vous voulez aller plus loin,
-            c'est par là.
+            Livret du citoyen. Pas de carte bancaire à sortir. Si vous voulez
+            aller plus loin, c'est par là.
           </p>
 
           <h2 className="mt-8 text-lg font-bold text-white sm:text-xl">Indépendance</h2>
@@ -74,7 +74,7 @@ export default function AProposPage() {
       <CTA
         variant="register"
         title="Rejoignez la communauté"
-        subtitle="Inscription gratuite sur cap-citoyen.fr, sans engagement, sans carte bancaire."
+        subtitle="Inscription sur cap-citoyen.fr, sans engagement, sans carte bancaire."
       />
     </>
   );

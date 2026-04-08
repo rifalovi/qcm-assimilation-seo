@@ -134,7 +134,7 @@ export default function ValeursPage() {
       <CTA
         variant="register"
         title="Préparez l'entretien sereinement"
-        subtitle="Inscription gratuite sur cap-citoyen.fr : accès aux fiches et au mode audio."
+        subtitle="Inscription rapide sur cap-citoyen.fr : accès aux fiches et au mode audio."
       />
 
       <FAQ items={faqItems} />

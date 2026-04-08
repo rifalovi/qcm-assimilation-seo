@@ -6,7 +6,7 @@ const variants: Record<
 > = {
   register: {
     href: "https://cap-citoyen.fr/register",
-    label: "Créer mon compte gratuit",
+    label: "Créer mon compte",
     sub: "Sans carte bancaire, accès immédiat",
   },
   quiz: {
@@ -51,7 +51,7 @@ export default function CTA({
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-slate-400 sm:text-base">
             {subtitle ??
-              "Inscription gratuite. Testez votre niveau, suivez votre progression et accédez aux fiches du Livret du citoyen."}
+              "Inscription en 30 secondes. Testez votre niveau, suivez votre progression et accédez aux fiches du Livret du citoyen."}
           </p>
           <a
             href={v.href}
