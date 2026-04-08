@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Hero from "../components/Hero";
 import CTA from "../components/CTA";
 import FAQ from "../components/FAQ";
-import QCMCard from "../components/QCMCard";
+import QCMQuiz from "../components/QCMQuiz";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
 import { questions } from "../lib/questions";
@@ -92,8 +92,9 @@ export default function QCMPage() {
 
       <Hero
         badge="50 questions · 7 thématiques"
-        title="QCM d'assimilation France — 50 questions gratuites"
-        subtitle="Le QCM complet pour la naturalisation française : symboles, histoire, institutions, valeurs, géographie, culture, vie quotidienne. Toutes les réponses sont expliquées."
+        title="QCM d'assimilation France — 50 questions"
+        highlight="assimilation"
+        subtitle="Le QCM complet pour la naturalisation française : symboles, histoire, institutions, valeurs, géographie, culture, vie quotidienne. Cliquez sur une réponse pour voir le corrigé."
         ctaLabel="Démarrer le QCM interactif"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
@@ -132,7 +133,7 @@ export default function QCMPage() {
             </header>
             <div className="mt-6 grid gap-4 md:grid-cols-2">
               {list.map((q, i) => (
-                <QCMCard key={q.id} question={q} index={i} />
+                <QCMQuiz key={q.id} question={q} index={i} />
               ))}
             </div>
           </section>

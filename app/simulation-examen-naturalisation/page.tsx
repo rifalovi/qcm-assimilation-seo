@@ -94,7 +94,8 @@ export default function SimulationPage() {
 
       <Hero
         badge="Mode chronométré · 15 minutes"
-        title="Simulation d'examen de naturalisation française"
+        title="Simulation d'examen de naturalisation"
+        highlight="Simulation"
         subtitle="Passez l'examen comme en préfecture : 20 questions, 15 minutes, score immédiat. La méthode la plus efficace pour vaincre le stress."
         ctaLabel="Lancer la simulation"
         ctaHref="https://cap-citoyen.fr/quiz"
@@ -114,7 +115,7 @@ export default function SimulationPage() {
 
       <section className="container-prose mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {steps.map((s) => (
-          <div key={s.n} className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+          <div key={s.n} className="rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
             <span className="text-xs font-bold text-blue-400">Étape {s.n}</span>
             <h3 className="mt-2 text-lg font-semibold text-white">{s.title}</h3>
             <p className="mt-2 text-sm text-slate-400">{s.description}</p>
@@ -133,7 +134,7 @@ export default function SimulationPage() {
             { t: "Identifier vos lacunes", d: "Le score détaillé vous montre où vous devez réviser." },
             { t: "Travailler la rapidité", d: "Apprenez à répondre en moins d'une minute, comme à l'oral." },
           ].map((c) => (
-            <div key={c.t} className="rounded-xl border border-slate-800 bg-slate-900/60 p-5">
+            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
               <h3 className="text-base font-semibold text-white">{c.t}</h3>
               <p className="mt-2 text-sm text-slate-400">{c.d}</p>
             </div>

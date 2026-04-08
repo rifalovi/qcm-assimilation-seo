@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Hero from "./components/Hero";
 import CTA from "./components/CTA";
 import FAQ from "./components/FAQ";
-import QCMCard from "./components/QCMCard";
+import QCMQuiz from "./components/QCMQuiz";
 import JsonLd from "./components/JsonLd";
 import SectionTitle from "./components/SectionTitle";
 import { questions } from "./lib/questions";
@@ -57,23 +57,44 @@ const audiences = [
     description:
       "Vous demandez votre titre de séjour pluriannuel et devez prouver votre intégration : valeurs, histoire, vie quotidienne en France.",
     href: "/qcm-assimilation-france/",
-    color: "from-blue-700/20 to-blue-900/20 border-blue-700/40",
+    accent: "bleu",
+    icon: "🪪",
   },
   {
     title: "Naturalisation française",
     description:
       "Vous préparez l'entretien d'assimilation en préfecture pour devenir Français : entraînez-vous sur le Livret du citoyen et nos simulations.",
     href: "/test-naturalisation-france/",
-    color: "from-slate-100/10 to-slate-300/10 border-slate-300/30",
+    accent: "blanc",
+    icon: "🇫🇷",
   },
   {
     title: "Curieux de la France",
     description:
       "Vous voulez (re)découvrir l'histoire, les institutions et la culture françaises : des QCM clairs et des fiches synthétiques.",
     href: "/culture-francaise-quiz/",
-    color: "from-red-700/20 to-red-900/20 border-red-700/40",
+    accent: "rouge",
+    icon: "✨",
   },
 ];
+
+const accentMap = {
+  bleu: {
+    border: "hover:border-blue-400/30",
+    bar: "from-blue-500 to-indigo-500",
+    iconBg: "border-blue-400/30 bg-blue-500/15 text-blue-300",
+  },
+  blanc: {
+    border: "hover:border-white/30",
+    bar: "from-slate-200 to-slate-400",
+    iconBg: "border-white/20 bg-white/10 text-slate-100",
+  },
+  rouge: {
+    border: "hover:border-red-400/30",
+    bar: "from-red-500 to-rose-500",
+    iconBg: "border-red-400/30 bg-red-500/15 text-red-300",
+  },
+} as const;
 
 const features = [
   {
@@ -104,8 +125,9 @@ export default function HomePage() {
       <JsonLd data={[organizationJsonLd(), websiteJsonLd(), faqJsonLd(faqItems)]} />
 
       <Hero
-        badge="Préparation gratuite — mise à jour 2026"
-        title="Réussissez votre entretien d'assimilation et votre naturalisation française"
+        badge="Préparation gratuite · 2026"
+        title="Réussissez votre naturalisation française"
+        highlight="naturalisation"
         subtitle="QCM, fiches, simulations d'examen et corrigés détaillés. Tout ce qu'il faut pour devenir Français en toute sérénité, gratuitement."
         ctaLabel="Commencer gratuitement"
         secondaryHref="/test-naturalisation-france/"
@@ -113,66 +135,88 @@ export default function HomePage() {
       />
 
       {/* Audiences */}
-      <section className="container-prose mt-8">
+      <section className="container-prose mt-12">
         <SectionTitle
-          eyebrow="À qui s'adresse ce site"
-          title="Trois publics, un même objectif : maîtriser la France"
+          eyebrow="Pour qui"
+          title="Trois publics, un même objectif"
+          description="Que vous demandiez un titre de séjour, la nationalité, ou que vous soyez simplement curieux, cette préparation est pour vous."
         />
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
-          {audiences.map((a) => (
-            <Link
-              key={a.title}
-              href={a.href}
-              className={`group rounded-2xl border bg-gradient-to-br ${a.color} p-6 transition hover:scale-[1.01]`}
-            >
-              <h3 className="text-lg font-bold text-white">{a.title}</h3>
-              <p className="mt-2 text-sm text-slate-300">{a.description}</p>
-              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-300 group-hover:text-blue-200">
-                S'entraîner →
-              </span>
-            </Link>
-          ))}
+        <div className="mt-14 grid gap-6 md:grid-cols-3">
+          {audiences.map((a) => {
+            const acc = accentMap[a.accent as keyof typeof accentMap];
+            return (
+              <Link
+                key={a.title}
+                href={a.href}
+                className={`group relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)] transition-all duration-300 ${acc.border}`}
+              >
+                <div
+                  className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${acc.bar}`}
+                  aria-hidden
+                />
+                <span
+                  aria-hidden
+                  className={`flex h-12 w-12 items-center justify-center rounded-2xl border text-2xl ${acc.iconBg}`}
+                >
+                  {a.icon}
+                </span>
+                <h3 className="mt-5 text-xl font-bold text-white">{a.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-slate-300">
+                  {a.description}
+                </p>
+                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-blue-300 transition group-hover:gap-2.5 group-hover:text-blue-200">
+                  S'entraîner <span aria-hidden>→</span>
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
       {/* Features */}
-      <section className="container-prose mt-20">
+      <section className="container-prose mt-28">
         <SectionTitle
           eyebrow="Pourquoi QCM Assimilation"
           title="Une préparation complète, claire et gratuite"
           description="Conçu pour les candidats à la naturalisation et au titre de séjour, par des passionnés de la République."
         />
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((f) => (
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {features.map((f, i) => (
             <div
               key={f.title}
-              className="rounded-xl border border-slate-800 bg-slate-900/60 p-5"
+              className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)] transition hover:border-blue-400/20"
             >
-              <h3 className="text-base font-semibold text-white">{f.title}</h3>
-              <p className="mt-2 text-sm text-slate-400">{f.description}</p>
+              <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-blue-400/30 bg-blue-500/15 text-xs font-bold text-blue-300">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="mt-4 text-base font-bold text-white">{f.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-400">
+                {f.description}
+              </p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Sample QCM */}
-      <section className="container-prose mt-20">
+      <section className="container-prose mt-28">
         <SectionTitle
-          eyebrow="Aperçu des questions"
-          title="6 questions extraites du Livret du citoyen"
-          description="Voici un aperçu gratuit des questions que vous pourrez retrouver en entretien."
+          eyebrow="Aperçu interactif"
+          title="6 questions du Livret du citoyen"
+          description="Cliquez sur une réponse pour voir le corrigé immédiatement."
         />
-        <div className="mt-10 grid gap-4 md:grid-cols-2">
+        <div className="mt-14 grid gap-5 md:grid-cols-2">
           {featuredQuestions.map((q, i) => (
-            <QCMCard key={q.id} question={q} index={i} />
+            <QCMQuiz key={q.id} question={q} index={i} />
           ))}
         </div>
-        <div className="mt-8 text-center">
+        <div className="mt-12 text-center">
           <Link
             href="/qcm-assimilation-france/"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-900/40 px-5 py-3 text-sm font-semibold text-white hover:border-slate-500"
+            className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-7 py-4 text-base font-bold text-white backdrop-blur transition hover:border-blue-400/40 hover:bg-white/10"
           >
-            Voir les 50 questions →
+            Voir les 50 questions
+            <span aria-hidden>→</span>
           </Link>
         </div>
       </section>

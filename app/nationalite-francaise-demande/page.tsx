@@ -80,6 +80,7 @@ export default function DemandeNationalitePage() {
       <Hero
         badge="Guide démarches 2026"
         title="Demande de nationalité française : le guide complet"
+        highlight="nationalité française"
         subtitle="Conditions, pièces à fournir, étapes, délais, recours : tout ce qu'il faut savoir pour préparer votre dossier de naturalisation sans erreur."
         ctaLabel="Préparer mon entretien"
       />
@@ -90,7 +91,7 @@ export default function DemandeNationalitePage() {
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {conditions.map((c, i) => (
-            <div key={c.t} className="rounded-xl border border-slate-800 bg-slate-900/60 p-5">
+            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
               <span className="text-xs font-bold text-blue-400">0{i + 1}</span>
               <h3 className="mt-1 text-base font-semibold text-white">{c.t}</h3>
               <p className="mt-2 text-sm text-slate-400">{c.d}</p>
@@ -109,7 +110,7 @@ export default function DemandeNationalitePage() {
           {documents.map((d) => (
             <li
               key={d}
-              className="flex items-start gap-3 rounded-lg border border-slate-800 bg-slate-900/60 p-4 text-sm text-slate-200"
+              className="flex items-start gap-3 rounded-xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 text-sm text-slate-200 shadow-[0_8px_22px_rgba(2,8,23,0.3)]"
             >
               <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-700/30 text-xs text-blue-200">
                 ✓
@@ -133,7 +134,7 @@ export default function DemandeNationalitePage() {
             "Attendre l'avis favorable de la préfecture, transmis au ministère de l'Intérieur.",
             "Recevoir le décret de naturalisation publié au Journal officiel.",
           ].map((step, i) => (
-            <li key={step} className="flex items-start gap-4 rounded-xl border border-slate-800 bg-slate-900/60 p-5">
+            <li key={step} className="flex items-start gap-4 rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-700 text-sm font-bold text-white">
                 {i + 1}
               </span>

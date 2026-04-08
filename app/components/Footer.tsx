@@ -39,39 +39,42 @@ const sections = [
 
 export default function Footer() {
   return (
-    <footer className="mt-24 border-t border-slate-800/80 bg-slate-950">
+    <footer className="mt-32 border-t border-white/5 bg-slate-950">
       <div className="h-1 gradient-tricolore" aria-hidden />
-      <div className="container-prose py-14">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
+      <div className="container-prose py-16">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-md gradient-tricolore text-[0px]">
-                QCM
+            <Link href="/" className="flex items-center gap-2.5">
+              <span
+                aria-hidden
+                className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-gradient-to-br from-blue-600 via-indigo-600 to-sky-500 text-sm font-black text-white shadow-[0_8px_24px_rgba(37,99,235,0.45)]"
+              >
+                Qa
               </span>
               <span className="text-base font-bold text-white">QCM Assimilation</span>
             </Link>
-            <p className="mt-3 text-sm text-slate-400">
+            <p className="mt-4 text-sm leading-relaxed text-slate-400">
               Préparer la naturalisation française et l'entretien d'assimilation, gratuitement.
             </p>
             <a
               href="https://cap-citoyen.fr/register"
               target="_blank"
               rel="noopener"
-              className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-400 hover:text-blue-300"
+              className="mt-5 inline-flex items-center gap-1.5 rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-blue-300 transition hover:bg-blue-500/20"
             >
-              Tester sur cap-citoyen.fr →
+              cap-citoyen.fr →
             </a>
           </div>
 
           {sections.map((section) => (
             <div key={section.title}>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+              <h3 className="text-xs font-bold uppercase tracking-widest text-blue-300">
                 {section.title}
               </h3>
-              <ul className="mt-4 space-y-2 text-sm text-slate-400">
+              <ul className="mt-5 space-y-3 text-sm text-slate-400">
                 {section.links.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="hover:text-white">
+                    <Link href={link.href} className="transition hover:text-white">
                       {link.label}
                     </Link>
                   </li>
@@ -81,7 +84,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-slate-800 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center">
+        <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-8 text-xs text-slate-500 sm:flex-row sm:items-center">
           <p>
             © {new Date().getFullYear()} QCM Assimilation — Site indépendant, non
             affilié à l'État français.
@@ -92,7 +95,7 @@ export default function Footer() {
               href="https://cap-citoyen.fr"
               target="_blank"
               rel="noopener"
-              className="text-slate-400 hover:text-white"
+              className="font-semibold text-blue-400 hover:text-blue-300"
             >
               cap-citoyen.fr
             </a>

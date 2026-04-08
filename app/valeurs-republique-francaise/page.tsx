@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Hero from "../components/Hero";
 import CTA from "../components/CTA";
 import FAQ from "../components/FAQ";
-import QCMCard from "../components/QCMCard";
+import QCMQuiz from "../components/QCMQuiz";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
 import SectionTitle from "../components/SectionTitle";
@@ -91,7 +91,8 @@ export default function ValeursPage() {
 
       <Hero
         badge="Valeurs républicaines"
-        title="Les valeurs de la République française expliquées"
+        title="Les valeurs de la République française"
+        highlight="valeurs"
         subtitle="Liberté, Égalité, Fraternité, Laïcité : ce que ces mots signifient concrètement, et pourquoi ils sont au cœur de l'entretien d'assimilation."
         ctaLabel="S'entraîner sur les valeurs"
       />
@@ -126,7 +127,7 @@ export default function ValeursPage() {
         />
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           {valeurs.map((q, i) => (
-            <QCMCard key={q.id} question={q} index={i} />
+            <QCMQuiz key={q.id} question={q} index={i} />
           ))}
         </div>
       </section>

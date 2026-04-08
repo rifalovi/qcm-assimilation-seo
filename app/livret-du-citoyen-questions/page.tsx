@@ -138,9 +138,10 @@ export default function LivretPage() {
 
       <Hero
         badge="Livret du citoyen 2026"
-        title="Le Livret du citoyen, résumé chapitre par chapitre"
+        title="Le Livret du citoyen, chapitre par chapitre"
+        highlight="Livret du citoyen"
         subtitle="Toutes les fiches essentielles pour la naturalisation française : symboles, histoire, institutions, valeurs, vie quotidienne, culture, géographie."
-        ctaLabel="Écouter le Livret en audio"
+        ctaLabel="Écouter en audio"
         ctaHref="https://cap-citoyen.fr/audio"
       />
 
@@ -160,7 +161,7 @@ export default function LivretPage() {
         {chapters.map((c) => (
           <article
             key={c.title}
-            className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6"
+            className="rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]"
           >
             <h2 className="text-lg font-bold text-white">{c.title}</h2>
             <p className="mt-3 text-sm text-slate-300">{c.summary}</p>

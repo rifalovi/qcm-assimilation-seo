@@ -27,12 +27,13 @@ export default function ContactPage() {
       <Hero
         badge="Contact"
         title="Une question, une suggestion ?"
+        highlight="suggestion"
         subtitle="Nous lisons tous les messages, qu'ils viennent de candidats à la naturalisation, d'enseignants, de bénévoles ou de curieux de la France."
         ctaLabel="Aller sur cap-citoyen.fr"
       />
 
       <section className="container-prose mt-8 grid gap-6 md:grid-cols-2">
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+        <div className="rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
           <h2 className="text-lg font-bold text-white">Email</h2>
           <p className="mt-3 text-sm text-slate-300">
             Envoyez-nous un email à l'adresse :
@@ -45,7 +46,7 @@ export default function ContactPage() {
           </a>
         </div>
 
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+        <div className="rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
           <h2 className="text-lg font-bold text-white">Sujets fréquents</h2>
           <ul className="mt-3 space-y-2 text-sm text-slate-300">
             <li>• Signaler une erreur dans une question</li>

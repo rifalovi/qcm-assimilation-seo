@@ -3,7 +3,7 @@ import Link from "next/link";
 import Hero from "../components/Hero";
 import CTA from "../components/CTA";
 import FAQ from "../components/FAQ";
-import QCMCard from "../components/QCMCard";
+import QCMQuiz from "../components/QCMQuiz";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
 import SectionTitle from "../components/SectionTitle";
@@ -78,11 +78,12 @@ export default function TestNaturalisationPage() {
       <Hero
         badge="Test gratuit · 50 questions"
         title="Test de naturalisation française gratuit"
+        highlight="naturalisation française"
         subtitle="Évaluez en 15 minutes votre niveau réel sur les connaissances exigées en entretien d'assimilation. Corrigé instantané, explications détaillées."
         ctaLabel="Démarrer le test"
         ctaHref="https://cap-citoyen.fr/quiz"
         secondaryHref="/livret-du-citoyen-questions/"
-        secondaryLabel="Réviser le Livret du citoyen"
+        secondaryLabel="Réviser le Livret"
       />
 
       <section className="container-prose mt-8">
@@ -110,7 +111,7 @@ export default function TestNaturalisationPage() {
           { n: "02", t: "Simulation chrono", d: "Mode 15 minutes pour reproduire les conditions réelles d'examen." },
           { n: "03", t: "Score & progression", d: "Visualisez vos points faibles et concentrez votre révision dessus." },
         ].map((s) => (
-          <div key={s.n} className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+          <div key={s.n} className="rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
             <span className="text-xs font-bold text-blue-400">{s.n}</span>
             <h3 className="mt-2 text-lg font-semibold text-white">{s.t}</h3>
             <p className="mt-2 text-sm text-slate-400">{s.d}</p>
@@ -126,7 +127,7 @@ export default function TestNaturalisationPage() {
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {sample.map((q, i) => (
-            <QCMCard key={q.id} question={q} index={i} />
+            <QCMQuiz key={q.id} question={q} index={i} />
           ))}
         </div>
       </section>
@@ -151,7 +152,7 @@ export default function TestNaturalisationPage() {
             <Link
               key={c.href}
               href={c.href}
-              className="rounded-xl border border-slate-800 bg-slate-900/60 p-5 hover:border-blue-700/60"
+              className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)] hover:border-blue-700/60"
             >
               <h3 className="text-base font-semibold text-white">{c.t}</h3>
               <p className="mt-2 text-sm text-slate-400">{c.d}</p>

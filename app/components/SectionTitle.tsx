@@ -10,15 +10,17 @@ export default function SectionTitle({
   return (
     <header className="mx-auto max-w-3xl text-center">
       {eyebrow && (
-        <p className="text-xs font-bold uppercase tracking-wider text-blue-400">
+        <span className="inline-block rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-blue-300">
           {eyebrow}
-        </p>
+        </span>
       )}
-      <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+      <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
         {title}
       </h2>
       {description && (
-        <p className="mt-4 text-base text-slate-300 sm:text-lg">{description}</p>
+        <p className="mt-5 text-base leading-relaxed text-slate-300 sm:text-lg">
+          {description}
+        </p>
       )}
     </header>
   );

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Hero from "../components/Hero";
 import CTA from "../components/CTA";
 import FAQ from "../components/FAQ";
-import QCMCard from "../components/QCMCard";
+import QCMQuiz from "../components/QCMQuiz";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
 import SectionTitle from "../components/SectionTitle";
@@ -75,6 +75,7 @@ export default function CultureFrancaisePage() {
       <Hero
         badge="Quiz culture · Gratuit"
         title="Quiz culture française : littérature, art, sciences"
+        highlight="culture française"
         subtitle="Testez vos connaissances sur les grands noms et œuvres de la France. Parfait pour briller en entretien d'assimilation ou pour le simple plaisir."
         ctaLabel="Faire le quiz complet"
         ctaHref="https://cap-citoyen.fr/quiz"
@@ -99,7 +100,7 @@ export default function CultureFrancaisePage() {
         />
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {figures.map((f) => (
-            <div key={f.name} className="rounded-xl border border-slate-800 bg-slate-900/60 p-5">
+            <div key={f.name} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
               <h3 className="text-base font-semibold text-white">{f.name}</h3>
               <p className="mt-1 text-xs text-blue-300">{f.role}</p>
               <p className="mt-2 text-sm text-slate-400">{f.work}</p>
@@ -116,7 +117,7 @@ export default function CultureFrancaisePage() {
         />
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           {culture.map((q, i) => (
-            <QCMCard key={q.id} question={q} index={i} />
+            <QCMQuiz key={q.id} question={q} index={i} />
           ))}
         </div>
       </section>

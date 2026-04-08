@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Hero from "../components/Hero";
 import CTA from "../components/CTA";
 import FAQ from "../components/FAQ";
-import QCMCard from "../components/QCMCard";
+import QCMQuiz from "../components/QCMQuiz";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
 import SectionTitle from "../components/SectionTitle";
@@ -79,7 +79,8 @@ export default function HistoirePage() {
 
       <Hero
         badge="Frise historique · Naturalisation"
-        title="Histoire de France : tout ce qu'il faut savoir pour la naturalisation"
+        title="Histoire de France pour la naturalisation"
+        highlight="Histoire de France"
         subtitle="Une frise chronologique claire avec les 17 dates fondamentales à mémoriser et les questions du QCM associées."
         ctaLabel="Écouter la version audio"
         ctaHref="https://cap-citoyen.fr/audio"
@@ -118,7 +119,7 @@ export default function HistoirePage() {
         />
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           {histoire.map((q, i) => (
-            <QCMCard key={q.id} question={q} index={i} />
+            <QCMQuiz key={q.id} question={q} index={i} />
           ))}
         </div>
       </section>

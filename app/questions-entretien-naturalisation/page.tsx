@@ -110,7 +110,8 @@ export default function QuestionsEntretienPage() {
 
       <Hero
         badge="Entretien d'assimilation"
-        title="Les questions les plus posées en entretien de naturalisation"
+        title="Les questions les plus posées en entretien"
+        highlight="entretien"
         subtitle="Quatre familles de questions, plus de 25 exemples concrets pour vous préparer à l'oral devant l'agent de préfecture."
         ctaLabel="S'entraîner gratuitement"
       />
@@ -170,7 +171,7 @@ export default function QuestionsEntretienPage() {
               d: "Sur la laïcité ou l'égalité, soyez clair et catégorique.",
             },
           ].map((c) => (
-            <div key={c.t} className="rounded-xl border border-slate-800 bg-slate-900/60 p-5">
+            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
               <h3 className="text-base font-semibold text-white">{c.t}</h3>
               <p className="mt-2 text-sm text-slate-400">{c.d}</p>
             </div>

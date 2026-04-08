@@ -27,6 +27,7 @@ export default function AProposPage() {
       <Hero
         badge="Notre mission"
         title="Aider chaque candidat à devenir Français sereinement"
+        highlight="Français"
         subtitle="QCM Assimilation est une initiative indépendante qui propose gratuitement les meilleures ressources pour préparer la naturalisation française."
         ctaLabel="Découvrir cap-citoyen.fr"
       />

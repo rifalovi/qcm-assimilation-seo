@@ -73,6 +73,7 @@ export default function DroitsDevoirsPage() {
       <Hero
         badge="Citoyenneté · Naturalisation"
         title="Droits et devoirs du citoyen français"
+        highlight="citoyen français"
         subtitle="Devenir Français, c'est obtenir des droits, mais aussi accepter des devoirs. Le panorama complet pour préparer l'entretien d'assimilation."
         ctaLabel="Tester mes connaissances"
       />
