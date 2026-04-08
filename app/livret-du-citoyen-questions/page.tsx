@@ -147,7 +147,7 @@ export default function LivretPage() {
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-bold text-white">Pourquoi maîtriser le Livret du citoyen ?</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">Pourquoi maîtriser le Livret du citoyen ?</h2>
           <p className="mt-4 text-slate-300">
             Le Livret du citoyen est la base de l'entretien d'assimilation. Les agents
             de préfecture s'en inspirent directement pour formuler leurs questions. Le
@@ -157,11 +157,11 @@ export default function LivretPage() {
         </div>
       </section>
 
-      <section className="container-prose mt-12 grid gap-6 lg:grid-cols-2">
+      <section className="container-prose mt-6 sm:mt-8 grid gap-4 lg:grid-cols-2">
         {chapters.map((c) => (
           <article
             key={c.title}
-            className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 sm:rounded-[1.6rem] sm:p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]"
+            className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]"
           >
             <h2 className="text-lg font-bold text-white">{c.title}</h2>
             <p className="mt-3 text-sm text-slate-300">{c.summary}</p>

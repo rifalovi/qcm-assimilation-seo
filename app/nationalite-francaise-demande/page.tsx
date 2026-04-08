@@ -87,11 +87,11 @@ export default function DemandeNationalitePage() {
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-bold text-white">5 conditions pour demander la nationalité française</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">5 conditions pour demander la nationalité française</h2>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {conditions.map((c, i) => (
-            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
+            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
               <span className="text-xs font-bold text-blue-400">0{i + 1}</span>
               <h3 className="mt-1 text-base font-semibold text-white">{c.t}</h3>
               <p className="mt-2 text-sm text-slate-400">{c.d}</p>
@@ -100,7 +100,7 @@ export default function DemandeNationalitePage() {
         </div>
       </section>
 
-      <section className="container-prose mt-16">
+      <section className="container-prose mt-8 sm:mt-10">
         <SectionTitle
           eyebrow="Pièces à fournir"
           title="Le dossier type de naturalisation"
@@ -121,7 +121,7 @@ export default function DemandeNationalitePage() {
         </ul>
       </section>
 
-      <section className="container-prose mt-16">
+      <section className="container-prose mt-8 sm:mt-10">
         <SectionTitle
           eyebrow="Procédure"
           title="5 étapes, du dépôt au décret"
@@ -134,7 +134,7 @@ export default function DemandeNationalitePage() {
             "Attendre l'avis favorable de la préfecture, transmis au ministère de l'Intérieur.",
             "Recevoir le décret de naturalisation publié au Journal officiel.",
           ].map((step, i) => (
-            <li key={step} className="flex items-start gap-4 rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
+            <li key={step} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-700 text-sm font-bold text-white">
                 {i + 1}
               </span>

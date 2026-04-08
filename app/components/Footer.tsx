@@ -39,10 +39,10 @@ const sections = [
 
 export default function Footer() {
   return (
-    <footer className="mt-32 border-t border-white/5 bg-slate-950">
-      <div className="h-1 gradient-tricolore" aria-hidden />
-      <div className="container-prose py-16">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
+    <footer className="mt-16 border-t border-white/5 bg-slate-950 sm:mt-20">
+      <div className="h-0.5 gradient-tricolore" aria-hidden />
+      <div className="container-prose py-10 sm:py-12">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5">
               <span
@@ -84,7 +84,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-8 text-xs text-slate-500 sm:flex-row sm:items-center">
+        <div className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center">
           <p>
             © {new Date().getFullYear()} QCM Assimilation — Site indépendant, non
             affilié à l'État français.

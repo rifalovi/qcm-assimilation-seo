@@ -88,7 +88,7 @@ export default function HistoirePage() {
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-bold text-white">Comprendre la France à travers son histoire</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">Comprendre la France à travers son histoire</h2>
           <p className="mt-4 text-slate-300">
             On ne devient pas Français sans connaître les grandes étapes qui ont
             façonné le pays. De la Gaule romaine à la République actuelle, voici la
@@ -97,7 +97,7 @@ export default function HistoirePage() {
         </div>
       </section>
 
-      <section className="container-prose mt-12">
+      <section className="container-prose mt-6 sm:mt-8">
         <SectionTitle eyebrow="Frise" title="17 dates clés à mémoriser" />
         <ol className="mt-8 relative border-l border-blue-400/20 pl-6 sm:pl-8">
           {dates.map((d) => (
@@ -112,7 +112,7 @@ export default function HistoirePage() {
         </ol>
       </section>
 
-      <section className="container-prose mt-16">
+      <section className="container-prose mt-8 sm:mt-10">
         <SectionTitle
           eyebrow="Quiz"
           title="Questions d'histoire issues du QCM"

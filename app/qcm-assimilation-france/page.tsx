@@ -101,7 +101,7 @@ export default function QCMPage() {
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-bold text-white">À quoi sert ce QCM d'assimilation ?</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">À quoi sert ce QCM d'assimilation ?</h2>
           <p className="mt-4 text-slate-300">
             Ce QCM est un outil de révision avant l'entretien d'assimilation, qu'il
             soit pour une demande de naturalisation, un titre de séjour pluriannuel
@@ -121,13 +121,13 @@ export default function QCMPage() {
         if (list.length === 0) return null;
         const meta = sectionMeta[key];
         return (
-          <section key={key} className="container-prose mt-16">
+          <section key={key} className="container-prose mt-8 sm:mt-10">
             <header className="flex items-end justify-between gap-4">
               <div>
                 <p className={`text-xs font-bold uppercase tracking-wider ${meta.color}`}>
                   Thématique
                 </p>
-                <h2 className="mt-1 text-2xl font-bold text-white">{meta.label}</h2>
+                <h2 className="mt-1 text-lg font-bold text-white sm:text-xl">{meta.label}</h2>
               </div>
               <span className="text-sm text-slate-500">{list.length} questions</span>
             </header>

@@ -103,7 +103,7 @@ export default function SimulationPage() {
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-bold text-white">Comment se passe l'examen le jour J ?</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">Comment se passe l'examen le jour J ?</h2>
           <p className="mt-4 text-slate-300">
             L'entretien d'assimilation se déroule en préfecture, dans un bureau, en
             face-à-face avec un agent. Il dure entre 30 et 60 minutes et alterne
@@ -113,9 +113,9 @@ export default function SimulationPage() {
         </div>
       </section>
 
-      <section className="container-prose mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <section className="container-prose mt-6 sm:mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {steps.map((s) => (
-          <div key={s.n} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 sm:rounded-[1.6rem] sm:p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
+          <div key={s.n} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
             <span className="text-xs font-bold text-blue-400">Étape {s.n}</span>
             <h3 className="mt-2 text-lg font-semibold text-white">{s.title}</h3>
             <p className="mt-2 text-sm text-slate-400">{s.description}</p>
@@ -123,18 +123,18 @@ export default function SimulationPage() {
         ))}
       </section>
 
-      <section className="container-prose mt-20">
+      <section className="container-prose mt-10">
         <SectionTitle
           eyebrow="Pourquoi simuler"
           title="3 bonnes raisons de passer une simulation à blanc"
         />
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-6 grid gap-5 md:grid-cols-3">
           {[
             { t: "Vaincre le stress", d: "Plus vous le ferez, moins le jour J vous fera peur." },
             { t: "Identifier vos lacunes", d: "Le score détaillé vous montre où vous devez réviser." },
             { t: "Travailler la rapidité", d: "Apprenez à répondre en moins d'une minute, comme à l'oral." },
           ].map((c) => (
-            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
+            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
               <h3 className="text-base font-semibold text-white">{c.t}</h3>
               <p className="mt-2 text-sm text-slate-400">{c.d}</p>
             </div>

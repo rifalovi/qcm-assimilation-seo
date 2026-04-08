@@ -118,7 +118,7 @@ export default function QuestionsEntretienPage() {
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-bold text-white">À quoi vous attendre</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">À quoi vous attendre</h2>
           <p className="mt-4 text-slate-300">
             L'entretien d'assimilation est avant tout une discussion. L'agent de préfecture
             n'est pas là pour vous piéger : il veut s'assurer que vous comprenez la France,
@@ -132,11 +132,11 @@ export default function QuestionsEntretienPage() {
         </div>
       </section>
 
-      <section className="container-prose mt-14 grid gap-6 md:grid-cols-2">
+      <section className="container-prose mt-8 grid gap-4 md:grid-cols-2">
         {themes.map((t) => (
           <div
             key={t.title}
-            className={`rounded-2xl border bg-slate-900/60 p-6 ${t.color}`}
+            className={`rounded-2xl border bg-slate-900/60 p-4 sm:p-5 ${t.color}`}
           >
             <h3 className="text-xl font-bold text-white">{t.title}</h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-300">
@@ -151,12 +151,12 @@ export default function QuestionsEntretienPage() {
         ))}
       </section>
 
-      <section className="container-prose mt-20">
+      <section className="container-prose mt-10">
         <SectionTitle
           eyebrow="Méthode"
           title="3 conseils pour bien répondre"
         />
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-6 grid gap-5 md:grid-cols-3">
           {[
             {
               t: "Soyez précis et sincère",
@@ -171,7 +171,7 @@ export default function QuestionsEntretienPage() {
               d: "Sur la laïcité ou l'égalité, soyez clair et catégorique.",
             },
           ].map((c) => (
-            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
+            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
               <h3 className="text-base font-semibold text-white">{c.t}</h3>
               <p className="mt-2 text-sm text-slate-400">{c.d}</p>
             </div>

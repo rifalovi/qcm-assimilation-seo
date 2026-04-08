@@ -88,7 +88,7 @@ export default function TestNaturalisationPage() {
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-bold text-white">Pourquoi passer un test de naturalisation avant l'entretien ?</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">Pourquoi passer un test de naturalisation avant l'entretien ?</h2>
           <p className="mt-4 text-slate-300">
             L'entretien d'assimilation est l'une des étapes les plus stressantes de la
             procédure de naturalisation. Faire un test à blanc à plusieurs reprises est
@@ -105,13 +105,13 @@ export default function TestNaturalisationPage() {
         </div>
       </section>
 
-      <section className="container-prose mt-12 grid gap-6 md:grid-cols-3">
+      <section className="container-prose mt-6 sm:mt-8 grid gap-4 md:grid-cols-3">
         {[
           { n: "01", t: "50 questions corrigées", d: "Du symbole tricolore à la loi de 1905, tous les thèmes y passent." },
           { n: "02", t: "Simulation chrono", d: "Mode 15 minutes pour reproduire les conditions réelles d'examen." },
           { n: "03", t: "Score & progression", d: "Visualisez vos points faibles et concentrez votre révision dessus." },
         ].map((s) => (
-          <div key={s.n} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 sm:rounded-[1.6rem] sm:p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
+          <div key={s.n} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
             <span className="text-xs font-bold text-blue-400">{s.n}</span>
             <h3 className="mt-2 text-lg font-semibold text-white">{s.t}</h3>
             <p className="mt-2 text-sm text-slate-400">{s.d}</p>
@@ -119,13 +119,13 @@ export default function TestNaturalisationPage() {
         ))}
       </section>
 
-      <section className="container-prose mt-20">
+      <section className="container-prose mt-10">
         <SectionTitle
           eyebrow="Aperçu"
           title="8 questions du test de naturalisation"
           description="Faites un échauffement avec ces extraits avant de passer le test complet."
         />
-        <div className="mt-10 grid gap-4 md:grid-cols-2">
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
           {sample.map((q, i) => (
             <QCMQuiz key={q.id} question={q} index={i} />
           ))}
@@ -152,7 +152,7 @@ export default function TestNaturalisationPage() {
             <Link
               key={c.href}
               href={c.href}
-              className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)] hover:border-blue-700/60"
+              className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.3)] hover:border-blue-700/60"
             >
               <h3 className="text-base font-semibold text-white">{c.t}</h3>
               <p className="mt-2 text-sm text-slate-400">{c.d}</p>

@@ -32,8 +32,8 @@ export default function ContactPage() {
         ctaLabel="Aller sur cap-citoyen.fr"
       />
 
-      <section className="container-prose mt-8 grid gap-6 md:grid-cols-2">
-        <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 sm:rounded-[1.6rem] sm:p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
+      <section className="container-prose mt-8 grid gap-4 md:grid-cols-2">
+        <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
           <h2 className="text-lg font-bold text-white">Email</h2>
           <p className="mt-3 text-sm text-slate-300">
             Envoyez-nous un email à l'adresse :
@@ -46,7 +46,7 @@ export default function ContactPage() {
           </a>
         </div>
 
-        <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 sm:rounded-[1.6rem] sm:p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
+        <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
           <h2 className="text-lg font-bold text-white">Sujets fréquents</h2>
           <ul className="mt-3 space-y-2 text-sm text-slate-300">
             <li>• Signaler une erreur dans une question</li>
@@ -57,8 +57,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="container-prose mt-12">
-        <div className="rounded-2xl border border-blue-700/30 bg-blue-700/5 p-6">
+      <section className="container-prose mt-6 sm:mt-8">
+        <div className="rounded-2xl border border-blue-700/30 bg-blue-700/5 p-5">
           <h2 className="text-base font-bold text-white">Pour les démarches officielles</h2>
           <p className="mt-2 text-sm text-slate-300">
             Nous ne pouvons pas vous accompagner individuellement sur votre dossier

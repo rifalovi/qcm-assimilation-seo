@@ -135,36 +135,36 @@ export default function HomePage() {
       />
 
       {/* Audiences */}
-      <section className="container-prose mt-12">
+      <section className="container-prose mt-6 sm:mt-8">
         <SectionTitle
           eyebrow="Pour qui"
           title="Trois publics, un même objectif"
           description="Que vous demandiez un titre de séjour, la nationalité, ou que vous soyez simplement curieux, cette préparation est pour vous."
         />
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-6 grid gap-6 md:grid-cols-3">
           {audiences.map((a) => {
             const acc = accentMap[a.accent as keyof typeof accentMap];
             return (
               <Link
                 key={a.title}
                 href={a.href}
-                className={`group relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-7 shadow-[0_18px_45px_rgba(2,8,23,0.4)] transition-all duration-300 ${acc.border}`}
+                className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 shadow-[0_18px_45px_rgba(2,8,23,0.35)] transition-all duration-300 ${acc.border}`}
               >
                 <div
-                  className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${acc.bar}`}
+                  className={`absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r ${acc.bar}`}
                   aria-hidden
                 />
                 <span
                   aria-hidden
-                  className={`flex h-12 w-12 items-center justify-center rounded-2xl border text-2xl ${acc.iconBg}`}
+                  className={`flex h-10 w-10 items-center justify-center rounded-xl border text-xl ${acc.iconBg}`}
                 >
                   {a.icon}
                 </span>
-                <h3 className="mt-5 text-xl font-bold text-white">{a.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-300">
+                <h3 className="mt-3 text-base font-bold text-white">{a.title}</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-slate-400">
                   {a.description}
                 </p>
-                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-blue-300 transition group-hover:gap-2.5 group-hover:text-blue-200">
+                <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-blue-300 transition group-hover:gap-2 group-hover:text-blue-200">
                   S'entraîner <span aria-hidden>→</span>
                 </span>
               </Link>
@@ -174,23 +174,25 @@ export default function HomePage() {
       </section>
 
       {/* Features */}
-      <section className="container-prose mt-28">
+      <section className="container-prose mt-10 sm:mt-14">
         <SectionTitle
           eyebrow="Pourquoi QCM Assimilation"
           title="Une préparation complète, claire et gratuite"
           description="Conçu pour les candidats à la naturalisation et au titre de séjour, par des passionnés de la République."
         />
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f, i) => (
             <div
               key={f.title}
-              className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 shadow-[0_18px_45px_rgba(2,8,23,0.3)] transition hover:border-blue-400/20"
+              className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 shadow-[0_18px_45px_rgba(2,8,23,0.3)] transition hover:border-blue-400/20 sm:p-5"
             >
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-blue-400/30 bg-blue-500/15 text-xs font-bold text-blue-300">
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-blue-400/30 bg-blue-500/15 text-[11px] font-bold text-blue-300">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="mt-4 text-base font-bold text-white">{f.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-400">
+              <h3 className="mt-3 text-sm font-bold text-white sm:text-[15px]">
+                {f.title}
+              </h3>
+              <p className="mt-1.5 text-[13px] leading-relaxed text-slate-400">
                 {f.description}
               </p>
             </div>
@@ -199,13 +201,13 @@ export default function HomePage() {
       </section>
 
       {/* Sample QCM */}
-      <section className="container-prose mt-28">
+      <section className="container-prose mt-10 sm:mt-14">
         <SectionTitle
           eyebrow="Aperçu interactif"
           title="6 questions du Livret du citoyen"
           description="Cliquez sur une réponse pour voir le corrigé immédiatement."
         />
-        <div className="mt-14 grid gap-5 md:grid-cols-2">
+        <div className="mt-6 grid gap-5 md:grid-cols-2">
           {featuredQuestions.map((q, i) => (
             <QCMQuiz key={q.id} question={q} index={i} />
           ))}

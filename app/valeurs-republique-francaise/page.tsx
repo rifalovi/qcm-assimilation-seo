@@ -99,7 +99,7 @@ export default function ValeursPage() {
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-bold text-white">Pourquoi les valeurs sont-elles centrales ?</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">Pourquoi les valeurs sont-elles centrales ?</h2>
           <p className="mt-4 text-slate-300">
             Devenir Français, c'est adhérer à un projet collectif. Les valeurs de la
             République ne sont pas des slogans : elles structurent les lois, l'école,
@@ -110,16 +110,16 @@ export default function ValeursPage() {
         </div>
       </section>
 
-      <section className="container-prose mt-12 grid gap-5 md:grid-cols-2">
+      <section className="container-prose mt-6 sm:mt-8 grid gap-5 md:grid-cols-2">
         {principes.map((p) => (
-          <div key={p.title} className={`rounded-2xl border p-6 ${p.color}`}>
-            <h3 className="text-2xl font-bold text-white">{p.title}</h3>
-            <p className="mt-3 text-sm text-slate-200">{p.description}</p>
+          <div key={p.title} className={`rounded-2xl border p-4 sm:p-5 ${p.color}`}>
+            <h3 className="text-lg font-bold text-white sm:text-xl">{p.title}</h3>
+            <p className="mt-2 text-sm text-slate-200">{p.description}</p>
           </div>
         ))}
       </section>
 
-      <section className="container-prose mt-20">
+      <section className="container-prose mt-10">
         <SectionTitle
           eyebrow="Quiz"
           title="Questions sur les valeurs républicaines"

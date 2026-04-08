@@ -80,7 +80,7 @@ export default function DroitsDevoirsPage() {
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-bold text-white">Citoyen : un statut, deux faces</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">Citoyen : un statut, deux faces</h2>
           <p className="mt-4 text-slate-300">
             La citoyenneté française repose sur un équilibre : la République garantit
             des droits fondamentaux, et chaque citoyen accepte des devoirs envers la
@@ -90,8 +90,8 @@ export default function DroitsDevoirsPage() {
         </div>
       </section>
 
-      <section className="container-prose mt-12 grid gap-6 md:grid-cols-2">
-        <div className="rounded-2xl border border-blue-700/40 bg-blue-700/5 p-6">
+      <section className="container-prose mt-6 sm:mt-8 grid gap-4 md:grid-cols-2">
+        <div className="rounded-2xl border border-blue-700/40 bg-blue-700/5 p-5">
           <h3 className="text-xl font-bold text-white">Vos droits</h3>
           <ul className="mt-4 space-y-3">
             {droits.map((d) => (
@@ -102,7 +102,7 @@ export default function DroitsDevoirsPage() {
             ))}
           </ul>
         </div>
-        <div className="rounded-2xl border border-red-700/40 bg-red-700/5 p-6">
+        <div className="rounded-2xl border border-red-700/40 bg-red-700/5 p-5">
           <h3 className="text-xl font-bold text-white">Vos devoirs</h3>
           <ul className="mt-4 space-y-3">
             {devoirs.map((d) => (

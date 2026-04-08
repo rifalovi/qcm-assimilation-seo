@@ -24,23 +24,23 @@ export default function QCMQuiz({
   }
 
   return (
-    <article className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)] transition-all duration-300 hover:border-blue-400/20 sm:rounded-[1.6rem] sm:p-6">
-      <header className="flex items-start gap-3">
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border border-blue-400/30 bg-blue-500/15 text-xs font-bold text-blue-300">
+    <article className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 shadow-[0_18px_45px_rgba(2,8,23,0.35)] transition-all duration-300 hover:border-blue-400/20 sm:p-5">
+      <header className="flex items-start gap-2.5">
+        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-blue-400/30 bg-blue-500/15 text-[11px] font-bold text-blue-300">
           {String(index + 1).padStart(2, "0")}
         </span>
-        <h3 className="text-sm font-semibold leading-snug text-white sm:text-base">
+        <h3 className="text-sm font-semibold leading-snug text-white sm:text-[15px]">
           {question.question}
         </h3>
       </header>
 
-      <ul className="mt-5 space-y-2.5">
+      <ul className="mt-4 space-y-2">
         {question.choices.map((choice, i) => {
           const isAnswer = i === question.answerIndex;
           const isPicked = selected === i;
 
           let className =
-            "flex w-full items-start gap-3 rounded-xl border px-4 py-3 text-left text-sm transition-all duration-200 ";
+            "flex w-full items-start gap-2.5 rounded-xl border px-3.5 py-2.5 text-left text-sm transition-all duration-200 ";
 
           if (!revealed) {
             className +=
@@ -78,12 +78,12 @@ export default function QCMQuiz({
                 </span>
                 <span className="flex-1">{choice}</span>
                 {revealed && isAnswer && (
-                  <span aria-hidden className="text-base text-emerald-300">
+                  <span aria-hidden className="text-sm text-emerald-300">
                     ✓
                   </span>
                 )}
                 {revealed && isPicked && !isAnswer && (
-                  <span aria-hidden className="text-base text-red-300">
+                  <span aria-hidden className="text-sm text-red-300">
                     ✕
                   </span>
                 )}
@@ -96,7 +96,7 @@ export default function QCMQuiz({
       {revealed && (
         <div
           className={
-            "mt-5 rounded-xl border p-4 text-sm " +
+            "mt-4 rounded-xl border p-3.5 text-sm " +
             (isCorrect
               ? "border-emerald-400/30 bg-emerald-500/10 text-emerald-100"
               : "border-red-400/30 bg-red-500/10 text-red-100")
@@ -106,12 +106,14 @@ export default function QCMQuiz({
             {isCorrect ? "Bonne réponse !" : "Pas tout à fait."}
           </p>
           {question.explanation && (
-            <p className="mt-2 text-slate-200">{question.explanation}</p>
+            <p className="mt-1.5 text-[13px] leading-relaxed text-slate-200">
+              {question.explanation}
+            </p>
           )}
           <button
             type="button"
             onClick={reset}
-            className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-blue-300 hover:text-blue-200"
+            className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-blue-300 hover:text-blue-200"
           >
             ↻ Recommencer
           </button>

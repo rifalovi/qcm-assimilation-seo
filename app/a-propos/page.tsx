@@ -34,7 +34,7 @@ export default function AProposPage() {
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-2xl font-bold text-white">Pourquoi ce site ?</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">Pourquoi ce site ?</h2>
           <p className="mt-4 text-slate-300">
             Demander la nationalité française est l'aboutissement d'un long parcours
             personnel. Pourtant, beaucoup de candidats se présentent à l'entretien
@@ -47,7 +47,7 @@ export default function AProposPage() {
             les institutions, et le rendre totalement gratuit.
           </p>
 
-          <h2 className="mt-10 text-2xl font-bold text-white">Notre méthode</h2>
+          <h2 className="mt-8 text-lg font-bold text-white sm:text-xl">Notre méthode</h2>
           <p className="mt-4 text-slate-300">
             Nous croyons à la pédagogie active : un QCM bien fait, avec une explication
             claire, vaut mieux que dix pages à lire. Toutes nos questions sont conçues
@@ -55,7 +55,7 @@ export default function AProposPage() {
             naturalisation.
           </p>
 
-          <h2 className="mt-10 text-2xl font-bold text-white">Notre relation avec cap-citoyen.fr</h2>
+          <h2 className="mt-8 text-lg font-bold text-white sm:text-xl">Notre relation avec cap-citoyen.fr</h2>
           <p className="mt-4 text-slate-300">
             QCM Assimilation est l'antenne SEO de cap-citoyen.fr, une application
             web qui propose un suivi de progression, des fiches imprimables et
@@ -63,7 +63,7 @@ export default function AProposPage() {
             souhaitez aller plus loin, c'est par là.
           </p>
 
-          <h2 className="mt-10 text-2xl font-bold text-white">Indépendance</h2>
+          <h2 className="mt-8 text-lg font-bold text-white sm:text-xl">Indépendance</h2>
           <p className="mt-4 text-slate-300">
             QCM Assimilation est un site indépendant, sans aucun lien officiel avec
             l'État français. Les informations qu'il propose ne se substituent pas aux
