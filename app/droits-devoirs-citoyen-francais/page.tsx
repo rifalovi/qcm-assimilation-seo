@@ -7,7 +7,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Droits et devoirs du citoyen français — Tout comprendre",
+  title: "Droits et devoirs du citoyen français : tout comprendre",
   description:
     "Quels sont les droits et les devoirs du citoyen français ? Vote, fiscalité, justice, libertés, défense, école : le guide complet pour la naturalisation.",
   alternates: { canonical: "/droits-devoirs-citoyen-francais/" },
@@ -15,42 +15,42 @@ export const metadata: Metadata = {
 
 const droits = [
   { t: "Voter et être éligible", d: "Aux élections présidentielle, législatives, locales et européennes." },
-  { t: "Liberté d'expression", d: "S'exprimer librement, dans le respect des lois." },
-  { t: "Accès à la justice", d: "Être jugé par un tribunal indépendant et impartial." },
-  { t: "Sécurité sociale", d: "Bénéficier de l'assurance maladie, retraite, famille." },
-  { t: "Éducation gratuite", d: "Accès à l'école publique gratuite et laïque." },
-  { t: "Liberté de circulation", d: "Se déplacer dans toute l'Union européenne." },
+  { t: "Liberté d'expression", d: "Vous parlez librement, dans le respect des lois." },
+  { t: "Accès à la justice", d: "Vous êtes jugé par un tribunal indépendant et impartial." },
+  { t: "Sécurité sociale", d: "Assurance maladie, retraite, allocations familiales." },
+  { t: "École gratuite", d: "L'école publique est gratuite et laïque pour tous." },
+  { t: "Libre circulation", d: "Vous voyagez et vous installez dans toute l'Union européenne." },
 ];
 
 const devoirs = [
-  { t: "Respecter les lois", d: "La loi française s'applique à tous, sans exception." },
+  { t: "Respecter les lois", d: "La loi s'applique à tous, sans exception." },
   { t: "Payer ses impôts", d: "Contribuer aux charges publiques selon ses moyens (article 13 DDHC)." },
-  { t: "Voter (devoir civique)", d: "Le vote n'est pas obligatoire mais c'est un devoir moral." },
+  { t: "Voter (devoir civique)", d: "Le vote n'est pas obligatoire, mais c'est un devoir moral." },
   { t: "Participer à la défense", d: "Journée de défense et citoyenneté pour les jeunes Français." },
   { t: "Respecter les valeurs", d: "Liberté, égalité, fraternité, laïcité, dignité humaine." },
-  { t: "Assister sa famille", d: "Obligation alimentaire entre parents et enfants." },
+  { t: "Aider sa famille", d: "Obligation alimentaire entre parents et enfants." },
 ];
 
 const faqItems = [
   {
-    question: "Le vote est-il obligatoire en France ?",
+    question: "Le vote est-il obligatoire ?",
     answer:
-      "Non, le vote n'est pas obligatoire en France (à l'exception des sénateurs). Mais il est considéré comme un devoir civique fondamental.",
+      "Non (sauf pour les sénateurs). Mais c'est un devoir civique très important.",
   },
   {
-    question: "Que se passe-t-il si je ne paie pas mes impôts ?",
+    question: "Et si je ne paie pas mes impôts ?",
     answer:
-      "Vous risquez des pénalités, des majorations, voire des poursuites pénales en cas de fraude. L'article 13 de la Déclaration des droits de l'homme rappelle que la contribution commune est indispensable.",
+      "Vous risquez des pénalités, des majorations, et même des poursuites en cas de fraude. La contribution commune est rappelée dès 1789 dans la Déclaration des droits de l'homme.",
   },
   {
-    question: "Suis-je obligé de faire la JDC (Journée Défense Citoyenneté) ?",
+    question: "La JDC, c'est obligatoire ?",
     answer:
-      "Oui, tous les jeunes Français de 16 à 25 ans doivent y participer. Elle est obligatoire pour s'inscrire à un examen (permis, bac, etc.).",
+      "Oui. Tous les jeunes Français de 16 à 25 ans doivent y participer. Sans elle, pas de permis ni de bac.",
   },
   {
-    question: "Puis-je perdre la nationalité française ?",
+    question: "Peut-on perdre la nationalité française ?",
     answer:
-      "C'est très rare. Cela ne peut intervenir que dans des cas exceptionnels (engagement contre la France, fraude à la naturalisation), sous contrôle strict du juge.",
+      "Très rarement. Seulement dans des cas exceptionnels (engagement contre la France, fraude à la naturalisation), et toujours sous contrôle du juge.",
   },
 ];
 
@@ -74,18 +74,17 @@ export default function DroitsDevoirsPage() {
         badge="Citoyenneté · Naturalisation"
         title="Droits et devoirs du citoyen français"
         highlight="citoyen français"
-        subtitle="Devenir Français, c'est obtenir des droits, mais aussi accepter des devoirs. Le panorama complet pour préparer l'entretien d'assimilation."
+        subtitle="Devenir Français, c'est gagner des droits, mais aussi accepter des devoirs. Voici le panorama, en clair."
         ctaLabel="Tester mes connaissances"
       />
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">Citoyen : un statut, deux faces</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">Un statut, deux faces</h2>
           <p className="mt-4 text-slate-300">
-            La citoyenneté française repose sur un équilibre : la République garantit
-            des droits fondamentaux, et chaque citoyen accepte des devoirs envers la
-            collectivité. C'est ce contrat moral et juridique que vous reconnaissez
-            en devenant Français.
+            La citoyenneté française, c'est un équilibre. La République garantit
+            vos droits, et vous acceptez des devoirs envers la collectivité.
+            C'est ce contrat que vous signez en devenant Français.
           </p>
         </div>
       </section>
@@ -118,7 +117,7 @@ export default function DroitsDevoirsPage() {
       <CTA
         variant="register"
         title="Devenez un citoyen averti"
-        subtitle="Sur cap-citoyen.fr, accédez à toutes les fiches sur les droits, devoirs et institutions."
+        subtitle="Sur cap-citoyen.fr, retrouvez toutes les fiches sur les droits, les devoirs et les institutions."
       />
 
       <FAQ items={faqItems} />

@@ -14,37 +14,37 @@ import {
 } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "QCM d'assimilation France — 50 questions corrigées",
+  title: "QCM d'assimilation France : 50 questions corrigées",
   description:
-    "Le QCM d'assimilation gratuit pour la naturalisation : 50 questions sur les symboles, l'histoire, les institutions et les valeurs de la République française.",
+    "Le QCM d'assimilation gratuit pour la naturalisation : 50 questions sur les symboles, l'histoire, les institutions et les valeurs de la République.",
   alternates: { canonical: "/qcm-assimilation-france/" },
 };
 
 const faqItems = [
   {
-    question: "Qu'est-ce qu'un QCM d'assimilation ?",
+    question: "C'est quoi, un QCM d'assimilation ?",
     answer:
-      "Un QCM (Questionnaire à Choix Multiples) d'assimilation est une série de questions sur la France posées sous forme de cases à cocher. Il sert à vérifier vos connaissances avant ou pendant l'entretien de naturalisation.",
+      "C'est une série de questions sur la France à choix multiples. Vous choisissez la bonne réponse, on vous dit si c'est juste. Pratique pour réviser avant l'entretien.",
   },
   {
-    question: "Le QCM d'assimilation est-il officiel ?",
+    question: "Ce QCM est-il officiel ?",
     answer:
-      "Il n'existe pas de QCM officiel unique. Chaque préfecture compose ses questions à partir du Livret du citoyen. Notre QCM couvre l'intégralité des thèmes du livret.",
+      "Il n'y a pas de QCM officiel unique. Chaque préfecture pioche ses questions dans le Livret du citoyen. Le nôtre couvre tous les thèmes du livret.",
   },
   {
-    question: "Combien de questions vais-je avoir en entretien ?",
+    question: "Combien de questions à l'entretien ?",
     answer:
-      "En général, 15 à 25 questions sont posées. Notre QCM de 50 questions vous permet de couvrir un spectre plus large que ce qui sera effectivement demandé.",
+      "Comptez 15 à 25 questions en moyenne. Nos 50 questions vous donnent une longueur d'avance par rapport à ce qu'on vous posera vraiment.",
   },
   {
-    question: "Y a-t-il un score minimum pour réussir ?",
+    question: "Un score minimum pour réussir ?",
     answer:
-      "Officiellement non, mais visez au moins 80 % de bonnes réponses pour être à l'aise. L'agent évaluera aussi votre français et votre attitude.",
+      "Pas officiellement. Mais visez 80 % de bonnes réponses : vous serez à l'aise. L'agent regarde aussi votre français et votre attitude.",
   },
   {
-    question: "Puis-je télécharger le QCM en PDF ?",
+    question: "Le QCM en PDF, ça existe ?",
     answer:
-      "Oui, en créant un compte gratuit sur cap-citoyen.fr, vous accédez aux fiches PDF imprimables et au Livret du citoyen complet.",
+      "Oui. Avec un compte gratuit sur cap-citoyen.fr, vous récupérez les fiches PDF imprimables et le Livret du citoyen complet.",
   },
 ];
 
@@ -91,27 +91,25 @@ export default function QCMPage() {
       <Breadcrumb items={[{ href: "/qcm-assimilation-france/", label: "QCM d'assimilation" }]} />
 
       <Hero
-        badge="50 questions · 7 thématiques"
-        title="QCM d'assimilation France — 50 questions"
+        badge="50 questions · 7 thèmes"
+        title="Le QCM d'assimilation, version complète"
         highlight="assimilation"
-        subtitle="Le QCM complet pour la naturalisation française : symboles, histoire, institutions, valeurs, géographie, culture, vie quotidienne. Cliquez sur une réponse pour voir le corrigé."
-        ctaLabel="Démarrer le QCM interactif"
+        subtitle="Symboles, histoire, institutions, valeurs, géographie, culture, vie quotidienne. Cliquez sur une réponse, le corrigé apparaît tout de suite."
+        ctaLabel="Démarrer le QCM"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">À quoi sert ce QCM d'assimilation ?</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">À quoi ça sert ?</h2>
           <p className="mt-4 text-slate-300">
-            Ce QCM est un outil de révision avant l'entretien d'assimilation, qu'il
-            soit pour une demande de naturalisation, un titre de séjour pluriannuel
-            ou une simple curiosité sur la France. Les 50 questions ci-dessous sont
-            toutes accompagnées de la bonne réponse et d'une courte explication
-            pédagogique.
+            À réviser avant l'entretien, que ce soit pour la naturalisation, un
+            titre de séjour pluriannuel, ou par simple curiosité. Les 50 questions
+            ci-dessous sont toutes corrigées et expliquées en quelques mots.
           </p>
           <p className="mt-3 text-slate-300">
-            Faites-les dans l'ordre, ou directement par thématique. L'objectif est
-            d'arriver à répondre à 80 % des questions sans hésitation.
+            Faites-les dans l'ordre, ou directement par thème. L'objectif : répondre
+            à 80 % des questions sans hésiter.
           </p>
         </div>
       </section>
@@ -125,7 +123,7 @@ export default function QCMPage() {
             <header className="flex items-end justify-between gap-4">
               <div>
                 <p className={`text-xs font-bold uppercase tracking-wider ${meta.color}`}>
-                  Thématique
+                  Thème
                 </p>
                 <h2 className="mt-1 text-lg font-bold text-white sm:text-xl">{meta.label}</h2>
               </div>
@@ -142,8 +140,8 @@ export default function QCMPage() {
 
       <CTA
         variant="quiz"
-        title="Vous voulez vous tester en mode chronométré ?"
-        subtitle="Lancez la simulation d'examen sur cap-citoyen.fr et obtenez un score instantané."
+        title="Envie d'un test chronométré ?"
+        subtitle="Lancez la simulation sur cap-citoyen.fr et voyez votre score à la fin."
       />
 
       <FAQ items={faqItems} />

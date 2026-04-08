@@ -7,7 +7,7 @@ const variants: Record<
   register: {
     href: "https://cap-citoyen.fr/register",
     label: "Créer mon compte gratuit",
-    sub: "Sans carte bancaire — accès immédiat",
+    sub: "Sans carte bancaire, accès immédiat",
   },
   quiz: {
     href: "https://cap-citoyen.fr/quiz",
@@ -17,7 +17,7 @@ const variants: Record<
   audio: {
     href: "https://cap-citoyen.fr/audio",
     label: "Écouter le Livret du citoyen",
-    sub: "Format audio, à apprendre partout",
+    sub: "Idéal pour réviser dans les transports",
   },
 };
 

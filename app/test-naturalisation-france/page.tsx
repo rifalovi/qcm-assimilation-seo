@@ -16,7 +16,7 @@ import {
 } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Test de naturalisation française gratuit — QCM 2026",
+  title: "Test de naturalisation française gratuit, QCM 2026",
   description:
     "Faites le test de naturalisation française gratuitement. 50 questions du Livret du citoyen, corrigés détaillés, simulation type entretien préfecture.",
   alternates: { canonical: "/test-naturalisation-france/" },
@@ -24,29 +24,29 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "À quoi sert le test de naturalisation ?",
+    question: "À quoi sert le test ?",
     answer:
-      "Il permet de vérifier votre niveau de connaissance de la France avant l'entretien d'assimilation : histoire, valeurs, institutions et vie quotidienne. C'est un excellent indicateur de votre niveau réel.",
+      "À mesurer où vous en êtes avant l'entretien : histoire, valeurs, institutions, vie quotidienne. C'est un thermomètre fiable de votre niveau réel.",
   },
   {
     question: "Le test est-il chronométré ?",
     answer:
-      "Sur cap-citoyen.fr, vous pouvez choisir entre un mode entraînement libre et une simulation chronométrée (15 minutes pour 20 questions, comme en conditions réelles).",
+      "Sur cap-citoyen.fr vous avez le choix : entraînement libre ou mode chrono (15 minutes pour 20 questions, comme à la préfecture).",
   },
   {
-    question: "Quelle note faut-il viser ?",
+    question: "Quel score viser ?",
     answer:
-      "Il n'y a pas de note officielle imposée par les préfectures, mais on considère qu'à partir de 80 % de bonnes réponses, vous êtes prêt pour l'entretien.",
+      "Aucune note officielle n'est imposée par les préfectures. Visez 80 % de bonnes réponses : vous serez à l'aise le jour J.",
   },
   {
-    question: "Puis-je refaire le test plusieurs fois ?",
+    question: "Puis-je le refaire plusieurs fois ?",
     answer:
-      "Oui, autant de fois que vous le souhaitez. Les questions sont mélangées à chaque session pour éviter la mémorisation par cœur.",
+      "Oui, autant que vous voulez. Les questions sont mélangées à chaque session pour éviter d'apprendre par cœur.",
   },
   {
-    question: "Le test prépare-t-il aussi à l'oral ?",
+    question: "Et pour l'oral ?",
     answer:
-      "Le QCM prépare la partie connaissances. Pour l'oral, écoutez le mode audio du Livret du citoyen et entraînez-vous à reformuler chaque réponse à voix haute.",
+      "Le QCM travaille les connaissances. Pour l'oral, écoutez la version audio du Livret et reformulez chaque réponse à voix haute.",
   },
 ];
 
@@ -76,10 +76,10 @@ export default function TestNaturalisationPage() {
       <Breadcrumb items={[{ href: "/test-naturalisation-france/", label: "Test de naturalisation" }]} />
 
       <Hero
-        badge="Test gratuit · 50 questions"
-        title="Test de naturalisation française gratuit"
-        highlight="naturalisation française"
-        subtitle="Évaluez en 15 minutes votre niveau réel sur les connaissances exigées en entretien d'assimilation. Corrigé instantané, explications détaillées."
+        badge="Gratuit · 50 questions"
+        title="Le test pour voir où vous en êtes"
+        highlight="test"
+        subtitle="15 minutes pour mesurer votre niveau sur les questions qu'on vous posera en préfecture. Corrigé tout de suite, et on vous explique pourquoi."
         ctaLabel="Démarrer le test"
         ctaHref="https://cap-citoyen.fr/quiz"
         secondaryHref="/livret-du-citoyen-questions/"
@@ -88,28 +88,27 @@ export default function TestNaturalisationPage() {
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">Pourquoi passer un test de naturalisation avant l'entretien ?</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">Pourquoi un test à blanc, ça change tout</h2>
           <p className="mt-4 text-slate-300">
-            L'entretien d'assimilation est l'une des étapes les plus stressantes de la
-            procédure de naturalisation. Faire un test à blanc à plusieurs reprises est
-            le meilleur moyen de baisser la pression : vous identifiez vos lacunes,
-            vous mémorisez les bonnes réponses, et vous arrivez serein devant l'agent
-            de préfecture.
+            L'entretien d'assimilation, ça stresse. Faire le test plusieurs fois
+            avant le jour J est la meilleure façon de relâcher la pression : vous
+            voyez vos points faibles, vous fixez les bonnes réponses, et vous
+            arrivez détendu en face de l'agent.
           </p>
           <p className="mt-3 text-slate-300">
-            Notre test couvre les sept thématiques principales du Livret du citoyen :
-            symboles de la République, histoire, institutions, valeurs, vie quotidienne,
-            culture et géographie. Chaque question est suivie d'une explication courte
-            qui vous permet de comprendre, et pas seulement de retenir.
+            Le test couvre les sept gros thèmes du Livret du citoyen : symboles,
+            histoire, institutions, valeurs, vie quotidienne, culture, géographie.
+            Chaque question est suivie d'une explication courte pour comprendre,
+            pas juste pour retenir.
           </p>
         </div>
       </section>
 
       <section className="container-prose mt-6 sm:mt-8 grid gap-4 md:grid-cols-3">
         {[
-          { n: "01", t: "50 questions corrigées", d: "Du symbole tricolore à la loi de 1905, tous les thèmes y passent." },
-          { n: "02", t: "Simulation chrono", d: "Mode 15 minutes pour reproduire les conditions réelles d'examen." },
-          { n: "03", t: "Score & progression", d: "Visualisez vos points faibles et concentrez votre révision dessus." },
+          { n: "01", t: "50 questions corrigées", d: "Du drapeau tricolore à la loi de 1905, tout y passe." },
+          { n: "02", t: "Mode chrono", d: "15 minutes top chrono, comme le jour de l'entretien." },
+          { n: "03", t: "Score et suivi", d: "Vous voyez vos points faibles, vous savez quoi réviser." },
         ].map((s) => (
           <div key={s.n} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
             <span className="text-xs font-bold text-blue-400">{s.n}</span>
@@ -121,9 +120,9 @@ export default function TestNaturalisationPage() {
 
       <section className="container-prose mt-10">
         <SectionTitle
-          eyebrow="Aperçu"
-          title="8 questions du test de naturalisation"
-          description="Faites un échauffement avec ces extraits avant de passer le test complet."
+          eyebrow="Échauffement"
+          title="8 questions pour démarrer"
+          description="Cliquez, voyez le corrigé. Quand vous êtes chaud, lancez le test complet."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {sample.map((q, i) => (
@@ -135,13 +134,13 @@ export default function TestNaturalisationPage() {
       <CTA
         variant="quiz"
         title="Prêt pour le test complet ?"
-        subtitle="Lancez le test de naturalisation chronométré sur cap-citoyen.fr et recevez votre score immédiatement."
+        subtitle="Lancez le test chronométré sur cap-citoyen.fr et recevez votre score à la fin."
       />
 
       <section className="container-prose">
         <SectionTitle
-          title="Les autres ressources utiles"
-          description="Combinez plusieurs entraînements pour progresser plus vite."
+          title="Pour aller plus loin"
+          description="Mélangez les formats : c'est ce qui marche le mieux."
         />
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {[

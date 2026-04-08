@@ -200,7 +200,7 @@ export const questions: QCMQuestion[] = [
   {
     id: 19,
     category: "histoire",
-    question: "Quelle loi de 1905 est fondamentale pour la France ?",
+    question: "Quelle loi de 1905 est restée centrale en France ?",
     choices: [
       "La loi sur l'école obligatoire",
       "La loi de séparation des Églises et de l'État",
@@ -339,7 +339,7 @@ export const questions: QCMQuestion[] = [
   {
     id: 32,
     category: "valeurs",
-    question: "Quel droit fondamental les citoyens français exercent-ils aux élections ?",
+    question: "Quel droit les citoyens français exercent-ils aux élections ?",
     choices: [
       "Le droit de pétition",
       "Le droit de vote au suffrage universel",
@@ -512,7 +512,7 @@ export const questions: QCMQuestion[] = [
     choices: ["L'Espagne", "La Belgique", "L'Allemagne", "Le Brésil (via la Guyane)"],
     answerIndex: 3,
     explanation:
-      "Grâce à la Guyane, la France a une frontière de plus de 700 km avec le Brésil — la plus longue frontière française.",
+      "Grâce à la Guyane, la France partage plus de 700 km de frontière avec le Brésil. C'est sa plus longue frontière terrestre.",
   },
 ];
 

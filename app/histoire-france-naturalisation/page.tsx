@@ -10,7 +10,7 @@ import { getQuestionsByCategory } from "../lib/questions";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Histoire de France pour la naturalisation — Dates clés et événements",
+  title: "Histoire de France pour la naturalisation : dates clés et événements",
   description:
     "Toute l'histoire de France à connaître pour la naturalisation : Révolution 1789, Républiques successives, guerres mondiales, Ve République. Frise et QCM.",
   alternates: { canonical: "/histoire-france-naturalisation/" },
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
 const histoire = getQuestionsByCategory("histoire");
 
 const dates = [
-  { y: "−52", e: "Bataille d'Alésia, défaite de Vercingétorix face à Jules César." },
+  { y: "−52", e: "Bataille d'Alésia : Vercingétorix s'incline devant Jules César." },
   { y: "496", e: "Baptême de Clovis, roi des Francs." },
-  { y: "800", e: "Couronnement de Charlemagne empereur d'Occident." },
-  { y: "1539", e: "Ordonnance de Villers-Cotterêts : le français devient langue officielle." },
+  { y: "800", e: "Charlemagne couronné empereur d'Occident." },
+  { y: "1539", e: "Ordonnance de Villers-Cotterêts : le français devient la langue officielle." },
   { y: "1789", e: "Révolution française : prise de la Bastille (14 juillet) et Déclaration des droits de l'homme." },
   { y: "1792", e: "Proclamation de la Première République." },
-  { y: "1804", e: "Napoléon empereur et Code civil." },
+  { y: "1804", e: "Napoléon empereur, Code civil." },
   { y: "1848", e: "Deuxième République, suffrage universel masculin." },
   { y: "1870", e: "Troisième République, après la défaite de Sedan." },
   { y: "1905", e: "Loi de séparation des Églises et de l'État." },
@@ -40,24 +40,24 @@ const dates = [
 
 const faqItems = [
   {
-    question: "Faut-il connaître toutes les dates par cœur ?",
+    question: "Faut-il toutes les dates par cœur ?",
     answer:
-      "Non, mais maîtrisez les grandes dates : 1789, 1792, 1905, 1944, 1958, 1981. Ce sont celles qui reviennent le plus souvent en entretien.",
+      "Non. Concentrez-vous sur 1789, 1792, 1905, 1944, 1958, 1981. Ce sont celles qui reviennent le plus en entretien.",
   },
   {
-    question: "Quel événement est le plus important pour comprendre la France actuelle ?",
+    question: "Quel événement compte le plus aujourd'hui ?",
     answer:
-      "La Révolution française de 1789. C'est l'acte fondateur de la République, des droits de l'homme et de la devise « Liberté, Égalité, Fraternité ».",
+      "La Révolution de 1789, sans hésiter. Elle fonde la République, les droits de l'homme et la devise Liberté, Égalité, Fraternité.",
   },
   {
-    question: "Pourquoi 1905 est-elle une date clé ?",
+    question: "Pourquoi 1905 ?",
     answer:
-      "C'est l'année de la loi de séparation des Églises et de l'État, qui pose le principe de laïcité, l'un des fondements de la République.",
+      "C'est la loi de séparation des Églises et de l'État. Elle pose le principe de laïcité, l'un des piliers de la République.",
   },
   {
     question: "Et 1944 ?",
     answer:
-      "C'est l'année où les femmes françaises obtiennent le droit de vote, par ordonnance du général de Gaulle.",
+      "Les femmes françaises obtiennent enfin le droit de vote, par ordonnance du général de Gaulle.",
   },
 ];
 
@@ -78,27 +78,27 @@ export default function HistoirePage() {
       <Breadcrumb items={[{ href: "/histoire-france-naturalisation/", label: "Histoire de France" }]} />
 
       <Hero
-        badge="Frise historique · Naturalisation"
+        badge="Frise · Naturalisation"
         title="Histoire de France pour la naturalisation"
         highlight="Histoire de France"
-        subtitle="Une frise chronologique claire avec les 17 dates fondamentales à mémoriser et les questions du QCM associées."
-        ctaLabel="Écouter la version audio"
+        subtitle="Une frise claire, 17 dates à retenir, et les questions du QCM qui vont avec."
+        ctaLabel="Écouter en audio"
         ctaHref="https://cap-citoyen.fr/audio"
       />
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">Comprendre la France à travers son histoire</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">La France à travers son histoire</h2>
           <p className="mt-4 text-slate-300">
             On ne devient pas Français sans connaître les grandes étapes qui ont
-            façonné le pays. De la Gaule romaine à la République actuelle, voici la
-            colonne vertébrale historique à maîtriser.
+            façonné le pays. De la Gaule romaine à la République actuelle, voilà
+            la colonne vertébrale à retenir.
           </p>
         </div>
       </section>
 
       <section className="container-prose mt-6 sm:mt-8">
-        <SectionTitle eyebrow="Frise" title="17 dates clés à mémoriser" />
+        <SectionTitle eyebrow="Frise" title="17 dates à retenir" />
         <ol className="mt-8 relative border-l border-blue-400/20 pl-6 sm:pl-8">
           {dates.map((d) => (
             <li key={d.y} className="relative mb-7 last:mb-0">
@@ -126,8 +126,8 @@ export default function HistoirePage() {
 
       <CTA
         variant="audio"
-        title="L'histoire de France lue pour vous"
-        subtitle="Toutes les fiches du Livret du citoyen en audio gratuit, à écouter quand vous voulez."
+        title="L'histoire, lue à voix haute"
+        subtitle="Toutes les fiches du Livret du citoyen en audio gratuit. À écouter quand vous voulez."
       />
 
       <FAQ items={faqItems} />

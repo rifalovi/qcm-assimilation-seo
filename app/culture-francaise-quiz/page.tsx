@@ -10,7 +10,7 @@ import { getQuestionsByCategory } from "../lib/questions";
 import { breadcrumbJsonLd, faqJsonLd, quizJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Quiz culture française gratuit — Littérature, art, cinéma",
+  title: "Quiz culture française gratuit : littérature, art, cinéma",
   description:
     "Testez votre culture française : littérature, peinture, cinéma, sciences. Idéal pour la naturalisation et pour les passionnés de la France.",
   alternates: { canonical: "/culture-francaise-quiz/" },
@@ -20,30 +20,30 @@ const culture = getQuestionsByCategory("culture");
 
 const faqItems = [
   {
-    question: "Pourquoi la culture française est-elle abordée en entretien d'assimilation ?",
+    question: "Pourquoi la culture en entretien ?",
     answer:
-      "Parce qu'elle fait partie de l'identité française. Connaître les grands auteurs et artistes, c'est montrer son intérêt et son adhésion au patrimoine français.",
+      "Parce qu'elle fait partie de l'identité du pays. Connaître quelques grands auteurs et artistes, c'est montrer que vous vous intéressez vraiment à la France.",
   },
   {
-    question: "Quelles œuvres faut-il absolument connaître ?",
+    question: "Quelles œuvres faut-il connaître ?",
     answer:
-      "Au minimum : « Les Misérables » (Victor Hugo), « Le Petit Prince » (Saint-Exupéry), « La Liberté guidant le peuple » (Delacroix), les Nymphéas (Monet) et les grands noms des Lumières.",
+      "Au minimum : Les Misérables (Victor Hugo), Le Petit Prince (Saint-Exupéry), La Liberté guidant le peuple (Delacroix), les Nymphéas (Monet) et les grands noms des Lumières.",
   },
   {
-    question: "Le cinéma français est-il évoqué en entretien ?",
+    question: "Le cinéma français, ça tombe en entretien ?",
     answer:
-      "Rarement comme question principale, mais citer un film français que vous avez vu peut être un plus pour montrer votre intégration culturelle.",
+      "Pas souvent comme question principale. Mais citer un film français que vous avez aimé, c'est toujours un bon point.",
   },
   {
-    question: "Comment apprendre la culture française rapidement ?",
+    question: "Comment apprendre vite ?",
     answer:
-      "Lisez les fiches du Livret du citoyen, écoutez la version audio dans les transports, et faites les quiz culture régulièrement.",
+      "Lisez les fiches du Livret du citoyen, écoutez la version audio dans les transports, et refaites les quiz régulièrement.",
   },
 ];
 
 const figures = [
   { name: "Victor Hugo", role: "Écrivain (1802-1885)", work: "Les Misérables, Notre-Dame de Paris" },
-  { name: "Marie Curie", role: "Scientifique (1867-1934)", work: "Double prix Nobel — physique 1903, chimie 1911" },
+  { name: "Marie Curie", role: "Scientifique (1867-1934)", work: "Double prix Nobel : physique 1903, chimie 1911" },
   { name: "Claude Monet", role: "Peintre (1840-1926)", work: "Les Nymphéas, Impression soleil levant" },
   { name: "Antoine de Saint-Exupéry", role: "Écrivain et aviateur (1900-1944)", work: "Le Petit Prince" },
   { name: "Simone de Beauvoir", role: "Philosophe (1908-1986)", work: "Le Deuxième Sexe" },
@@ -73,10 +73,10 @@ export default function CultureFrancaisePage() {
       <Breadcrumb items={[{ href: "/culture-francaise-quiz/", label: "Culture française" }]} />
 
       <Hero
-        badge="Quiz culture · Gratuit"
-        title="Quiz culture française : littérature, art, sciences"
-        highlight="culture française"
-        subtitle="Testez vos connaissances sur les grands noms et œuvres de la France. Parfait pour briller en entretien d'assimilation ou pour le simple plaisir."
+        badge="Quiz culture · gratuit"
+        title="Culture française : littérature, art, sciences"
+        highlight="Culture française"
+        subtitle="Testez vos connaissances sur les grands noms et les œuvres qui ont fait la France. Pour l'entretien, ou juste pour le plaisir."
         ctaLabel="Faire le quiz complet"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
@@ -85,18 +85,17 @@ export default function CultureFrancaisePage() {
         <div className="prose prose-invert max-w-none">
           <h2 className="text-lg font-bold text-white sm:text-xl">La culture française, un patrimoine vivant</h2>
           <p className="mt-4 text-slate-300">
-            La France est universellement reconnue pour son rayonnement culturel : littérature,
-            arts, cinéma, sciences, gastronomie. Connaître les grandes figures qui ont fait
-            l'histoire intellectuelle et artistique du pays, c'est entrer en sympathie avec
-            son âme.
+            La France a marqué le monde par sa littérature, ses arts, son cinéma,
+            ses sciences et sa gastronomie. Connaître quelques grandes figures
+            qui ont fait son histoire, c'est commencer à comprendre son âme.
           </p>
         </div>
       </section>
 
       <section className="container-prose mt-6 sm:mt-8">
         <SectionTitle
-          eyebrow="Figures incontournables"
-          title="6 personnalités à connaître absolument"
+          eyebrow="À connaître"
+          title="Six figures qu'il faut savoir nommer"
         />
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {figures.map((f) => (
@@ -113,7 +112,7 @@ export default function CultureFrancaisePage() {
         <SectionTitle
           eyebrow="Quiz"
           title="Questions de culture française"
-          description="Toutes les questions de notre QCM relatives à la culture, avec corrigés."
+          description="Toutes les questions du QCM sur la culture, avec corrigés."
         />
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           {culture.map((q, i) => (
@@ -124,8 +123,8 @@ export default function CultureFrancaisePage() {
 
       <CTA
         variant="quiz"
-        title="Encore plus de questions sur cap-citoyen.fr"
-        subtitle="500+ questions, mode chronométré, suivi de progression. C'est gratuit."
+        title="Plus de questions sur cap-citoyen.fr"
+        subtitle="500+ questions, mode chrono, suivi de votre progression. C'est gratuit."
       />
 
       <FAQ items={faqItems} />

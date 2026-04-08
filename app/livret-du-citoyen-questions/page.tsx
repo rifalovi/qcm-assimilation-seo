@@ -7,7 +7,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Livret du citoyen — Toutes les questions et réponses",
+  title: "Livret du citoyen : toutes les questions et réponses",
   description:
     "Le Livret du citoyen pour la naturalisation française : toutes les fiches résumées par chapitre, en version texte et audio. Préparez l'entretien d'assimilation.",
   alternates: { canonical: "/livret-du-citoyen-questions/" },
@@ -21,14 +21,14 @@ const chapters = [
     keypoints: [
       "Article 1 de la Constitution : République indivisible, laïque, démocratique et sociale.",
       "Devise : Liberté, Égalité, Fraternité (1848, inscrite dans la Constitution en 1946).",
-      "Drapeau bleu, blanc, rouge — adopté en 1794.",
+      "Drapeau bleu, blanc, rouge, adopté en 1794.",
       "La Marseillaise composée par Rouget de Lisle en 1792, hymne en 1795.",
     ],
   },
   {
     title: "2. L'histoire de France",
     summary:
-      "Des Gaulois à la Ve République : les grands moments — Charlemagne, Saint Louis, Louis XIV, la Révolution de 1789, Napoléon, les guerres mondiales, la décolonisation, la construction européenne.",
+      "Des Gaulois à la Ve République, les grands moments : Charlemagne, Saint Louis, Louis XIV, la Révolution de 1789, Napoléon, les guerres mondiales, la décolonisation, la construction européenne.",
     keypoints: [
       "1789 : prise de la Bastille, Déclaration des droits de l'homme et du citoyen.",
       "1792 : proclamation de la Première République.",
@@ -94,29 +94,29 @@ const chapters = [
 
 const faqItems = [
   {
-    question: "Qu'est-ce que le Livret du citoyen ?",
+    question: "C'est quoi, le Livret du citoyen ?",
     answer:
-      "C'est un document publié par l'État français qui présente les connaissances de base sur la France attendues pour la naturalisation. Il sert de référence pour l'entretien d'assimilation.",
+      "Un document publié par l'État qui rassemble ce qu'un futur Français doit savoir sur le pays. C'est la référence pour l'entretien d'assimilation.",
   },
   {
-    question: "Le Livret du citoyen est-il obligatoire à connaître par cœur ?",
+    question: "Faut-il le connaître par cœur ?",
     answer:
-      "Non, mais vous devez en maîtriser les grandes lignes : symboles, valeurs, dates clés, institutions. Pas besoin de réciter — il faut comprendre et savoir reformuler.",
+      "Non. Vous devez maîtriser les grandes lignes : symboles, valeurs, dates clés, institutions. Pas besoin de réciter, il faut comprendre et savoir reformuler.",
   },
   {
-    question: "Existe-t-il une version audio du Livret du citoyen ?",
+    question: "Une version audio existe ?",
     answer:
-      "Oui, sur cap-citoyen.fr/audio vous trouvez la version audio gratuite, idéale pour réviser dans les transports.",
+      "Oui, sur cap-citoyen.fr/audio, gratuite. Idéale pour réviser pendant les trajets ou en faisant du sport.",
   },
   {
-    question: "Combien de chapitres contient le Livret du citoyen ?",
+    question: "Combien de chapitres ?",
     answer:
-      "Sept grands chapitres, des principes de la République à la géographie. Nous résumons chacun ci-dessus.",
+      "Sept grands chapitres, des principes de la République à la géographie. Vous les avez tous résumés au-dessus.",
   },
   {
-    question: "Le Livret évolue-t-il chaque année ?",
+    question: "Le Livret change chaque année ?",
     answer:
-      "Il est mis à jour à chaque grande réforme (territoriale, constitutionnelle, etc.). Notre version est à jour pour 2026.",
+      "Il bouge à chaque grande réforme (territoriale, constitutionnelle...). Notre version est à jour pour 2026.",
   },
 ];
 
@@ -140,19 +140,19 @@ export default function LivretPage() {
         badge="Livret du citoyen 2026"
         title="Le Livret du citoyen, chapitre par chapitre"
         highlight="Livret du citoyen"
-        subtitle="Toutes les fiches essentielles pour la naturalisation française : symboles, histoire, institutions, valeurs, vie quotidienne, culture, géographie."
+        subtitle="Toutes les fiches utiles pour la naturalisation : symboles, histoire, institutions, valeurs, vie quotidienne, culture, géographie."
         ctaLabel="Écouter en audio"
         ctaHref="https://cap-citoyen.fr/audio"
       />
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">Pourquoi maîtriser le Livret du citoyen ?</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">Pourquoi le maîtriser</h2>
           <p className="mt-4 text-slate-300">
-            Le Livret du citoyen est la base de l'entretien d'assimilation. Les agents
-            de préfecture s'en inspirent directement pour formuler leurs questions. Le
-            connaître, c'est savoir d'avance ce qu'on va vous demander — et surtout,
-            comprendre ce que la France attend de vous.
+            C'est la base de l'entretien. Les agents en préfecture y piochent
+            directement leurs questions. Le connaître, c'est savoir d'avance ce
+            qu'on va vous demander, et surtout comprendre ce que la France attend
+            de vous.
           </p>
         </div>
       </section>
@@ -179,8 +179,8 @@ export default function LivretPage() {
 
       <CTA
         variant="audio"
-        title="Le Livret du citoyen, lu pour vous"
-        subtitle="Apprenez en marchant ou dans les transports : la version audio gratuite vous attend sur cap-citoyen.fr."
+        title="Le Livret, lu à voix haute"
+        subtitle="Pour réviser pendant les trajets ou en faisant la cuisine. Version audio gratuite sur cap-citoyen.fr."
       />
 
       <FAQ items={faqItems} />

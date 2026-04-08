@@ -6,9 +6,9 @@ import Breadcrumb from "../components/Breadcrumb";
 import { breadcrumbJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact — QCM Assimilation",
+  title: "Contact : écrire à QCM Assimilation",
   description:
-    "Contactez l'équipe de QCM Assimilation : suggestion, signalement d'erreur, demande de partenariat. Nous lisons tous les messages.",
+    "Contactez l'équipe de QCM Assimilation : suggestion, signalement d'erreur, demande de partenariat. On lit tous les messages.",
   alternates: { canonical: "/contact/" },
 };
 
@@ -26,9 +26,9 @@ export default function ContactPage() {
 
       <Hero
         badge="Contact"
-        title="Une question, une suggestion ?"
-        highlight="suggestion"
-        subtitle="Nous lisons tous les messages, qu'ils viennent de candidats à la naturalisation, d'enseignants, de bénévoles ou de curieux de la France."
+        title="Une question, une idée ?"
+        highlight="idée"
+        subtitle="On lit tous les messages, qu'ils viennent de candidats, d'enseignants, de bénévoles ou de curieux."
         ctaLabel="Aller sur cap-citoyen.fr"
       />
 
@@ -36,7 +36,7 @@ export default function ContactPage() {
         <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
           <h2 className="text-lg font-bold text-white">Email</h2>
           <p className="mt-3 text-sm text-slate-300">
-            Envoyez-nous un email à l'adresse :
+            Écrivez-nous à :
           </p>
           <a
             href="mailto:contact@qcm-assimilation.fr"
@@ -47,12 +47,12 @@ export default function ContactPage() {
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
-          <h2 className="text-lg font-bold text-white">Sujets fréquents</h2>
+          <h2 className="text-lg font-bold text-white">Ce qu'on reçoit le plus</h2>
           <ul className="mt-3 space-y-2 text-sm text-slate-300">
-            <li>• Signaler une erreur dans une question</li>
-            <li>• Suggérer un nouveau thème</li>
-            <li>• Demander un retour d'expérience d'entretien</li>
-            <li>• Partenariat associatif ou institutionnel</li>
+            <li>• Une coquille à corriger dans une question</li>
+            <li>• L'envie d'un nouveau thème de QCM</li>
+            <li>• Un retour d'expérience après l'entretien</li>
+            <li>• Une demande de partenariat associatif ou institutionnel</li>
           </ul>
         </div>
       </section>
@@ -61,9 +61,8 @@ export default function ContactPage() {
         <div className="rounded-2xl border border-blue-700/30 bg-blue-700/5 p-5">
           <h2 className="text-base font-bold text-white">Pour les démarches officielles</h2>
           <p className="mt-2 text-sm text-slate-300">
-            Nous ne pouvons pas vous accompagner individuellement sur votre dossier
-            de naturalisation. Pour toute question juridique, contactez votre
-            préfecture ou consultez{" "}
+            On ne peut pas vous accompagner sur votre dossier en particulier. Pour
+            toute question juridique, le bon réflexe c'est votre préfecture ou{" "}
             <a
               href="https://service-public.fr"
               target="_blank"
@@ -80,7 +79,7 @@ export default function ContactPage() {
       <CTA
         variant="register"
         title="Plus rapide qu'un email : créez votre compte"
-        subtitle="Sur cap-citoyen.fr, accédez immédiatement à toutes nos ressources gratuites."
+        subtitle="Sur cap-citoyen.fr, vous accédez tout de suite à toutes les ressources, gratuitement."
       />
     </>
   );

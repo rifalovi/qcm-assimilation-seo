@@ -8,9 +8,9 @@ import SectionTitle from "../components/SectionTitle";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Questions d'entretien de naturalisation — Liste 2026",
+  title: "Questions d'entretien de naturalisation : la liste 2026",
   description:
-    "Découvrez les questions les plus fréquemment posées en entretien d'assimilation : symboles, valeurs, vie personnelle, projet d'intégration. Conseils et exemples de réponses.",
+    "Les questions qui reviennent vraiment en entretien d'assimilation : symboles, valeurs, vie personnelle, intégration. Conseils et exemples de réponses.",
   alternates: { canonical: "/questions-entretien-naturalisation/" },
 };
 
@@ -66,29 +66,29 @@ const themes = [
 
 const faqItems = [
   {
-    question: "Combien de questions sont posées en moyenne ?",
+    question: "Combien de questions, en moyenne ?",
     answer:
-      "L'entretien dure entre 30 et 60 minutes. L'agent pose en moyenne 15 à 25 questions, alternant questions personnelles et questions sur la France.",
+      "L'entretien dure entre 30 et 60 minutes. Comptez 15 à 25 questions, qui alternent vie personnelle et France.",
   },
   {
-    question: "Faut-il apprendre des réponses par cœur ?",
+    question: "Faut-il apprendre par cœur ?",
     answer:
-      "Non. L'agent cherche à voir si vous comprenez réellement et si vous savez vous exprimer en français. Mieux vaut savoir reformuler que réciter.",
+      "Non, surtout pas. L'agent veut voir si vous comprenez et si vous savez parler français. Reformuler avec vos mots vaut mille fois mieux que réciter.",
   },
   {
-    question: "Peut-on être recalé pour une seule mauvaise réponse ?",
+    question: "Une mauvaise réponse est éliminatoire ?",
     answer:
-      "Non. Une mauvaise réponse n'est pas éliminatoire. L'agent évalue votre niveau global, votre compréhension et votre adhésion aux valeurs.",
+      "Non. Une mauvaise réponse ne fait pas tomber le dossier. L'agent regarde votre niveau global, votre compréhension et votre adhésion aux valeurs.",
   },
   {
     question: "L'entretien est-il toujours en français ?",
     answer:
-      "Oui, intégralement. C'est aussi un test de votre niveau de français, qui doit être au minimum B1 oral et écrit.",
+      "Oui, du début à la fin. C'est aussi un test de français, niveau B1 oral et écrit minimum.",
   },
   {
-    question: "Que faire si je ne comprends pas une question ?",
+    question: "Et si je ne comprends pas une question ?",
     answer:
-      "Demandez poliment à l'agent de reformuler ou de répéter plus lentement. C'est mieux que de répondre à côté.",
+      "Demandez poliment à l'agent de reformuler ou de répéter doucement. C'est mille fois mieux que de répondre à côté.",
   },
 ];
 
@@ -110,9 +110,9 @@ export default function QuestionsEntretienPage() {
 
       <Hero
         badge="Entretien d'assimilation"
-        title="Les questions les plus posées en entretien"
-        highlight="entretien"
-        subtitle="Quatre familles de questions, plus de 25 exemples concrets pour vous préparer à l'oral devant l'agent de préfecture."
+        title="Les questions qui reviennent en entretien"
+        highlight="questions"
+        subtitle="Quatre familles de questions, plus de 25 exemples concrets pour ne pas être pris au dépourvu devant l'agent."
         ctaLabel="S'entraîner gratuitement"
       />
 
@@ -120,14 +120,15 @@ export default function QuestionsEntretienPage() {
         <div className="prose prose-invert max-w-none">
           <h2 className="text-lg font-bold text-white sm:text-xl">À quoi vous attendre</h2>
           <p className="mt-4 text-slate-300">
-            L'entretien d'assimilation est avant tout une discussion. L'agent de préfecture
-            n'est pas là pour vous piéger : il veut s'assurer que vous comprenez la France,
-            que vous adhérez à ses valeurs, et que votre français est suffisant. Notre conseil :
-            soyez sincère, restez calme, et répondez à voix posée.
+            L'entretien, c'est surtout une discussion. L'agent ne cherche pas à
+            vous piéger : il veut juste savoir si vous comprenez la France, si vous
+            adhérez à ses valeurs, et si votre français tient la route. Notre
+            conseil : restez sincère, gardez votre calme, et parlez posément.
           </p>
           <p className="mt-3 text-slate-300">
-            Les questions ci-dessous reviennent presque systématiquement. Préparez votre
-            réponse à voix haute, avec vos propres mots. Vous gagnerez en assurance.
+            Les questions ci-dessous reviennent presque tout le temps. Préparez
+            votre réponse à voix haute, avec vos mots à vous. Vous y gagnerez en
+            confiance.
           </p>
         </div>
       </section>
@@ -160,15 +161,15 @@ export default function QuestionsEntretienPage() {
           {[
             {
               t: "Soyez précis et sincère",
-              d: "Donnez des dates, des noms, des exemples concrets. Évitez les généralités.",
+              d: "Donnez des dates, des noms, des exemples concrets. Pas de phrases vagues.",
             },
             {
               t: "Reformulez avec vos mots",
-              d: "Mieux vaut une réponse simple et naturelle qu'un texte récité.",
+              d: "Une phrase simple et naturelle vaut bien mieux qu'un texte récité.",
             },
             {
               t: "Affirmez vos valeurs",
-              d: "Sur la laïcité ou l'égalité, soyez clair et catégorique.",
+              d: "Sur la laïcité ou l'égalité, soyez clair et net. Pas de demi-réponse.",
             },
           ].map((c) => (
             <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
@@ -181,8 +182,8 @@ export default function QuestionsEntretienPage() {
 
       <CTA
         variant="register"
-        title="Entraînez-vous à l'oral, gratuitement"
-        subtitle="Sur cap-citoyen.fr, écoutez les réponses modèles et préparez votre entretien à votre rythme."
+        title="Préparez l'oral à votre rythme"
+        subtitle="Sur cap-citoyen.fr, vous écoutez des réponses modèles et vous vous entraînez quand vous voulez."
       />
 
       <FAQ items={faqItems} />

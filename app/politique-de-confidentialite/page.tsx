@@ -4,7 +4,7 @@ import JsonLd from "../components/JsonLd";
 import { breadcrumbJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité — QCM Assimilation",
+  title: "Politique de confidentialité",
   description:
     "Politique de confidentialité du site QCM Assimilation : données personnelles, cookies, droits RGPD, contact DPO.",
   alternates: { canonical: "/politique-de-confidentialite/" },

@@ -4,7 +4,7 @@ import JsonLd from "../components/JsonLd";
 import { breadcrumbJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Mentions légales — QCM Assimilation",
+  title: "Mentions légales",
   description:
     "Mentions légales du site QCM Assimilation : éditeur, hébergeur, propriété intellectuelle, responsabilité, droit applicable.",
   alternates: { canonical: "/mentions-legales/" },

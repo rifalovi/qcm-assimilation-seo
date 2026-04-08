@@ -86,8 +86,8 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center">
           <p>
-            © {new Date().getFullYear()} QCM Assimilation — Site indépendant, non
-            affilié à l'État français.
+            © {new Date().getFullYear()} QCM Assimilation. Site indépendant, sans
+            lien officiel avec l'État français.
           </p>
           <p>
             Propulsé par{" "}

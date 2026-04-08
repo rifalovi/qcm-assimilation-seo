@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   metadataBase: new URL("https://qcm-assimilation.fr"),
   title: {
-    default: "QCM Assimilation — Réussir l'entretien d'assimilation et la naturalisation française",
+    default: "QCM Assimilation : réussir l'entretien et la naturalisation française",
     template: "%s | QCM Assimilation",
   },
   description:
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: "https://qcm-assimilation.fr",
     siteName: "QCM Assimilation",
-    title: "QCM Assimilation — Réussir l'entretien et la naturalisation française",
+    title: "QCM Assimilation : réussir l'entretien et la naturalisation française",
     description:
       "Préparez gratuitement votre entretien d'assimilation et votre QCM de naturalisation. Questions du Livret du citoyen, corrigés détaillés.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "QCM Assimilation — Réussir la naturalisation française",
+    title: "QCM Assimilation : réussir la naturalisation française",
     description:
       "Tests gratuits, QCM, simulations d'examen et fiches sur les valeurs de la République.",
   },

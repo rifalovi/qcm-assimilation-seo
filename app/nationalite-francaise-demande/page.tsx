@@ -8,18 +8,18 @@ import SectionTitle from "../components/SectionTitle";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Demande de nationalité française — Démarches 2026",
+  title: "Demande de nationalité française : démarches 2026",
   description:
     "Le guide complet pour demander la nationalité française : conditions, pièces à fournir, étapes, délais. Préparez votre dossier sereinement.",
   alternates: { canonical: "/nationalite-francaise-demande/" },
 };
 
 const conditions = [
-  { t: "Résidence en France", d: "Au moins 5 ans (2 ans en cas d'études supérieures réussies en France, sans délai en cas de mariage avec un Français selon le cas)." },
-  { t: "Niveau de français B1", d: "Oral et écrit, attesté par un diplôme ou un test reconnu (TCF, TEF, DELF B1...)." },
-  { t: "Intégration républicaine", d: "Adhésion aux valeurs et principes de la République, contrôlée lors de l'entretien d'assimilation." },
-  { t: "Bonne moralité", d: "Pas de condamnation incompatible avec l'acquisition de la nationalité, casier judiciaire vérifié." },
-  { t: "Ressources stables", d: "Revenus suffisants et réguliers, généralement issus du travail." },
+  { t: "Résidence en France", d: "Au moins 5 ans en France (2 ans après des études supérieures réussies ici, parfois sans délai en cas de mariage)." },
+  { t: "Niveau de français B1", d: "Oral et écrit, prouvé par un diplôme ou un test reconnu (TCF, TEF, DELF B1...)." },
+  { t: "Intégration républicaine", d: "Vous adhérez aux valeurs de la République. C'est ce que l'agent vérifie en entretien." },
+  { t: "Casier propre", d: "Aucune condamnation qui empêche d'obtenir la nationalité. Le casier est vérifié." },
+  { t: "Ressources stables", d: "Des revenus réguliers et suffisants, en général issus du travail." },
 ];
 
 const documents = [
@@ -35,29 +35,29 @@ const documents = [
 
 const faqItems = [
   {
-    question: "Combien de temps pour obtenir la nationalité française ?",
+    question: "Combien de temps pour devenir Français ?",
     answer:
-      "Comptez en moyenne 18 à 24 mois entre le dépôt du dossier et le décret de naturalisation. Les délais varient selon les préfectures.",
+      "Comptez 18 à 24 mois entre le dépôt du dossier et le décret de naturalisation. Les délais varient pas mal selon les préfectures.",
   },
   {
-    question: "Combien coûte la demande ?",
+    question: "Combien ça coûte ?",
     answer:
-      "La demande de naturalisation par décret coûte 55 € (timbre fiscal). En cas de mariage, la procédure est gratuite.",
+      "55 € de timbre fiscal pour la naturalisation par décret. Si vous passez par le mariage, c'est gratuit.",
   },
   {
-    question: "Puis-je conserver ma nationalité d'origine ?",
+    question: "Je peux garder ma nationalité d'origine ?",
     answer:
-      "Oui, la France accepte la double nationalité. Mais vérifiez la position de votre pays d'origine, car certains pays ne l'autorisent pas.",
+      "Côté France, oui : la double nationalité est acceptée. Vérifiez quand même côté pays d'origine, certains ne l'autorisent pas.",
   },
   {
-    question: "Que faire si ma demande est refusée ?",
+    question: "Et si ma demande est refusée ?",
     answer:
-      "Vous pouvez faire un recours gracieux dans les 2 mois, puis un recours contentieux devant le tribunal administratif.",
+      "Vous avez 2 mois pour faire un recours gracieux, puis vous pouvez porter l'affaire devant le tribunal administratif.",
   },
   {
-    question: "Quelle différence entre naturalisation et déclaration ?",
+    question: "Naturalisation ou déclaration, quelle différence ?",
     answer:
-      "La naturalisation par décret est à la discrétion de l'État. La déclaration concerne notamment les conjoints de Français et est un droit, sous conditions.",
+      "La naturalisation par décret reste à la discrétion de l'État. La déclaration (notamment pour les conjoints de Français) est un droit, sous conditions.",
   },
 ];
 
@@ -79,15 +79,15 @@ export default function DemandeNationalitePage() {
 
       <Hero
         badge="Guide démarches 2026"
-        title="Demande de nationalité française : le guide complet"
+        title="Demande de nationalité française : le guide"
         highlight="nationalité française"
-        subtitle="Conditions, pièces à fournir, étapes, délais, recours : tout ce qu'il faut savoir pour préparer votre dossier de naturalisation sans erreur."
+        subtitle="Conditions, pièces à fournir, étapes, délais, recours : ce qu'il faut savoir pour monter votre dossier sans vous tromper."
         ctaLabel="Préparer mon entretien"
       />
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">5 conditions pour demander la nationalité française</h2>
+          <h2 className="text-lg font-bold text-white sm:text-xl">Cinq conditions à cocher</h2>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {conditions.map((c, i) => (
@@ -103,8 +103,8 @@ export default function DemandeNationalitePage() {
       <section className="container-prose mt-8 sm:mt-10">
         <SectionTitle
           eyebrow="Pièces à fournir"
-          title="Le dossier type de naturalisation"
-          description="Préparez bien tous les documents avant de déposer votre demande."
+          title="Le dossier type"
+          description="Préparez tout avant de déposer la demande, vous gagnerez des semaines."
         />
         <ul className="mt-8 grid gap-3 sm:grid-cols-2">
           {documents.map((d) => (
@@ -124,13 +124,13 @@ export default function DemandeNationalitePage() {
       <section className="container-prose mt-8 sm:mt-10">
         <SectionTitle
           eyebrow="Procédure"
-          title="5 étapes, du dépôt au décret"
+          title="Du dépôt au décret, en cinq étapes"
         />
         <ol className="mt-8 space-y-4">
           {[
-            "Constituer son dossier complet (pièces d'identité, justificatifs, casier judiciaire).",
-            "Déposer la demande en préfecture ou en plateforme régionale (selon votre département).",
-            "Passer l'entretien d'assimilation devant un agent.",
+            "Préparer le dossier complet (pièces d'identité, justificatifs, casier judiciaire).",
+            "Déposer la demande en préfecture ou sur la plateforme régionale (selon votre département).",
+            "Passer l'entretien d'assimilation avec un agent.",
             "Attendre l'avis favorable de la préfecture, transmis au ministère de l'Intérieur.",
             "Recevoir le décret de naturalisation publié au Journal officiel.",
           ].map((step, i) => (
@@ -146,7 +146,7 @@ export default function DemandeNationalitePage() {
 
       <CTA
         variant="register"
-        title="Préparez votre entretien dès maintenant"
+        title="Préparez l'entretien sereinement"
         subtitle="Avec QCM Assimilation et cap-citoyen.fr, vous arrivez en préfecture avec une longueur d'avance."
       />
 

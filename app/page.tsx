@@ -10,7 +10,7 @@ import { questions } from "./lib/questions";
 import { faqJsonLd, organizationJsonLd, websiteJsonLd } from "./lib/site";
 
 export const metadata: Metadata = {
-  title: "QCM Assimilation France — Tests gratuits pour la naturalisation",
+  title: "QCM Assimilation France : tests gratuits pour la naturalisation",
   description:
     "Réussissez l'entretien d'assimilation et la naturalisation française grâce à 500+ questions corrigées, simulations d'examen et fiches sur les valeurs de la République.",
   alternates: { canonical: "/" },
@@ -18,34 +18,34 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: "Qu'est-ce que l'entretien d'assimilation ?",
+    question: "C'est quoi, l'entretien d'assimilation ?",
     answer:
-      "C'est l'entretien individuel mené en préfecture lors d'une demande de naturalisation. L'agent vérifie votre niveau de français, votre connaissance des valeurs de la République, de l'histoire et des institutions, ainsi que votre intégration réelle dans la société française.",
+      "C'est le rendez-vous individuel que vous passez en préfecture quand vous demandez la naturalisation. L'agent vérifie que vous parlez bien français, que vous connaissez les bases de la République, l'histoire, les institutions, et que vous êtes vraiment intégré à la vie d'ici.",
   },
   {
-    question: "Le QCM est-il identique à celui de la préfecture ?",
+    question: "Le QCM est-il le même qu'en préfecture ?",
     answer:
-      "Aucun QCM officiel n'est imposé : chaque préfecture pose ses propres questions, généralement issues du Livret du citoyen. Nos QCM couvrent l'intégralité de ce livret et reprennent les thèmes les plus fréquemment posés en entretien.",
+      "Il n'y a pas de QCM officiel unique. Chaque préfecture pioche ses propres questions dans le Livret du citoyen. Nos QCM couvrent tout le livret et reprennent ce qui revient le plus souvent à l'oral.",
   },
   {
     question: "Faut-il payer pour s'entraîner ?",
     answer:
-      "Non. Toutes les questions de QCM Assimilation sont gratuites. Pour aller plus loin (suivi de progression, mode audio, fiches imprimables), vous pouvez créer un compte gratuit sur cap-citoyen.fr.",
+      "Non. Tout ce que vous voyez ici est gratuit. Si vous voulez aller plus loin (suivi de progression, mode audio, fiches imprimables), vous pouvez créer un compte gratuit sur cap-citoyen.fr.",
   },
   {
     question: "À qui s'adresse ce site ?",
     answer:
-      "À toute personne qui prépare un titre de séjour pluriannuel, une naturalisation par décret ou par mariage, ainsi qu'à toute personne curieuse de la France et de ses valeurs.",
+      "À toute personne qui prépare un titre de séjour pluriannuel, une naturalisation par décret ou par mariage, ou simplement à ceux qui veulent (re)découvrir la France.",
   },
   {
-    question: "Quel niveau de français faut-il pour la naturalisation ?",
+    question: "Quel niveau de français pour la naturalisation ?",
     answer:
-      "Le niveau requis est le B1 oral et écrit du Cadre européen commun de référence pour les langues (CECRL). Il doit être attesté par un diplôme ou un test de français reconnu.",
+      "Niveau B1 oral et écrit (CECRL), à prouver avec un diplôme ou un test de français reconnu.",
   },
   {
-    question: "Combien de temps faut-il pour préparer l'entretien ?",
+    question: "Combien de temps pour préparer l'entretien ?",
     answer:
-      "Avec un entraînement régulier (15 à 30 minutes par jour), un mois suffit pour bien maîtriser les bases du Livret du citoyen et les questions les plus posées.",
+      "Avec 15 à 30 minutes par jour, un mois suffit largement pour maîtriser le Livret du citoyen et les questions qui reviennent le plus.",
   },
 ];
 
@@ -55,7 +55,7 @@ const audiences = [
   {
     title: "Titre de séjour pluriannuel",
     description:
-      "Vous demandez votre titre de séjour pluriannuel et devez prouver votre intégration : valeurs, histoire, vie quotidienne en France.",
+      "Vous demandez votre carte pluriannuelle et il faut montrer que vous êtes intégré : valeurs, histoire, vie de tous les jours.",
     href: "/qcm-assimilation-france/",
     accent: "bleu",
     icon: "🪪",
@@ -63,7 +63,7 @@ const audiences = [
   {
     title: "Naturalisation française",
     description:
-      "Vous préparez l'entretien d'assimilation en préfecture pour devenir Français : entraînez-vous sur le Livret du citoyen et nos simulations.",
+      "Vous préparez l'entretien en préfecture pour devenir Français. Le Livret du citoyen et nos simulations sont faits pour ça.",
     href: "/test-naturalisation-france/",
     accent: "blanc",
     icon: "🇫🇷",
@@ -71,7 +71,7 @@ const audiences = [
   {
     title: "Curieux de la France",
     description:
-      "Vous voulez (re)découvrir l'histoire, les institutions et la culture françaises : des QCM clairs et des fiches synthétiques.",
+      "Vous voulez (re)découvrir l'histoire, les institutions et la culture du pays. Des QCM clairs, des fiches courtes, sans jargon.",
     href: "/culture-francaise-quiz/",
     accent: "rouge",
     icon: "✨",
@@ -100,22 +100,22 @@ const features = [
   {
     title: "500+ questions corrigées",
     description:
-      "Couvre l'intégralité du Livret du citoyen et les thèmes posés en entretien d'assimilation.",
+      "Tout le Livret du citoyen est couvert, et les thèmes que les agents posent vraiment.",
   },
   {
-    title: "Simulations d'examen",
+    title: "Simulations chrono",
     description:
-      "Tests chronométrés type préfecture, avec score et explications détaillées.",
+      "Tests minutés comme en préfecture, avec score et explications question par question.",
   },
   {
-    title: "Fiches officielles",
+    title: "Fiches au bon format",
     description:
-      "Symboles, histoire, institutions, valeurs : tout ce qu'un futur Français doit connaître.",
+      "Symboles, histoire, institutions, valeurs : ce qu'il faut savoir, ni plus ni moins.",
   },
   {
     title: "Mode audio",
     description:
-      "Le Livret du citoyen lu pour vous, à écouter dans les transports.",
+      "Le Livret du citoyen lu à voix haute, pour réviser pendant les trajets.",
   },
 ];
 
@@ -125,10 +125,10 @@ export default function HomePage() {
       <JsonLd data={[organizationJsonLd(), websiteJsonLd(), faqJsonLd(faqItems)]} />
 
       <Hero
-        badge="Préparation gratuite · 2026"
-        title="Réussissez votre naturalisation française"
-        highlight="naturalisation"
-        subtitle="QCM, fiches, simulations d'examen et corrigés détaillés. Tout ce qu'il faut pour devenir Français en toute sérénité, gratuitement."
+        badge="Gratuit · à jour 2026"
+        title="Devenez Français, sans stress"
+        highlight="Français"
+        subtitle="QCM, fiches et simulations d'examen pour préparer l'entretien d'assimilation à votre rythme. Tout est gratuit, et fait par des gens qui aiment la France."
         ctaLabel="Commencer gratuitement"
         secondaryHref="/test-naturalisation-france/"
         secondaryLabel="Faire un test"
@@ -138,8 +138,8 @@ export default function HomePage() {
       <section className="container-prose mt-6 sm:mt-8">
         <SectionTitle
           eyebrow="Pour qui"
-          title="Trois publics, un même objectif"
-          description="Que vous demandiez un titre de séjour, la nationalité, ou que vous soyez simplement curieux, cette préparation est pour vous."
+          title="Vous êtes au bon endroit"
+          description="Titre de séjour, naturalisation ou curiosité personnelle : on a prévu de quoi vous occuper."
         />
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           {audiences.map((a) => {
@@ -176,9 +176,9 @@ export default function HomePage() {
       {/* Features */}
       <section className="container-prose mt-10 sm:mt-14">
         <SectionTitle
-          eyebrow="Pourquoi QCM Assimilation"
-          title="Une préparation complète, claire et gratuite"
-          description="Conçu pour les candidats à la naturalisation et au titre de séjour, par des passionnés de la République."
+          eyebrow="Ce qu'on propose"
+          title="Une prépa carrée, sans chichi"
+          description="Pensé pour les candidats à la naturalisation et au titre de séjour, par des gens qui ont passé le test."
         />
         <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f, i) => (
@@ -203,9 +203,9 @@ export default function HomePage() {
       {/* Sample QCM */}
       <section className="container-prose mt-10 sm:mt-14">
         <SectionTitle
-          eyebrow="Aperçu interactif"
-          title="6 questions du Livret du citoyen"
-          description="Cliquez sur une réponse pour voir le corrigé immédiatement."
+          eyebrow="À vous de jouer"
+          title="6 questions pour s'échauffer"
+          description="Cliquez sur une réponse, le corrigé apparaît tout de suite."
         />
         <div className="mt-6 grid gap-5 md:grid-cols-2">
           {featuredQuestions.map((q, i) => (
@@ -225,8 +225,8 @@ export default function HomePage() {
 
       <CTA
         variant="register"
-        title="Devenez Français sans stress"
-        subtitle="Créez votre compte gratuit, suivez votre progression et accédez aux fiches officielles, sans engagement."
+        title="On vous accompagne jusqu'au bout"
+        subtitle="Compte gratuit, progression sauvegardée, accès aux fiches. Pas de carte bancaire."
       />
 
       <FAQ items={faqItems} />
