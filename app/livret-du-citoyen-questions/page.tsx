@@ -4,6 +4,8 @@ import CTA from "../components/CTA";
 import FAQ from "../components/FAQ";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
+import AlertBlock from "../components/AlertBlock";
+import MidPageCTA from "../components/MidPageCTA";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
@@ -141,8 +143,13 @@ export default function LivretPage() {
         title="Le Livret du citoyen, chapitre par chapitre"
         highlight="Livret du citoyen"
         subtitle="Toutes les fiches utiles pour la naturalisation : symboles, histoire, institutions, valeurs, vie quotidienne, culture, géographie."
-        ctaLabel="Écouter en audio"
-        ctaHref="https://cap-citoyen.fr/audio"
+        ctaLabel="Faire le test complet"
+        ctaHref="https://cap-citoyen.fr/quiz"
+      />
+
+      <AlertBlock
+        title="L'entretien de naturalisation ne s'improvise pas"
+        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée aux attentes réelles du jury."
       />
 
       <section className="container-prose mt-8">
@@ -176,6 +183,8 @@ export default function LivretPage() {
           </article>
         ))}
       </section>
+
+      <MidPageCTA />
 
       <CTA
         variant="audio"

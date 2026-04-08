@@ -7,6 +7,9 @@ import QCMQuiz from "../components/QCMQuiz";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
 import SectionTitle from "../components/SectionTitle";
+import AlertBlock from "../components/AlertBlock";
+import Differentiator from "../components/Differentiator";
+import MidPageCTA from "../components/MidPageCTA";
 import { questions } from "../lib/questions";
 import {
   breadcrumbJsonLd,
@@ -80,11 +83,18 @@ export default function TestNaturalisationPage() {
         title="Le test pour voir où vous en êtes"
         highlight="test"
         subtitle="8 questions tirées du Livret du citoyen pour vous mettre en jambe. Le test complet (50 questions et plus) vous attend sur cap-citoyen.fr."
-        ctaLabel="Démarrer le test complet"
+        ctaLabel="Faire le test complet"
         ctaHref="https://cap-citoyen.fr/quiz"
         secondaryHref="/livret-du-citoyen-questions/"
         secondaryLabel="Réviser le Livret"
       />
+
+      <AlertBlock
+        title="L'entretien de naturalisation ne s'improvise pas"
+        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée aux attentes réelles du jury."
+      />
+
+      <Differentiator />
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
@@ -117,6 +127,8 @@ export default function TestNaturalisationPage() {
           </div>
         ))}
       </section>
+
+      <MidPageCTA />
 
       <section className="container-prose mt-10">
         <SectionTitle

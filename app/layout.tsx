@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import StickyMobileCTA from "./components/StickyMobileCTA";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://qcm-assimilation.fr"),
@@ -74,6 +75,7 @@ export default function RootLayout({
         <Header />
         <main id="main">{children}</main>
         <Footer />
+        <StickyMobileCTA />
       </body>
     </html>
   );

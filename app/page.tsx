@@ -6,6 +6,8 @@ import FAQ from "./components/FAQ";
 import QCMQuiz from "./components/QCMQuiz";
 import JsonLd from "./components/JsonLd";
 import SectionTitle from "./components/SectionTitle";
+import Differentiator from "./components/Differentiator";
+import MidPageCTA from "./components/MidPageCTA";
 import { questions } from "./lib/questions";
 import { faqJsonLd, organizationJsonLd, websiteJsonLd } from "./lib/site";
 
@@ -128,11 +130,14 @@ export default function HomePage() {
         badge="Préparation · 2026"
         title="Devenez Français, sans stress"
         highlight="Français"
-        subtitle="QCM, fiches et simulations d'examen pour préparer l'entretien d'assimilation à votre rythme. Pas d'inscription, fait par des gens qui aiment la France."
-        ctaLabel="Commencer maintenant"
+        subtitle="QCM, fiches et simulations pour préparer l'entretien d'assimilation à votre rythme. Pas d'inscription, fait par des gens qui aiment la France."
+        ctaHref="https://cap-citoyen.fr/quiz"
+        ctaLabel="Faire le test complet"
         secondaryHref="/test-naturalisation-france/"
         secondaryLabel="Faire un test"
       />
+
+      <Differentiator />
 
       {/* Audiences */}
       <section className="container-prose mt-6 sm:mt-8">
@@ -199,6 +204,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <MidPageCTA />
 
       {/* Sample QCM */}
       <section className="container-prose mt-10 sm:mt-14">

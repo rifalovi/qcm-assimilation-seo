@@ -5,6 +5,8 @@ import FAQ from "../components/FAQ";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
 import SectionTitle from "../components/SectionTitle";
+import AlertBlock from "../components/AlertBlock";
+import MidPageCTA from "../components/MidPageCTA";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
@@ -113,7 +115,13 @@ export default function QuestionsEntretienPage() {
         title="Les questions qui reviennent en entretien"
         highlight="questions"
         subtitle="Quatre familles de questions, plus de 25 exemples concrets pour ne pas être pris au dépourvu devant l'agent."
-        ctaLabel="S'entraîner maintenant"
+        ctaLabel="Faire le test complet"
+        ctaHref="https://cap-citoyen.fr/quiz"
+      />
+
+      <AlertBlock
+        title="L'entretien de naturalisation ne s'improvise pas"
+        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée aux attentes réelles du jury."
       />
 
       <section className="container-prose mt-8">
@@ -151,6 +159,8 @@ export default function QuestionsEntretienPage() {
           </div>
         ))}
       </section>
+
+      <MidPageCTA />
 
       <section className="container-prose mt-10">
         <SectionTitle

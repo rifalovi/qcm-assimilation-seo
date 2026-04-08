@@ -5,6 +5,9 @@ import FAQ from "../components/FAQ";
 import QCMQuiz from "../components/QCMQuiz";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
+import AlertBlock from "../components/AlertBlock";
+import Differentiator from "../components/Differentiator";
+import MidPageCTA from "../components/MidPageCTA";
 import { questions } from "../lib/questions";
 import {
   breadcrumbJsonLd,
@@ -95,9 +98,16 @@ export default function QCMPage() {
         title="Le QCM d'assimilation, version complète"
         highlight="assimilation"
         subtitle="Symboles, histoire, institutions, valeurs, géographie, culture, vie quotidienne. Cliquez sur une réponse, le corrigé apparaît tout de suite."
-        ctaLabel="Démarrer le QCM"
+        ctaLabel="Faire le test complet"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
+
+      <AlertBlock
+        title="L'entretien de naturalisation ne s'improvise pas"
+        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée aux attentes réelles du jury."
+      />
+
+      <Differentiator />
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
@@ -137,6 +147,8 @@ export default function QCMPage() {
           </section>
         );
       })}
+
+      <MidPageCTA />
 
       <CTA
         variant="quiz"

@@ -39,7 +39,7 @@ const sections = [
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-white/5 bg-slate-950 sm:mt-20">
+    <footer className="mt-16 border-t border-white/5 bg-slate-950 pb-24 sm:mt-20 lg:pb-0">
       <div className="h-0.5 gradient-tricolore" aria-hidden />
       <div className="container-prose py-10 sm:py-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">

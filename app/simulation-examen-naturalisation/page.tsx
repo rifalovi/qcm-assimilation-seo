@@ -5,6 +5,9 @@ import FAQ from "../components/FAQ";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
 import SectionTitle from "../components/SectionTitle";
+import AlertBlock from "../components/AlertBlock";
+import Differentiator from "../components/Differentiator";
+import MidPageCTA from "../components/MidPageCTA";
 import { breadcrumbJsonLd, faqJsonLd, quizJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
@@ -97,9 +100,16 @@ export default function SimulationPage() {
         title="Entraînez-vous avant l'entretien"
         highlight="entraînez-vous"
         subtitle="20 questions tirées du Livret du citoyen, score à la fin et corrigés détaillés. Pour arriver détendu en préfecture."
-        ctaLabel="Lancer la simulation"
+        ctaLabel="Faire le test complet"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
+
+      <AlertBlock
+        title="L'entretien de naturalisation ne s'improvise pas"
+        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée aux attentes réelles du jury."
+      />
+
+      <Differentiator />
 
       <section className="container-prose mt-8">
         <div className="prose prose-invert max-w-none">
@@ -122,6 +132,8 @@ export default function SimulationPage() {
           </div>
         ))}
       </section>
+
+      <MidPageCTA />
 
       <section className="container-prose mt-10">
         <SectionTitle
