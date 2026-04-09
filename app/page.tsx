@@ -8,6 +8,7 @@ import JsonLd from "./components/JsonLd";
 import SectionTitle from "./components/SectionTitle";
 import Differentiator from "./components/Differentiator";
 import MidPageCTA from "./components/MidPageCTA";
+import ShareButtons from "./components/ShareButtons";
 import CivicExamFacts from "./components/CivicExamFacts";
 import { questions } from "./lib/questions";
 import { faqJsonLd, organizationJsonLd, websiteJsonLd } from "./lib/site";
@@ -232,6 +233,8 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+
+      <ShareButtons path="/" message="Je prépare mon examen civique 🇫🇷" />
 
       <CTA
         variant="register"

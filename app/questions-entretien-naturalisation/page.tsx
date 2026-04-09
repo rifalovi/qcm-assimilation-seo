@@ -7,6 +7,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import SectionTitle from "../components/SectionTitle";
 import AlertBlock from "../components/AlertBlock";
 import MidPageCTA from "../components/MidPageCTA";
+import ShareButtons from "../components/ShareButtons";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
@@ -189,6 +190,8 @@ export default function QuestionsEntretienPage() {
           ))}
         </div>
       </section>
+
+      <ShareButtons path="/questions-entretien-naturalisation/" message="Les questions qui reviennent en entretien de naturalisation 🇫🇷" />
 
       <CTA
         variant="register"

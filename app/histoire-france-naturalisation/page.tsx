@@ -6,6 +6,7 @@ import QCMQuiz from "../components/QCMQuiz";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
 import SectionTitle from "../components/SectionTitle";
+import ShareButtons from "../components/ShareButtons";
 import { getQuestionsByCategory } from "../lib/questions";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
@@ -123,6 +124,8 @@ export default function HistoirePage() {
           ))}
         </div>
       </section>
+
+      <ShareButtons path="/histoire-france-naturalisation/" message="L'histoire de France pour l'examen civique et la naturalisation 🇫🇷" />
 
       <CTA
         variant="audio"

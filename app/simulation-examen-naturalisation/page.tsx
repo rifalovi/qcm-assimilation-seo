@@ -8,6 +8,7 @@ import SectionTitle from "../components/SectionTitle";
 import AlertBlock from "../components/AlertBlock";
 import Differentiator from "../components/Differentiator";
 import MidPageCTA from "../components/MidPageCTA";
+import ShareButtons from "../components/ShareButtons";
 import CivicExamFacts from "../components/CivicExamFacts";
 import { breadcrumbJsonLd, faqJsonLd, quizJsonLd, SITE_URL } from "../lib/site";
 
@@ -156,6 +157,8 @@ export default function SimulationPage() {
           ))}
         </div>
       </section>
+
+      <ShareButtons path="/simulation-examen-naturalisation/" message="Simulation d'entraînement pour l'examen civique 🇫🇷" />
 
       <CTA
         variant="quiz"

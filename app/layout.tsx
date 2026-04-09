@@ -38,12 +38,21 @@ export const metadata: Metadata = {
     title: "QCM Assimilation : examen civique, naturalisation, culture française",
     description:
       "Préparez l'examen civique 2026, l'entretien de naturalisation ou enrichissez votre connaissance de la France. Questions du Livret du citoyen, corrigés détaillés.",
+    images: [
+      {
+        url: "https://qcm-assimilation.fr/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "QCM Assimilation : examen civique, naturalisation, culture française",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "QCM Assimilation : examen civique et naturalisation",
     description:
       "Préparation à l'examen civique 2026, à la naturalisation et à la culture française.",
+    images: ["https://qcm-assimilation.fr/og-image.png"],
   },
   robots: {
     index: true,

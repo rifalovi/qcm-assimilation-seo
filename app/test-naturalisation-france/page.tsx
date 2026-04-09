@@ -10,6 +10,7 @@ import SectionTitle from "../components/SectionTitle";
 import AlertBlock from "../components/AlertBlock";
 import Differentiator from "../components/Differentiator";
 import MidPageCTA from "../components/MidPageCTA";
+import ShareButtons from "../components/ShareButtons";
 import CivicExamFacts from "../components/CivicExamFacts";
 import { questions } from "../lib/questions";
 import {
@@ -145,6 +146,8 @@ export default function TestNaturalisationPage() {
           ))}
         </div>
       </section>
+
+      <ShareButtons path="/test-naturalisation-france/" message="Je prépare mon examen civique avec ce QCM 🇫🇷" />
 
       <CTA
         variant="quiz"

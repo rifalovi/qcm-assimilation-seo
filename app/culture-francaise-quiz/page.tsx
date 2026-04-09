@@ -6,6 +6,7 @@ import QCMQuiz from "../components/QCMQuiz";
 import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
 import SectionTitle from "../components/SectionTitle";
+import ShareButtons from "../components/ShareButtons";
 import { getQuestionsByCategory } from "../lib/questions";
 import { breadcrumbJsonLd, faqJsonLd, quizJsonLd, SITE_URL } from "../lib/site";
 
@@ -120,6 +121,8 @@ export default function CultureFrancaisePage() {
           ))}
         </div>
       </section>
+
+      <ShareButtons path="/culture-francaise-quiz/" message="Quiz culture française : littérature, art, sciences 🇫🇷" />
 
       <CTA
         variant="quiz"

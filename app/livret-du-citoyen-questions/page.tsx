@@ -6,6 +6,7 @@ import JsonLd from "../components/JsonLd";
 import Breadcrumb from "../components/Breadcrumb";
 import AlertBlock from "../components/AlertBlock";
 import MidPageCTA from "../components/MidPageCTA";
+import ShareButtons from "../components/ShareButtons";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
@@ -185,6 +186,8 @@ export default function LivretPage() {
       </section>
 
       <MidPageCTA />
+
+      <ShareButtons path="/livret-du-citoyen-questions/" message="Le Livret du citoyen résumé chapitre par chapitre 🇫🇷" />
 
       <CTA
         variant="audio"

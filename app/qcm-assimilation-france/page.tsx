@@ -8,6 +8,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import AlertBlock from "../components/AlertBlock";
 import Differentiator from "../components/Differentiator";
 import MidPageCTA from "../components/MidPageCTA";
+import ShareButtons from "../components/ShareButtons";
 import CivicExamFacts from "../components/CivicExamFacts";
 import { questions } from "../lib/questions";
 import {
@@ -152,6 +153,8 @@ export default function QCMPage() {
       })}
 
       <MidPageCTA />
+
+      <ShareButtons path="/qcm-assimilation-france/" message="50 questions pour l'examen civique et la naturalisation 🇫🇷" />
 
       <CTA
         variant="quiz"
