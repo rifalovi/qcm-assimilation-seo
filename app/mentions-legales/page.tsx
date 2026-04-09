@@ -28,25 +28,21 @@ export default function MentionsLegalesPage() {
           Dernière mise à jour : avril 2026
         </p>
 
-        {/*
-          ============================================================
-          TODO AVANT MISE EN LIGNE OFFICIELLE :
-          - Éditeur : ajouter raison sociale, adresse, SIRET/SIREN
-          - Directeur de la publication : nom complet de la personne
-            physique responsable
-          - Vérifier conformité LCEN (loi 2004-575)
-          ============================================================
-        */}
         <div className="prose prose-invert mt-10 max-w-none">
           <h2>Éditeur du site</h2>
           <p>
-            Le site <strong>qcm-assimilation.fr</strong> est édité par l'équipe de
-            cap-citoyen.fr. Pour toute demande, écrivez à{" "}
-            <a href="mailto:contact@cap-citoyen.fr">contact@cap-citoyen.fr</a>.
+            <strong>HOUNSINOU VIGNON CARLOS</strong><br />
+            Entrepreneur individuel<br />
+            SIRET : 918 107 848 00015<br />
+            SIREN : 918 107 848<br />
+            Chennevières-sur-Marne, France<br />
+            Contact : <a href="mailto:contact@cap-citoyen.fr">contact@cap-citoyen.fr</a>
           </p>
 
           <h2>Directeur de la publication</h2>
-          <p>L'équipe éditoriale de QCM Assimilation.</p>
+          <p>
+            Vignon Carlos Hounsinou, entrepreneur individuel.
+          </p>
 
           <h2>Hébergeur</h2>
           <p>
