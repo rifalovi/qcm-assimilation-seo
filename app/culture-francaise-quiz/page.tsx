@@ -77,7 +77,7 @@ export default function CultureFrancaisePage() {
         title="Culture française : littérature, art, sciences"
         highlight="Culture française"
         subtitle="Testez vos connaissances sur les grands noms et les œuvres qui ont fait la France. Pour l'entretien, ou juste pour le plaisir."
-        ctaLabel="Faire le quiz complet"
+        ctaLabel="Découvrir quiz, audio et mode scroll"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
 

@@ -7,12 +7,14 @@ import StickyMobileCTA from "./components/StickyMobileCTA";
 export const metadata: Metadata = {
   metadataBase: new URL("https://qcm-assimilation.fr"),
   title: {
-    default: "QCM Assimilation : réussir l'entretien et la naturalisation française",
+    default: "QCM Assimilation : examen civique, naturalisation, culture française",
     template: "%s | QCM Assimilation",
   },
   description:
-    "Préparez l'entretien d'assimilation, le QCM de naturalisation et le test de culture française. Questions issues du Livret du citoyen, corrigés et accès à l'app cap-citoyen.fr.",
+    "Préparez l'examen civique obligatoire depuis 2026 (titre de séjour pluriannuel), l'entretien de naturalisation, ou enrichissez votre culture française. Questions du Livret du citoyen, corrigés détaillés.",
   keywords: [
+    "examen civique 2026",
+    "examen civique titre de séjour",
     "QCM assimilation",
     "test naturalisation",
     "entretien naturalisation",
@@ -33,15 +35,15 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: "https://qcm-assimilation.fr",
     siteName: "QCM Assimilation",
-    title: "QCM Assimilation : réussir l'entretien et la naturalisation française",
+    title: "QCM Assimilation : examen civique, naturalisation, culture française",
     description:
-      "Préparez votre entretien d'assimilation et votre QCM de naturalisation. Questions du Livret du citoyen, corrigés détaillés.",
+      "Préparez l'examen civique 2026, l'entretien de naturalisation ou enrichissez votre connaissance de la France. Questions du Livret du citoyen, corrigés détaillés.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "QCM Assimilation : réussir la naturalisation française",
+    title: "QCM Assimilation : examen civique et naturalisation",
     description:
-      "Tests, QCM, simulations d'examen et fiches sur les valeurs de la République.",
+      "Préparation à l'examen civique 2026, à la naturalisation et à la culture française.",
   },
   robots: {
     index: true,

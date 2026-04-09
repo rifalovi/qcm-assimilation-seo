@@ -10,6 +10,7 @@ import SectionTitle from "../components/SectionTitle";
 import AlertBlock from "../components/AlertBlock";
 import Differentiator from "../components/Differentiator";
 import MidPageCTA from "../components/MidPageCTA";
+import CivicExamFacts from "../components/CivicExamFacts";
 import { questions } from "../lib/questions";
 import {
   breadcrumbJsonLd,
@@ -19,9 +20,9 @@ import {
 } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Test de naturalisation française 2026",
+  title: "Test naturalisation et examen civique 2026",
   description:
-    "Le test de naturalisation française : 50 questions du Livret du citoyen, corrigés détaillés, mode chrono d'entraînement disponible sur cap-citoyen.fr.",
+    "Préparez l'examen civique obligatoire (titre de séjour pluriannuel) et l'entretien de naturalisation : 50 questions du Livret du citoyen, corrigés détaillés, mode chrono d'entraînement sur cap-citoyen.fr.",
   alternates: { canonical: "/test-naturalisation-france/" },
 };
 
@@ -79,19 +80,21 @@ export default function TestNaturalisationPage() {
       <Breadcrumb items={[{ href: "/test-naturalisation-france/", label: "Test de naturalisation" }]} />
 
       <Hero
-        badge="8 questions d'échauffement"
+        badge="Examen civique · Naturalisation"
         title="Le test pour voir où vous en êtes"
         highlight="test"
-        subtitle="8 questions tirées du Livret du citoyen pour vous mettre en jambe. Le test complet (50 questions et plus) vous attend sur cap-citoyen.fr."
-        ctaLabel="Faire le test complet"
+        subtitle="Examen civique 2026, entretien de naturalisation, ou simple curiosité : 8 questions pour vous situer, puis la préparation complète sur cap-citoyen.fr."
+        ctaLabel="Découvrir quiz, audio et mode scroll"
         ctaHref="https://cap-citoyen.fr/quiz"
         secondaryHref="/livret-du-citoyen-questions/"
         secondaryLabel="Réviser le Livret"
       />
 
+      <CivicExamFacts />
+
       <AlertBlock
-        title="L'entretien de naturalisation ne s'improvise pas"
-        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée aux attentes réelles du jury."
+        title="L'examen et l'entretien ne s'improvisent pas"
+        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée. Un passage raté, c'est 70 à 90 € et plusieurs semaines perdues."
       />
 
       <Differentiator />

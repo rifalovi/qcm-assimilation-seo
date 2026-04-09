@@ -16,8 +16,8 @@ export default function Hero({
   title,
   highlight,
   subtitle,
-  ctaHref = "https://cap-citoyen.fr/register",
-  ctaLabel = "Commencer maintenant",
+  ctaHref = "https://cap-citoyen.fr/quiz",
+  ctaLabel = "Découvrir quiz, audio et mode scroll",
   secondaryHref,
   secondaryLabel,
 }: HeroProps) {

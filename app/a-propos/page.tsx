@@ -29,7 +29,7 @@ export default function AProposPage() {
         title="Vous aider à devenir Français sereinement"
         highlight="Français"
         subtitle="QCM Assimilation, c'est une initiative indépendante qui rassemble en accès libre les meilleures ressources pour préparer la naturalisation."
-        ctaLabel="Aller sur cap-citoyen.fr"
+        ctaLabel="Découvrir quiz, audio et mode scroll"
       />
 
       <section className="container-prose mt-8">

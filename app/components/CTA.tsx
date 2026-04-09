@@ -5,19 +5,19 @@ const variants: Record<
   { href: string; label: string; sub: string }
 > = {
   register: {
-    href: "https://cap-citoyen.fr/register",
-    label: "Créer mon compte",
-    sub: "Sans carte bancaire, accès immédiat",
+    href: "https://cap-citoyen.fr/quiz",
+    label: "Découvrir quiz, audio et mode scroll",
+    sub: "Trois formats pour réviser à votre rythme",
   },
   quiz: {
     href: "https://cap-citoyen.fr/quiz",
-    label: "Démarrer le quiz",
-    sub: "500+ questions corrigées",
+    label: "Quiz, audio et mode scroll",
+    sub: "Tout est là, sur cap-citoyen.fr",
   },
   audio: {
     href: "https://cap-citoyen.fr/audio",
-    label: "Écouter le Livret du citoyen",
-    sub: "Idéal pour réviser dans les transports",
+    label: "Audio, quiz et mode scroll",
+    sub: "Trois façons de réviser, un seul compte",
   },
 };
 

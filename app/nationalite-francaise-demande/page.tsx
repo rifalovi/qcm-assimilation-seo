@@ -82,7 +82,7 @@ export default function DemandeNationalitePage() {
         title="Demande de nationalité française : le guide"
         highlight="nationalité française"
         subtitle="Conditions, pièces à fournir, étapes, délais, recours : ce qu'il faut savoir pour monter votre dossier sans vous tromper."
-        ctaLabel="Préparer mon entretien"
+        ctaLabel="Découvrir quiz, audio et mode scroll"
       />
 
       <section className="container-prose mt-8">

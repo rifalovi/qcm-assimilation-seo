@@ -94,7 +94,7 @@ export default function ValeursPage() {
         title="Les valeurs de la République, en clair"
         highlight="valeurs"
         subtitle="Liberté, Égalité, Fraternité, Laïcité : ce que ces mots veulent dire concrètement, et pourquoi ils reviennent toujours en entretien."
-        ctaLabel="S'entraîner sur les valeurs"
+        ctaLabel="Découvrir quiz, audio et mode scroll"
       />
 
       <section className="container-prose mt-8">

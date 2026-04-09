@@ -10,9 +10,9 @@ import MidPageCTA from "../components/MidPageCTA";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Questions d'entretien de naturalisation : la liste 2026",
+  title: "Questions d'entretien de naturalisation 2026",
   description:
-    "Les questions qui reviennent vraiment en entretien d'assimilation : symboles, valeurs, vie personnelle, intégration. Conseils et exemples de réponses.",
+    "Les questions qui reviennent en entretien de naturalisation et à l'examen civique : symboles, valeurs, vie personnelle, intégration. Conseils et exemples de réponses.",
   alternates: { canonical: "/questions-entretien-naturalisation/" },
 };
 
@@ -115,13 +115,13 @@ export default function QuestionsEntretienPage() {
         title="Les questions qui reviennent en entretien"
         highlight="questions"
         subtitle="Quatre familles de questions, plus de 25 exemples concrets pour ne pas être pris au dépourvu devant l'agent."
-        ctaLabel="Faire le test complet"
+        ctaLabel="Découvrir quiz, audio et mode scroll"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
 
       <AlertBlock
-        title="L'entretien de naturalisation ne s'improvise pas"
-        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée aux attentes réelles du jury."
+        title="L'examen et l'entretien ne s'improvisent pas"
+        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée. Un passage raté, c'est 70 à 90 € et plusieurs semaines perdues."
       />
 
       <section className="container-prose mt-8">

@@ -29,7 +29,8 @@ export default function ContactPage() {
         title="Une question, une idée ?"
         highlight="idée"
         subtitle="On lit tous les messages, qu'ils viennent de candidats, d'enseignants, de bénévoles ou de curieux."
-        ctaLabel="Aller sur cap-citoyen.fr"
+        ctaLabel="Écrire à l'équipe"
+        ctaHref="https://cap-citoyen.fr/contact"
       />
 
       <section className="container-prose mt-8 grid gap-4 md:grid-cols-2">
@@ -39,10 +40,10 @@ export default function ContactPage() {
             Écrivez-nous à :
           </p>
           <a
-            href="mailto:contact@qcm-assimilation.fr"
+            href="mailto:contact@cap-citoyen.fr"
             className="mt-2 inline-block break-all text-sm font-semibold text-blue-300 hover:text-blue-200 sm:text-base"
           >
-            contact@qcm-assimilation.fr
+            contact@cap-citoyen.fr
           </a>
         </div>
 
@@ -77,9 +78,9 @@ export default function ContactPage() {
       </section>
 
       <CTA
-        variant="register"
-        title="Plus rapide qu'un email : créez votre compte"
-        subtitle="Sur cap-citoyen.fr, vous accédez tout de suite à toutes les ressources."
+        variant="quiz"
+        title="Plus rapide qu'un email : testez-vous"
+        subtitle="Sur cap-citoyen.fr, vous accédez au quiz, à l'audio et au mode scroll en quelques secondes."
       />
     </>
   );

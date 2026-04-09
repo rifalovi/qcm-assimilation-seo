@@ -57,11 +57,18 @@ export default function StickyMobileCTA() {
         href="https://cap-citoyen.fr/quiz"
         target="_blank"
         rel="noopener"
-        className="group flex w-full items-center justify-center gap-2.5 rounded-2xl border border-blue-400/40 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 px-5 py-3.5 text-sm font-bold text-white shadow-[0_-8px_32px_rgba(37,99,235,0.45)] backdrop-blur transition hover:brightness-110 active:scale-[0.98]"
+        className="group flex w-full items-center justify-center gap-2.5 rounded-2xl border border-blue-400/40 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 px-5 py-3 text-sm font-bold text-white shadow-[0_-8px_32px_rgba(37,99,235,0.45)] backdrop-blur transition hover:brightness-110 active:scale-[0.98]"
       >
-        Faire le test complet
-        <span aria-hidden className="transition group-hover:translate-x-0.5">
-          →
+        <span className="flex flex-col items-center leading-tight">
+          <span className="text-[11px] font-medium text-blue-100/90">
+            Sur cap-citoyen.fr
+          </span>
+          <span className="flex items-center gap-1.5">
+            Quiz, audio et mode scroll
+            <span aria-hidden className="transition group-hover:translate-x-0.5">
+              →
+            </span>
+          </span>
         </span>
       </a>
     </div>

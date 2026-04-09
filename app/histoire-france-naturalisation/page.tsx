@@ -82,7 +82,7 @@ export default function HistoirePage() {
         title="Histoire de France pour la naturalisation"
         highlight="Histoire de France"
         subtitle="Une frise claire, 17 dates à retenir, et les questions du QCM qui vont avec."
-        ctaLabel="Écouter en audio"
+        ctaLabel="Découvrir quiz, audio et mode scroll"
         ctaHref="https://cap-citoyen.fr/audio"
       />
 

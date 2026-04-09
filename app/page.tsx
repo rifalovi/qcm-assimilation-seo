@@ -8,46 +8,47 @@ import JsonLd from "./components/JsonLd";
 import SectionTitle from "./components/SectionTitle";
 import Differentiator from "./components/Differentiator";
 import MidPageCTA from "./components/MidPageCTA";
+import CivicExamFacts from "./components/CivicExamFacts";
 import { questions } from "./lib/questions";
 import { faqJsonLd, organizationJsonLd, websiteJsonLd } from "./lib/site";
 
 export const metadata: Metadata = {
-  title: "QCM Assimilation France : tests pour la naturalisation 2026",
+  title: "QCM Assimilation : examen civique, naturalisation, culture française 2026",
   description:
-    "Réussissez l'entretien d'assimilation et la naturalisation française grâce à 500+ questions corrigées, simulations d'examen et fiches sur les valeurs de la République.",
+    "Préparez l'examen civique obligatoire (titre de séjour pluriannuel), l'entretien de naturalisation ou enrichissez votre connaissance de la France. 500+ questions corrigées, mises à jour 2026.",
   alternates: { canonical: "/" },
 };
 
 const faqItems = [
   {
-    question: "C'est quoi, l'entretien d'assimilation ?",
+    question: "C'est quoi, l'examen civique obligatoire depuis 2026 ?",
     answer:
-      "C'est le rendez-vous individuel que vous passez en préfecture quand vous demandez la naturalisation. L'agent vérifie que vous parlez bien français, que vous connaissez les bases de la République, l'histoire, les institutions, et que vous êtes vraiment intégré à la vie d'ici.",
+      "Depuis le 1er janvier 2026, toute première demande de titre de séjour pluriannuel passe par un examen civique : 40 questions QCM en 45 minutes, avec un score minimum de 32/40 (80 % de bonnes réponses). Un passage coûte entre 70 et 90 euros, donc autant le préparer sérieusement pour éviter de repasser.",
   },
   {
-    question: "Le QCM est-il le même qu'en préfecture ?",
+    question: "Et l'entretien de naturalisation, c'est différent ?",
     answer:
-      "Il n'y a pas de QCM officiel unique. Chaque préfecture pioche ses propres questions dans le Livret du citoyen. Nos QCM couvrent tout le livret et reprennent ce qui revient le plus souvent à l'oral.",
+      "Oui. L'entretien de naturalisation est un oral individuel en préfecture, une discussion de 30 minutes à 1 heure sur la France, les valeurs républicaines et votre parcours. Les connaissances attendues se recoupent largement avec l'examen civique : les mêmes révisions servent pour les deux.",
   },
   {
-    question: "Faut-il payer pour s'entraîner ?",
+    question: "Le QCM est-il le même qu'à l'examen ?",
     answer:
-      "Non. Tout ce que vous voyez ici est en accès libre. Si vous voulez aller plus loin (suivi de progression, mode audio, fiches imprimables), vous pouvez créer un compte sur cap-citoyen.fr en 30 secondes.",
+      "Il n'existe pas de QCM officiel public. Nos questions sont conçues à partir du Livret du citoyen et des thèmes confirmés : symboles, histoire, institutions, valeurs, vie quotidienne, culture, géographie.",
+  },
+  {
+    question: "Faut-il payer pour s'entraîner ici ?",
+    answer:
+      "Non, vous pouvez parcourir ce site librement. Pour la préparation complète (quiz, audio, mode scroll, suivi de progression, fiches imprimables), rendez-vous sur cap-citoyen.fr.",
   },
   {
     question: "À qui s'adresse ce site ?",
     answer:
-      "À toute personne qui prépare un titre de séjour pluriannuel, une naturalisation par décret ou par mariage, ou simplement à ceux qui veulent (re)découvrir la France.",
+      "Trois publics : ceux qui préparent l'examen civique pour un titre de séjour pluriannuel, ceux qui préparent l'entretien de naturalisation, et les personnes simplement curieuses de mieux connaître la France.",
   },
   {
-    question: "Quel niveau de français pour la naturalisation ?",
+    question: "Combien de temps pour bien se préparer ?",
     answer:
-      "Niveau B1 oral et écrit (CECRL), à prouver avec un diplôme ou un test de français reconnu.",
-  },
-  {
-    question: "Combien de temps pour préparer l'entretien ?",
-    answer:
-      "Avec 15 à 30 minutes par jour, un mois suffit largement pour maîtriser le Livret du citoyen et les questions qui reviennent le plus.",
+      "Avec 15 à 30 minutes par jour, deux à quatre semaines suffisent pour maîtriser l'essentiel du Livret du citoyen et viser les 80 % de bonnes réponses sans stress.",
   },
 ];
 
@@ -55,9 +56,9 @@ const featuredQuestions = questions.slice(0, 6);
 
 const audiences = [
   {
-    title: "Titre de séjour pluriannuel",
+    title: "Examen civique 2026",
     description:
-      "Vous demandez votre carte pluriannuelle et il faut montrer que vous êtes intégré : valeurs, histoire, vie de tous les jours.",
+      "Vous passez l'examen obligatoire pour un titre de séjour pluriannuel : 40 questions, 45 minutes, 32/40 minimum. Mettez toutes les chances de votre côté.",
     href: "/qcm-assimilation-france/",
     accent: "bleu",
     icon: "🪪",
@@ -65,7 +66,7 @@ const audiences = [
   {
     title: "Naturalisation française",
     description:
-      "Vous préparez l'entretien en préfecture pour devenir Français. Le Livret du citoyen et nos simulations sont faits pour ça.",
+      "Vous préparez l'entretien oral en préfecture pour devenir Français. Les mêmes révisions servent, avec un focus sur les valeurs républicaines.",
     href: "/test-naturalisation-france/",
     accent: "blanc",
     icon: "🇫🇷",
@@ -102,12 +103,12 @@ const features = [
   {
     title: "500+ questions corrigées",
     description:
-      "Tout le Livret du citoyen est couvert, et les thèmes que les agents posent vraiment.",
+      "Tout le Livret du citoyen est couvert, avec les thèmes qui reviennent le plus à l'examen.",
   },
   {
-    title: "Simulations chrono",
+    title: "Simulations d'entraînement",
     description:
-      "Tests minutés comme en préfecture, avec score et explications question par question.",
+      "Tests au format 40 questions / 45 minutes, avec score et corrigé question par question.",
   },
   {
     title: "Fiches au bon format",
@@ -127,15 +128,17 @@ export default function HomePage() {
       <JsonLd data={[organizationJsonLd(), websiteJsonLd(), faqJsonLd(faqItems)]} />
 
       <Hero
-        badge="Préparation · 2026"
-        title="Devenez Français, sans stress"
-        highlight="Français"
-        subtitle="QCM, fiches et simulations pour préparer l'entretien d'assimilation à votre rythme. Pas d'inscription, fait par des gens qui aiment la France."
+        badge="Mis à jour · 2026"
+        title="Examen civique, naturalisation ou curiosité : préparez-vous avec les bonnes questions"
+        highlight="les bonnes questions"
+        subtitle="Examen civique obligatoire depuis le 1er janvier 2026, entretien de naturalisation, ou simple envie de mieux connaître la France : un même socle de révision, trois publics."
         ctaHref="https://cap-citoyen.fr/quiz"
-        ctaLabel="Faire le test complet"
-        secondaryHref="/test-naturalisation-france/"
-        secondaryLabel="Faire un test"
+        ctaLabel="Découvrir quiz, audio et mode scroll"
+        secondaryHref="/qcm-assimilation-france/"
+        secondaryLabel="Voir le QCM"
       />
+
+      <CivicExamFacts />
 
       <Differentiator />
 
@@ -143,8 +146,8 @@ export default function HomePage() {
       <section className="container-prose mt-6 sm:mt-8">
         <SectionTitle
           eyebrow="Pour qui"
-          title="Vous êtes au bon endroit"
-          description="Titre de séjour, naturalisation ou curiosité personnelle : on a prévu de quoi vous occuper."
+          title="Trois publics, un même socle"
+          description="Examen civique pour le titre de séjour, entretien de naturalisation, ou simple curiosité : la préparation est la même, seule l'intensité change."
         />
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           {audiences.map((a) => {
@@ -183,7 +186,7 @@ export default function HomePage() {
         <SectionTitle
           eyebrow="Ce qu'on propose"
           title="Une prépa carrée, sans chichi"
-          description="Pensé pour les candidats à la naturalisation et au titre de séjour, par des gens qui ont passé le test."
+          description="Pensé pour les candidats à l'examen civique, à la naturalisation, et pour tous les curieux, par des gens qui sont passés par là."
         />
         <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f, i) => (

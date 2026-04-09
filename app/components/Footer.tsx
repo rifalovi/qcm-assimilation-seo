@@ -1,6 +1,8 @@
 import Link from "next/link";
 
-const sections = [
+type FooterLink = { href: string; label: string; external?: boolean };
+
+const sections: { title: string; links: FooterLink[] }[] = [
   {
     title: "Préparer l'examen",
     links: [
@@ -25,7 +27,7 @@ const sections = [
     links: [
       { href: "/nationalite-francaise-demande/", label: "Demande de nationalité" },
       { href: "/a-propos/", label: "À propos" },
-      { href: "/contact/", label: "Contact" },
+      { href: "https://cap-citoyen.fr/contact", label: "Contact", external: true },
     ],
   },
   {
@@ -72,13 +74,26 @@ export default function Footer() {
                 {section.title}
               </h3>
               <ul className="mt-5 space-y-3 text-sm text-slate-400">
-                {section.links.map((link) => (
-                  <li key={link.href}>
-                    <Link href={link.href} className="transition hover:text-white">
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
+                {section.links.map((link) =>
+                  link.external ? (
+                    <li key={link.href}>
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener"
+                        className="transition hover:text-white"
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ) : (
+                    <li key={link.href}>
+                      <Link href={link.href} className="transition hover:text-white">
+                        {link.label}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
           ))}

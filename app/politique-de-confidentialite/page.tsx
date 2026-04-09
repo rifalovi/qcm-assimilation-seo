@@ -64,7 +64,7 @@ export default function ConfidentialitePage() {
             Conformément au Règlement général sur la protection des données (RGPD),
             vous disposez d'un droit d'accès, de rectification, d'effacement et
             d'opposition. Pour exercer ces droits, écrivez à{" "}
-            <a href="mailto:contact@qcm-assimilation.fr">contact@qcm-assimilation.fr</a>.
+            <a href="mailto:contact@cap-citoyen.fr">contact@cap-citoyen.fr</a>.
           </p>
 
           <h2>Réclamation</h2>

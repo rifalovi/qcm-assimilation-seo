@@ -9,9 +9,9 @@ import MidPageCTA from "../components/MidPageCTA";
 import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "Livret du citoyen : toutes les questions et réponses",
+  title: "Livret du citoyen 2026 : examen civique et naturalisation",
   description:
-    "Le Livret du citoyen pour la naturalisation française : toutes les fiches résumées par chapitre, en version texte et audio. Préparez l'entretien d'assimilation.",
+    "Le Livret du citoyen pour l'examen civique (titre de séjour pluriannuel) et la naturalisation : toutes les fiches résumées par chapitre, en version texte et audio.",
   alternates: { canonical: "/livret-du-citoyen-questions/" },
 };
 
@@ -142,14 +142,14 @@ export default function LivretPage() {
         badge="Livret du citoyen 2026"
         title="Le Livret du citoyen, chapitre par chapitre"
         highlight="Livret du citoyen"
-        subtitle="Toutes les fiches utiles pour la naturalisation : symboles, histoire, institutions, valeurs, vie quotidienne, culture, géographie."
-        ctaLabel="Faire le test complet"
+        subtitle="La référence commune à l'examen civique, à l'entretien de naturalisation et aux curieux de la France. Symboles, histoire, institutions, valeurs, vie quotidienne, culture, géographie."
+        ctaLabel="Découvrir quiz, audio et mode scroll"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
 
       <AlertBlock
-        title="L'entretien de naturalisation ne s'improvise pas"
-        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée aux attentes réelles du jury."
+        title="L'examen et l'entretien ne s'improvisent pas"
+        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée. Un passage raté, c'est 70 à 90 € et plusieurs semaines perdues."
       />
 
       <section className="container-prose mt-8">

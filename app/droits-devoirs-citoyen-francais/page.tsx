@@ -75,7 +75,7 @@ export default function DroitsDevoirsPage() {
         title="Droits et devoirs du citoyen français"
         highlight="citoyen français"
         subtitle="Devenir Français, c'est gagner des droits, mais aussi accepter des devoirs. Voici le panorama, en clair."
-        ctaLabel="Tester mes connaissances"
+        ctaLabel="Découvrir quiz, audio et mode scroll"
       />
 
       <section className="container-prose mt-8">

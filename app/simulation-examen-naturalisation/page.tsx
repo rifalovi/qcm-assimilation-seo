@@ -8,12 +8,13 @@ import SectionTitle from "../components/SectionTitle";
 import AlertBlock from "../components/AlertBlock";
 import Differentiator from "../components/Differentiator";
 import MidPageCTA from "../components/MidPageCTA";
+import CivicExamFacts from "../components/CivicExamFacts";
 import { breadcrumbJsonLd, faqJsonLd, quizJsonLd, SITE_URL } from "../lib/site";
 
 export const metadata: Metadata = {
   title: "Simulation d'examen de naturalisation française 2026",
   description:
-    "Simulation d'examen de naturalisation pour s'entraîner avant l'entretien : 20 questions tirées du Livret du citoyen, score immédiat, corrigés détaillés sur cap-citoyen.fr.",
+    "Simulation d'entraînement pour l'examen civique 2026 et l'entretien de naturalisation : 20 questions tirées du Livret du citoyen, score immédiat, corrigés détaillés sur cap-citoyen.fr.",
   alternates: { canonical: "/simulation-examen-naturalisation/" },
 };
 
@@ -97,16 +98,18 @@ export default function SimulationPage() {
 
       <Hero
         badge="Entraînement · 20 questions"
-        title="Entraînez-vous avant l'entretien"
-        highlight="entraînez-vous"
-        subtitle="20 questions tirées du Livret du citoyen, score à la fin et corrigés détaillés. Pour arriver détendu en préfecture."
-        ctaLabel="Faire le test complet"
+        title="Entraînez-vous avant l'examen ou l'entretien"
+        highlight="avant"
+        subtitle="20 questions tirées du Livret du citoyen, score à la fin et corrigés détaillés. Valable pour l'examen civique 2026 comme pour l'entretien de naturalisation."
+        ctaLabel="Découvrir quiz, audio et mode scroll"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
 
+      <CivicExamFacts />
+
       <AlertBlock
-        title="L'entretien de naturalisation ne s'improvise pas"
-        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée aux attentes réelles du jury."
+        title="L'examen et l'entretien ne s'improvisent pas"
+        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée. Un passage raté, c'est 70 à 90 € et plusieurs semaines perdues."
       />
 
       <Differentiator />

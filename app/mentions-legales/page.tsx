@@ -33,7 +33,7 @@ export default function MentionsLegalesPage() {
           <p>
             Le site <strong>qcm-assimilation.fr</strong> est édité par l'équipe de
             cap-citoyen.fr. Pour toute demande, écrivez à{" "}
-            <a href="mailto:contact@qcm-assimilation.fr">contact@qcm-assimilation.fr</a>.
+            <a href="mailto:contact@cap-citoyen.fr">contact@cap-citoyen.fr</a>.
           </p>
 
           <h2>Directeur de la publication</h2>

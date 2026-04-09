@@ -8,6 +8,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import AlertBlock from "../components/AlertBlock";
 import Differentiator from "../components/Differentiator";
 import MidPageCTA from "../components/MidPageCTA";
+import CivicExamFacts from "../components/CivicExamFacts";
 import { questions } from "../lib/questions";
 import {
   breadcrumbJsonLd,
@@ -17,9 +18,9 @@ import {
 } from "../lib/site";
 
 export const metadata: Metadata = {
-  title: "QCM d'assimilation France : 50 questions corrigées",
+  title: "QCM d'assimilation 2026 : examen civique et naturalisation",
   description:
-    "Le QCM d'assimilation 2026 pour la naturalisation : 50 questions sur les symboles, l'histoire, les institutions et les valeurs de la République.",
+    "Le QCM d'assimilation 2026 pour l'examen civique (titre de séjour pluriannuel) et la naturalisation : 50 questions sur les symboles, l'histoire, les institutions et les valeurs de la République.",
   alternates: { canonical: "/qcm-assimilation-france/" },
 };
 
@@ -97,14 +98,16 @@ export default function QCMPage() {
         badge="50 questions · 7 thèmes"
         title="Le QCM d'assimilation, version complète"
         highlight="assimilation"
-        subtitle="Symboles, histoire, institutions, valeurs, géographie, culture, vie quotidienne. Cliquez sur une réponse, le corrigé apparaît tout de suite."
-        ctaLabel="Faire le test complet"
+        subtitle="Valable pour l'examen civique obligatoire depuis 2026 et pour l'entretien de naturalisation. Cliquez sur une réponse, le corrigé apparaît tout de suite."
+        ctaLabel="Découvrir quiz, audio et mode scroll"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
 
+      <CivicExamFacts />
+
       <AlertBlock
-        title="L'entretien de naturalisation ne s'improvise pas"
-        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée aux attentes réelles du jury."
+        title="L'examen et l'entretien ne s'improvisent pas"
+        message="Chaque année, des candidats échouent non par manque de volonté, mais par manque de préparation adaptée. Un passage raté, c'est 70 à 90 € et plusieurs semaines perdues."
       />
 
       <Differentiator />
