@@ -26,8 +26,8 @@ export default function AProposPage() {
 
       <Hero
         badge="Notre mission"
-        title="Vous aider à devenir Français sereinement"
-        highlight="Français"
+        title="Réussir l'examen civique et la naturalisation du premier coup"
+        highlight="du premier coup"
         subtitle="QCM Assimilation, c'est une initiative indépendante qui rassemble en accès libre les meilleures ressources pour préparer la naturalisation."
         ctaLabel="Découvrir quiz, audio et mode scroll"
       />
