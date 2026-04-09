@@ -68,9 +68,9 @@ const themes = [
 
 const faqItems = [
   {
-    question: "Combien de questions, en moyenne ?",
+    question: "Combien de questions selon l'épreuve ?",
     answer:
-      "L'entretien dure entre 30 et 60 minutes. Comptez 15 à 25 questions, qui alternent vie personnelle et France.",
+      "Deux formats différents. L'examen civique (titre de séjour, obligatoire depuis 2026) : 40 questions QCM, 45 minutes, 32/40 minimum. L'entretien de naturalisation en préfecture : un oral libre, sans nombre fixe de questions, entre 30 minutes et 1 heure.",
   },
   {
     question: "Faut-il apprendre par cœur ?",

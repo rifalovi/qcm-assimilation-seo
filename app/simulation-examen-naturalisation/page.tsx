@@ -63,7 +63,7 @@ const steps = [
     n: "03",
     title: "Questions sur la France",
     description:
-      "15 à 25 questions issues du Livret du citoyen : symboles, histoire, institutions, valeurs.",
+      "Questions issues du Livret du citoyen : symboles, histoire, institutions, valeurs. L'examen civique en compte 40, l'entretien oral varie selon la préfecture.",
   },
   {
     n: "04",

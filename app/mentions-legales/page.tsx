@@ -28,6 +28,15 @@ export default function MentionsLegalesPage() {
           Dernière mise à jour : avril 2026
         </p>
 
+        {/*
+          ============================================================
+          TODO AVANT MISE EN LIGNE OFFICIELLE :
+          - Éditeur : ajouter raison sociale, adresse, SIRET/SIREN
+          - Directeur de la publication : nom complet de la personne
+            physique responsable
+          - Vérifier conformité LCEN (loi 2004-575)
+          ============================================================
+        */}
         <div className="prose prose-invert mt-10 max-w-none">
           <h2>Éditeur du site</h2>
           <p>

@@ -36,9 +36,9 @@ const faqItems = [
       "Il n'y a pas de QCM officiel unique. Chaque préfecture pioche ses questions dans le Livret du citoyen. Le nôtre couvre tous les thèmes du livret.",
   },
   {
-    question: "Combien de questions à l'entretien ?",
+    question: "Combien de questions selon l'épreuve ?",
     answer:
-      "Comptez 15 à 25 questions en moyenne. Nos 50 questions vous donnent une longueur d'avance par rapport à ce qu'on vous posera vraiment.",
+      "Deux cas distincts. L'examen civique (titre de séjour pluriannuel, obligatoire depuis 2026) : exactement 40 questions QCM en 45 minutes, score minimum 32/40. L'entretien de naturalisation en préfecture : un oral sans nombre fixe de questions, qui dure entre 30 minutes et 1 heure selon la préfecture. Nos 50 questions couvrent les deux formats.",
   },
   {
     question: "Un score minimum pour réussir ?",

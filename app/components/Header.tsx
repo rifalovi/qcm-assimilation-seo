@@ -74,7 +74,7 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <a
-          href="https://cap-citoyen.fr/quiz"
+          href="https://cap-citoyen.fr/register"
           target="_blank"
           rel="noopener"
           className="hidden lg:inline-flex items-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 px-4 py-2 text-sm font-bold text-white shadow-[0_8px_22px_rgba(37,99,235,0.4)] transition hover:brightness-110 active:scale-[0.98]"
@@ -146,7 +146,7 @@ export default function Header() {
               ))}
             </ul>
             <a
-              href="https://cap-citoyen.fr/quiz"
+              href="https://cap-citoyen.fr/register"
               target="_blank"
               rel="noopener"
               onClick={() => setOpen(false)}
