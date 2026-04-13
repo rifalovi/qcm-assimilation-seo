@@ -9,7 +9,7 @@ import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title: "Droits et devoirs du citoyen français : tout comprendre",
   description:
-    "Quels sont les droits et les devoirs du citoyen français ? Vote, fiscalité, justice, libertés, défense, école : le guide complet pour la naturalisation.",
+    "Droits et devoirs du citoyen français : vote, fiscalité, justice, libertés, défense, école. Guide complet avec assistant IA naturalisation, coach examen civique et aide démarches titre de séjour.",
   alternates: { canonical: "/droits-devoirs-citoyen-francais/" },
 };
 
@@ -75,7 +75,7 @@ export default function DroitsDevoirsPage() {
         title="Droits et devoirs du citoyen français"
         highlight="citoyen français"
         subtitle="Devenir Français, c'est gagner des droits, mais aussi accepter des devoirs. Voici le panorama, en clair."
-        ctaLabel="Découvrir quiz, audio et mode scroll"
+        ctaLabel="Accéder au quiz, à l'assistant IA et au coaching personnalisé"
       />
 
       <section className="container-prose mt-8">
@@ -117,7 +117,7 @@ export default function DroitsDevoirsPage() {
       <CTA
         variant="register"
         title="Devenez un citoyen averti"
-        subtitle="Sur cap-citoyen.fr, retrouvez toutes les fiches sur les droits, les devoirs et les institutions."
+        subtitle="Sur cap-citoyen.fr : assistant IA démarches, coaching personnalisé, explications IA et messagerie avec la communauté."
       />
 
       <FAQ items={faqItems} />

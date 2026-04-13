@@ -12,7 +12,7 @@ import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title: "Livret du citoyen 2026 : examen civique et naturalisation",
   description:
-    "Le Livret du citoyen pour l'examen civique (titre de séjour pluriannuel) et la naturalisation : toutes les fiches résumées par chapitre, en version texte et audio.",
+    "Livret du citoyen 2026 : fiches par chapitre, version audio. Préparez l'examen civique et la naturalisation avec un assistant IA naturalisation, coach examen civique et aide démarches titre de séjour.",
   alternates: { canonical: "/livret-du-citoyen-questions/" },
 };
 
@@ -144,7 +144,7 @@ export default function LivretPage() {
         title="Le Livret du citoyen, chapitre par chapitre"
         highlight="Livret du citoyen"
         subtitle="La référence commune à l'examen civique, à l'entretien de naturalisation et aux curieux de la France. Symboles, histoire, institutions, valeurs, vie quotidienne, culture, géographie."
-        ctaLabel="Découvrir quiz, audio et mode scroll"
+        ctaLabel="Accéder au quiz, à l'assistant IA et au coaching personnalisé"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
 
@@ -192,7 +192,7 @@ export default function LivretPage() {
       <CTA
         variant="audio"
         title="Le Livret, lu à voix haute"
-        subtitle="Pour réviser pendant les trajets ou en faisant la cuisine. Version audio sur cap-citoyen.fr."
+        subtitle="Audio, coaching IA personnalisé, assistant démarches et messagerie communautaire sur cap-citoyen.fr."
       />
 
       <FAQ items={faqItems} />

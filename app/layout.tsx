@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | QCM Assimilation",
   },
   description:
-    "Préparez l'examen civique obligatoire depuis 2026 (titre de séjour pluriannuel), l'entretien de naturalisation, ou enrichissez votre culture française. Questions du Livret du citoyen, corrigés détaillés.",
+    "Préparez l'examen civique 2026 et la naturalisation avec un assistant IA naturalisation, un coach examen civique personnalisé et une aide démarches titre de séjour. Questions du Livret du citoyen, corrigés détaillés.",
   keywords: [
     "examen civique 2026",
     "examen civique titre de séjour",
@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     "simulation examen naturalisation",
     "culture française",
     "valeurs République",
+    "assistant IA naturalisation",
+    "coach examen civique",
+    "aide démarches titre de séjour",
   ],
   authors: [{ name: "QCM Assimilation" }],
   creator: "QCM Assimilation",
@@ -37,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "QCM Assimilation",
     title: "QCM Assimilation : examen civique, naturalisation, culture française",
     description:
-      "Préparez l'examen civique 2026, l'entretien de naturalisation ou enrichissez votre connaissance de la France. Questions du Livret du citoyen, corrigés détaillés.",
+      "Préparez l'examen civique 2026 et la naturalisation avec assistant IA, coaching personnalisé et aide démarches. Questions du Livret du citoyen, corrigés détaillés.",
     images: [
       {
         url: "https://qcm-assimilation.fr/og-image.png",
@@ -51,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "QCM Assimilation : examen civique et naturalisation",
     description:
-      "Préparation à l'examen civique 2026, à la naturalisation et à la culture française.",
+      "Préparation à l'examen civique 2026 et à la naturalisation. Assistant IA, coach personnalisé et aide démarches.",
     images: ["https://qcm-assimilation.fr/og-image.png"],
   },
   robots: {

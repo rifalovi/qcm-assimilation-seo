@@ -13,7 +13,7 @@ import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title: "Questions d'entretien de naturalisation 2026",
   description:
-    "Les questions qui reviennent en entretien de naturalisation et à l'examen civique : symboles, valeurs, vie personnelle, intégration. Conseils et exemples de réponses.",
+    "Questions d'entretien de naturalisation et examen civique : symboles, valeurs, intégration. Conseils, assistant IA naturalisation, coach examen civique et aide démarches titre de séjour.",
   alternates: { canonical: "/questions-entretien-naturalisation/" },
 };
 
@@ -116,7 +116,7 @@ export default function QuestionsEntretienPage() {
         title="Les questions qui reviennent en entretien"
         highlight="questions"
         subtitle="Quatre familles de questions, plus de 25 exemples concrets pour ne pas être pris au dépourvu devant l'agent."
-        ctaLabel="Découvrir quiz, audio et mode scroll"
+        ctaLabel="Accéder au quiz, à l'assistant IA et au coaching personnalisé"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
 
@@ -196,7 +196,7 @@ export default function QuestionsEntretienPage() {
       <CTA
         variant="register"
         title="Préparez l'oral à votre rythme"
-        subtitle="Sur cap-citoyen.fr, vous écoutez des réponses modèles et vous vous entraînez quand vous voulez."
+        subtitle="Sur cap-citoyen.fr : assistant IA démarches, coaching personnalisé après chaque quiz, explications IA et messagerie avec la communauté."
       />
 
       <FAQ items={faqItems} />

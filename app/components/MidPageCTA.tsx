@@ -16,11 +16,11 @@ export default function MidPageCTA({
     <section className="container-prose mt-10 sm:mt-12">
       <div className="flex flex-col items-center gap-2 text-center">
         <PrimaryCTAButton
-          label={label ?? "Quiz, audio et mode scroll"}
+          label={label ?? "Obtenir mon coaching IA gratuit"}
           className="w-full max-w-xs"
         />
         <p className="text-xs text-slate-500">
-          {caption ?? "La préparation complète sur cap-citoyen.fr"}
+          {caption ?? "Quiz, coaching IA personnalisé et assistant démarches sur cap-citoyen.fr"}
         </p>
       </div>
     </section>

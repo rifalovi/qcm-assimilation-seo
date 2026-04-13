@@ -64,7 +64,7 @@ export default function StickyMobileCTA() {
             Sur cap-citoyen.fr
           </span>
           <span className="flex items-center gap-1.5">
-            Quiz, audio et mode scroll
+            Quiz, coaching IA et assistant démarches
             <span aria-hidden className="transition group-hover:translate-x-0.5">
               →
             </span>

@@ -8,7 +8,7 @@ import { breadcrumbJsonLd, SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title: "Contact : écrire à QCM Assimilation",
   description:
-    "Contactez l'équipe de QCM Assimilation : suggestion, signalement d'erreur, demande de partenariat. On lit tous les messages.",
+    "Contactez QCM Assimilation : suggestion, signalement d'erreur, partenariat. Découvrez aussi l'assistant IA naturalisation, le coach examen civique et l'aide démarches titre de séjour.",
   alternates: { canonical: "/contact/" },
 };
 
@@ -77,10 +77,42 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* App mobile */}
+      <section className="container-prose mt-10 sm:mt-14">
+        <div className="flex flex-col items-center gap-4 rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-6 text-center shadow-[0_18px_45px_rgba(2,8,23,0.4)] sm:p-8">
+          <h2 className="text-lg font-bold text-white sm:text-xl">
+            Cap Citoyen sur mobile
+          </h2>
+          <p className="max-w-md text-sm text-slate-300">
+            Révisez partout avec l'app Cap Citoyen : quiz, coaching IA, assistant
+            démarches et messagerie communautaire dans votre poche.
+          </p>
+          <a
+            href="https://play.google.com/store/apps/details?id=fr.capcitoyen.app"
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center gap-3 rounded-xl border border-white/10 bg-black px-5 py-3 text-white transition hover:bg-white/10"
+          >
+            <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current" aria-hidden>
+              <path d="M3.61 1.814L13.793 12 3.61 22.186a2.376 2.376 0 0 1-.61-1.6V3.414c0-.605.222-1.16.61-1.6Zm.96-.77L15.5 7.382l-2.86 2.858L4.57 1.044ZM16.397 8l3.102 1.792a1.88 1.88 0 0 1 0 3.416L16.397 15l-3.15-3.15L16.397 8ZM4.57 22.956l8.07-9.196 2.86 2.858L4.57 22.956Z" />
+            </svg>
+            <span className="flex flex-col items-start leading-tight">
+              <span className="text-[10px] uppercase tracking-wider text-slate-400">
+                Télécharger sur
+              </span>
+              <span className="text-sm font-bold">Google Play</span>
+            </span>
+          </a>
+          <p className="text-xs text-slate-500">
+            App Store bientôt disponible
+          </p>
+        </div>
+      </section>
+
       <CTA
-        variant="quiz"
-        title="Plus rapide qu'un email : testez-vous"
-        subtitle="Sur cap-citoyen.fr, vous accédez au quiz, à l'audio et au mode scroll en quelques secondes."
+        variant="assistant"
+        title="Plus rapide qu'un email : posez votre question à l'IA"
+        subtitle="L'assistant IA répond instantanément à vos questions sur la naturalisation, le titre de séjour et l'examen civique."
       />
     </>
   );

@@ -15,7 +15,7 @@ import { breadcrumbJsonLd, faqJsonLd, quizJsonLd, SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title: "Simulation d'examen de naturalisation française 2026",
   description:
-    "Simulation d'entraînement pour l'examen civique 2026 et l'entretien de naturalisation : 20 questions tirées du Livret du citoyen, score immédiat, corrigés détaillés sur cap-citoyen.fr.",
+    "Simulation examen civique 2026 et naturalisation : 20 questions, score immédiat, corrigés détaillés. Assistant IA naturalisation, coach examen civique personnalisé et aide démarches titre de séjour.",
   alternates: { canonical: "/simulation-examen-naturalisation/" },
 };
 
@@ -102,7 +102,7 @@ export default function SimulationPage() {
         title="Entraînez-vous avant l'examen ou l'entretien"
         highlight="avant"
         subtitle="20 questions tirées du Livret du citoyen, score à la fin et corrigés détaillés. Valable pour l'examen civique 2026 comme pour l'entretien de naturalisation."
-        ctaLabel="Découvrir quiz, audio et mode scroll"
+        ctaLabel="Accéder au quiz, à l'assistant IA et au coaching personnalisé"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
 
@@ -163,7 +163,7 @@ export default function SimulationPage() {
       <CTA
         variant="quiz"
         title="Prêt à vous lancer ?"
-        subtitle="Simulation d'entraînement sur cap-citoyen.fr, score à la fin, corrigés détaillés."
+        subtitle="Simulation sur cap-citoyen.fr avec coaching IA personnalisé, explications après chaque erreur et assistant démarches."
       />
 
       <FAQ items={faqItems} />

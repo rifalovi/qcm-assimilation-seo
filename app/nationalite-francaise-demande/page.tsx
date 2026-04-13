@@ -10,7 +10,7 @@ import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title: "Demande de nationalité française : démarches 2026",
   description:
-    "Le guide complet pour demander la nationalité française : conditions, pièces à fournir, étapes, délais. Préparez votre dossier sereinement.",
+    "Demande de nationalité française : conditions, pièces, étapes, délais. Préparez votre dossier avec l'assistant IA naturalisation, le coach examen civique et l'aide démarches titre de séjour.",
   alternates: { canonical: "/nationalite-francaise-demande/" },
 };
 
@@ -82,7 +82,7 @@ export default function DemandeNationalitePage() {
         title="Demande de nationalité française : le guide"
         highlight="nationalité française"
         subtitle="Conditions, pièces à fournir, étapes, délais, recours : ce qu'il faut savoir pour monter votre dossier sans vous tromper."
-        ctaLabel="Découvrir quiz, audio et mode scroll"
+        ctaLabel="Poser ma question à l'assistant démarches"
       />
 
       <section className="container-prose mt-8">
@@ -145,9 +145,9 @@ export default function DemandeNationalitePage() {
       </section>
 
       <CTA
-        variant="register"
-        title="Préparez l'entretien sereinement"
-        subtitle="Avec QCM Assimilation et cap-citoyen.fr, vous arrivez en préfecture avec une longueur d'avance."
+        variant="assistant"
+        title="Besoin d'aide pour vos démarches ?"
+        subtitle="L'assistant IA répond à vos questions sur la naturalisation, le titre de séjour et l'examen civique. Coaching personnalisé et messagerie communautaire inclus."
       />
 
       <FAQ items={faqItems} />

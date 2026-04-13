@@ -13,7 +13,7 @@ import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title: "Histoire de France pour la naturalisation : dates clés et événements",
   description:
-    "Toute l'histoire de France à connaître pour la naturalisation : Révolution 1789, Républiques successives, guerres mondiales, Ve République. Frise et QCM.",
+    "Histoire de France pour la naturalisation : Révolution 1789, Républiques, guerres mondiales, Ve République. Frise, QCM, assistant IA naturalisation, coach examen civique et aide démarches titre de séjour.",
   alternates: { canonical: "/histoire-france-naturalisation/" },
 };
 
@@ -83,7 +83,7 @@ export default function HistoirePage() {
         title="Histoire de France pour la naturalisation"
         highlight="Histoire de France"
         subtitle="Une frise claire, 17 dates à retenir, et les questions du QCM qui vont avec."
-        ctaLabel="Découvrir quiz, audio et mode scroll"
+        ctaLabel="Accéder au quiz, à l'assistant IA et au coaching personnalisé"
         ctaHref="https://cap-citoyen.fr/audio"
       />
 
@@ -130,7 +130,7 @@ export default function HistoirePage() {
       <CTA
         variant="audio"
         title="L'histoire, lue à voix haute"
-        subtitle="Toutes les fiches du Livret du citoyen en audio. À écouter quand vous voulez."
+        subtitle="Fiches audio, coaching IA personnalisé après chaque quiz, assistant démarches et messagerie communautaire sur cap-citoyen.fr."
       />
 
       <FAQ items={faqItems} />

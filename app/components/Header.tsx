@@ -79,7 +79,7 @@ export default function Header() {
           rel="noopener"
           className="hidden lg:inline-flex items-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 px-4 py-2 text-sm font-bold text-white shadow-[0_8px_22px_rgba(37,99,235,0.4)] transition hover:brightness-110 active:scale-[0.98]"
         >
-          Quiz, audio et scroll
+          Quiz et assistant IA
           <span aria-hidden>→</span>
         </a>
 
@@ -152,7 +152,7 @@ export default function Header() {
               onClick={() => setOpen(false)}
               className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 px-5 py-3.5 text-base font-bold text-white shadow-[0_12px_32px_rgba(37,99,235,0.45)] transition hover:brightness-110 active:scale-[0.98]"
             >
-              Quiz, audio et mode scroll
+              Quiz, assistant IA et coaching personnalisé
               <span aria-hidden>→</span>
             </a>
           </nav>

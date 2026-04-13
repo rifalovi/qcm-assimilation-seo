@@ -1,4 +1,4 @@
-type CTAVariant = "register" | "quiz" | "audio";
+type CTAVariant = "register" | "quiz" | "audio" | "assistant";
 
 const variants: Record<
   CTAVariant,
@@ -6,18 +6,23 @@ const variants: Record<
 > = {
   register: {
     href: "https://cap-citoyen.fr/quiz",
-    label: "Découvrir quiz, audio et mode scroll",
-    sub: "Trois formats pour réviser à votre rythme",
+    label: "Accéder au quiz, à l'assistant IA et au coaching personnalisé",
+    sub: "Quiz, coaching IA, assistant démarches et messagerie communautaire",
   },
   quiz: {
     href: "https://cap-citoyen.fr/quiz",
-    label: "Quiz, audio et mode scroll",
-    sub: "Tout est là, sur cap-citoyen.fr",
+    label: "Obtenir mon coaching IA gratuit",
+    sub: "Coach personnalisé après chaque quiz, explications IA après chaque erreur",
   },
   audio: {
     href: "https://cap-citoyen.fr/audio",
-    label: "Audio, quiz et mode scroll",
-    sub: "Trois façons de réviser, un seul compte",
+    label: "Audio, quiz et coaching IA",
+    sub: "Révisez en audio, testez-vous, et progressez avec le coach IA",
+  },
+  assistant: {
+    href: "https://cap-citoyen.fr/quiz",
+    label: "Poser ma question à l'assistant démarches",
+    sub: "Assistant IA naturalisation, titre de séjour et examen civique",
   },
 };
 

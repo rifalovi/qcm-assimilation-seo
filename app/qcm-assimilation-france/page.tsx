@@ -21,7 +21,7 @@ import {
 export const metadata: Metadata = {
   title: "QCM d'assimilation 2026 : examen civique et naturalisation",
   description:
-    "Le QCM d'assimilation 2026 pour l'examen civique (titre de séjour pluriannuel) et la naturalisation : 50 questions sur les symboles, l'histoire, les institutions et les valeurs de la République.",
+    "QCM d'assimilation 2026 : 50 questions corrigées avec explications IA, assistant IA naturalisation, coach examen civique et aide démarches titre de séjour. Symboles, histoire, institutions, valeurs.",
   alternates: { canonical: "/qcm-assimilation-france/" },
 };
 
@@ -100,7 +100,7 @@ export default function QCMPage() {
         title="Le QCM d'assimilation, version complète"
         highlight="assimilation"
         subtitle="Valable pour l'examen civique obligatoire depuis 2026 et pour l'entretien de naturalisation. Cliquez sur une réponse, le corrigé apparaît tout de suite."
-        ctaLabel="Découvrir quiz, audio et mode scroll"
+        ctaLabel="Accéder au quiz, à l'assistant IA et au coaching personnalisé"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
 
@@ -159,7 +159,7 @@ export default function QCMPage() {
       <CTA
         variant="quiz"
         title="Envie d'un test chronométré ?"
-        subtitle="Lancez la simulation sur cap-citoyen.fr et voyez votre score à la fin."
+        subtitle="Simulation sur cap-citoyen.fr avec coaching IA personnalisé, explications IA après chaque erreur et assistant démarches."
       />
 
       <FAQ items={faqItems} />

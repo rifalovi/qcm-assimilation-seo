@@ -13,7 +13,7 @@ import { breadcrumbJsonLd, faqJsonLd, quizJsonLd, SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title: "Quiz culture française 2026 : littérature, art, cinéma",
   description:
-    "Testez votre culture française : littérature, peinture, cinéma, sciences. Idéal pour la naturalisation et pour les passionnés de la France.",
+    "Quiz culture française : littérature, peinture, cinéma, sciences. Coach examen civique, assistant IA naturalisation et aide démarches titre de séjour sur cap-citoyen.fr.",
   alternates: { canonical: "/culture-francaise-quiz/" },
 };
 
@@ -78,7 +78,7 @@ export default function CultureFrancaisePage() {
         title="Culture française : littérature, art, sciences"
         highlight="Culture française"
         subtitle="Testez vos connaissances sur les grands noms et les œuvres qui ont fait la France. Pour l'entretien, ou juste pour le plaisir."
-        ctaLabel="Découvrir quiz, audio et mode scroll"
+        ctaLabel="Accéder au quiz, à l'assistant IA et au coaching personnalisé"
         ctaHref="https://cap-citoyen.fr/quiz"
       />
 
@@ -127,7 +127,7 @@ export default function CultureFrancaisePage() {
       <CTA
         variant="quiz"
         title="Plus de questions sur cap-citoyen.fr"
-        subtitle="500+ questions, mode chrono, suivi de votre progression. Sans carte bancaire."
+        subtitle="500+ questions avec explications IA, coaching personnalisé après chaque quiz, assistant démarches et messagerie communautaire."
       />
 
       <FAQ items={faqItems} />

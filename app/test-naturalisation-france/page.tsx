@@ -23,7 +23,7 @@ import {
 export const metadata: Metadata = {
   title: "Test naturalisation et examen civique 2026",
   description:
-    "Préparez l'examen civique obligatoire (titre de séjour pluriannuel) et l'entretien de naturalisation : 50 questions du Livret du citoyen, corrigés détaillés, mode chrono d'entraînement sur cap-citoyen.fr.",
+    "Préparez l'examen civique et la naturalisation : 50 questions corrigées, assistant IA naturalisation, coach examen civique personnalisé et aide démarches titre de séjour sur cap-citoyen.fr.",
   alternates: { canonical: "/test-naturalisation-france/" },
 };
 
@@ -85,7 +85,7 @@ export default function TestNaturalisationPage() {
         title="Le test pour voir où vous en êtes"
         highlight="test"
         subtitle="Examen civique 2026, entretien de naturalisation, ou simple curiosité : 8 questions pour vous situer, puis la préparation complète sur cap-citoyen.fr."
-        ctaLabel="Découvrir quiz, audio et mode scroll"
+        ctaLabel="Accéder au quiz, à l'assistant IA et au coaching personnalisé"
         ctaHref="https://cap-citoyen.fr/quiz"
         secondaryHref="/livret-du-citoyen-questions/"
         secondaryLabel="Réviser le Livret"
@@ -152,19 +152,19 @@ export default function TestNaturalisationPage() {
       <CTA
         variant="quiz"
         title="Prêt pour le test complet ?"
-        subtitle="Lancez le test chronométré sur cap-citoyen.fr et recevez votre score à la fin."
+        subtitle="Lancez le test sur cap-citoyen.fr avec coaching IA personnalisé, explications après chaque erreur et score détaillé."
       />
 
       <section className="container-prose">
         <SectionTitle
           title="Pour aller plus loin"
-          description="Mélangez les formats : c'est ce qui marche le mieux."
+          description="Mélangez les formats et profitez de l'assistant IA démarches, du coach IA personnalisé et de la messagerie communautaire sur cap-citoyen.fr."
         />
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {[
-            { href: "/qcm-assimilation-france/", t: "QCM d'assimilation", d: "Les 50 questions complètes." },
-            { href: "/livret-du-citoyen-questions/", t: "Livret du citoyen", d: "Toutes les fiches à réviser." },
-            { href: "/simulation-examen-naturalisation/", t: "Simulation d'examen", d: "Mode chrono d'entraînement, sur cap-citoyen.fr." },
+            { href: "/qcm-assimilation-france/", t: "QCM d'assimilation", d: "50 questions avec explications IA après chaque erreur." },
+            { href: "/livret-du-citoyen-questions/", t: "Livret du citoyen", d: "Fiches à réviser + coaching IA personnalisé." },
+            { href: "/simulation-examen-naturalisation/", t: "Simulation d'examen", d: "Mode chrono, coaching IA et assistant démarches sur cap-citoyen.fr." },
           ].map((c) => (
             <Link
               key={c.href}

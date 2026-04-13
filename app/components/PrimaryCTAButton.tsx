@@ -10,7 +10,7 @@ type Props = {
  * sache se cacher quand ce bouton est dans le viewport.
  */
 export default function PrimaryCTAButton({
-  label = "Quiz, audio et mode scroll",
+  label = "Accéder au quiz, à l'assistant IA et au coaching",
   href = "https://cap-citoyen.fr/quiz",
   className = "",
 }: Props) {

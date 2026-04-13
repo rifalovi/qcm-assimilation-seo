@@ -12,7 +12,7 @@ import { breadcrumbJsonLd, faqJsonLd, SITE_URL } from "../lib/site";
 export const metadata: Metadata = {
   title: "Valeurs de la République française : Liberté, Égalité, Fraternité, Laïcité",
   description:
-    "Comprendre les valeurs de la République française : liberté, égalité, fraternité, laïcité, démocratie. Au cœur de l'entretien de naturalisation.",
+    "Valeurs de la République : liberté, égalité, fraternité, laïcité, démocratie. Préparez la naturalisation avec un assistant IA naturalisation, coach examen civique et aide démarches titre de séjour.",
   alternates: { canonical: "/valeurs-republique-francaise/" },
 };
 
@@ -94,7 +94,7 @@ export default function ValeursPage() {
         title="Les valeurs de la République, en clair"
         highlight="valeurs"
         subtitle="Liberté, Égalité, Fraternité, Laïcité : ce que ces mots veulent dire concrètement, et pourquoi ils reviennent toujours en entretien."
-        ctaLabel="Découvrir quiz, audio et mode scroll"
+        ctaLabel="Accéder au quiz, à l'assistant IA et au coaching personnalisé"
       />
 
       <section className="container-prose mt-8">
@@ -134,7 +134,7 @@ export default function ValeursPage() {
       <CTA
         variant="register"
         title="Préparez l'entretien sereinement"
-        subtitle="Inscription rapide sur cap-citoyen.fr : accès aux fiches et au mode audio."
+        subtitle="Sur cap-citoyen.fr : assistant IA démarches, coaching IA personnalisé, explications après chaque erreur et messagerie communautaire."
       />
 
       <FAQ items={faqItems} />

@@ -16,7 +16,7 @@ import { faqJsonLd, organizationJsonLd, websiteJsonLd } from "./lib/site";
 export const metadata: Metadata = {
   title: "QCM Assimilation : examen civique, naturalisation, culture française 2026",
   description:
-    "Préparez l'examen civique obligatoire (titre de séjour pluriannuel), l'entretien de naturalisation ou enrichissez votre connaissance de la France. 500+ questions corrigées, mises à jour 2026.",
+    "Préparez l'examen civique et la naturalisation avec un assistant IA naturalisation, un coach examen civique personnalisé et une aide démarches titre de séjour. 500+ questions corrigées, mises à jour 2026.",
   alternates: { canonical: "/" },
 };
 
@@ -39,7 +39,7 @@ const faqItems = [
   {
     question: "Faut-il payer pour s'entraîner ici ?",
     answer:
-      "Non, vous pouvez parcourir ce site librement. Pour la préparation complète (quiz, audio, mode scroll, suivi de progression, fiches imprimables), rendez-vous sur cap-citoyen.fr.",
+      "Non, vous pouvez parcourir ce site librement. Pour la préparation complète (quiz, assistant IA démarches, coach IA personnalisé après chaque quiz, explications IA après chaque erreur, messagerie communautaire, audio, suivi de progression), rendez-vous sur cap-citoyen.fr.",
   },
   {
     question: "À qui s'adresse ce site ?",
@@ -134,7 +134,7 @@ export default function HomePage() {
         highlight="les bonnes questions"
         subtitle="Examen civique obligatoire depuis le 1er janvier 2026, entretien de naturalisation, ou simple envie de mieux connaître la France : un même socle de révision, trois publics."
         ctaHref="https://cap-citoyen.fr/quiz"
-        ctaLabel="Découvrir quiz, audio et mode scroll"
+        ctaLabel="Accéder au quiz, à l'assistant IA et au coaching personnalisé"
         secondaryHref="/qcm-assimilation-france/"
         secondaryLabel="Voir le QCM"
       />
@@ -142,6 +142,71 @@ export default function HomePage() {
       <CivicExamFacts />
 
       <Differentiator />
+
+      {/* Pourquoi Cap Citoyen ? */}
+      <section className="container-prose mt-10 sm:mt-14">
+        <SectionTitle
+          eyebrow="Nouveau"
+          title="Pourquoi Cap Citoyen ?"
+          description="Quatre fonctionnalités IA qui changent la donne pour votre préparation."
+        />
+        <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            {
+              icon: "🤖",
+              title: "Assistant IA démarches",
+              description:
+                "Posez vos questions sur la naturalisation, le titre de séjour ou l'examen civique. L'IA vous répond instantanément.",
+            },
+            {
+              icon: "🎯",
+              title: "Coach IA personnalisé",
+              description:
+                "Après chaque quiz, le coach IA analyse vos résultats et vous guide sur ce qu'il faut réviser en priorité.",
+            },
+            {
+              icon: "💡",
+              title: "Explications IA",
+              description:
+                "Chaque mauvaise réponse déclenche une explication IA claire et pédagogique pour comprendre, pas juste retenir.",
+            },
+            {
+              icon: "💬",
+              title: "Messagerie communautaire",
+              description:
+                "Échangez avec d'autres candidats en temps réel. Partagez vos conseils, vos retours d'expérience et vos questions.",
+            },
+          ].map((f) => (
+            <div
+              key={f.title}
+              className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 shadow-[0_18px_45px_rgba(2,8,23,0.3)] transition hover:border-blue-400/20 sm:p-5"
+            >
+              <span
+                aria-hidden
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-blue-400/30 bg-blue-500/15 text-xl"
+              >
+                {f.icon}
+              </span>
+              <h3 className="mt-3 text-sm font-bold text-white sm:text-[15px]">
+                {f.title}
+              </h3>
+              <p className="mt-1.5 text-[13px] leading-relaxed text-slate-400">
+                {f.description}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-6 text-center">
+          <a
+            href="https://cap-citoyen.fr/quiz"
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center gap-2 text-sm font-bold text-blue-300 transition hover:text-blue-200"
+          >
+            Découvrir Cap Citoyen gratuitement <span aria-hidden>→</span>
+          </a>
+        </div>
+      </section>
 
       {/* Audiences */}
       <section className="container-prose mt-6 sm:mt-8">
@@ -239,7 +304,7 @@ export default function HomePage() {
       <CTA
         variant="register"
         title="On vous accompagne jusqu'au bout"
-        subtitle="Compte cap-citoyen.fr, progression sauvegardée, accès aux fiches. Pas de carte bancaire."
+        subtitle="Assistant IA démarches, coaching personnalisé après chaque quiz, explications IA et messagerie communautaire. Sans carte bancaire."
       />
 
       <FAQ items={faqItems} />
