@@ -1,10 +1,5 @@
 import PrimaryCTAButton from "./PrimaryCTAButton";
 
-/**
- * CTA centré « milieu de page », posé entre deux sections de contenu.
- * Compact, sans habillage de carte, pour ne pas concurrencer la
- * grande section CTA de bas de page.
- */
 export default function MidPageCTA({
   label,
   caption,
@@ -19,7 +14,7 @@ export default function MidPageCTA({
           label={label ?? "Obtenir mon coaching IA gratuit"}
           className="w-full max-w-xs"
         />
-        <p className="text-xs text-slate-500">
+        <p className="text-xs" style={{ color: "var(--cc-text-muted)" }}>
           {caption ?? "Quiz, coaching IA personnalisé et assistant démarches sur cap-citoyen.fr"}
         </p>
       </div>

@@ -101,15 +101,15 @@ export default function TestNaturalisationPage() {
       <Differentiator />
 
       <section className="container-prose mt-8">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">Pourquoi un test à blanc, ça change tout</h2>
-          <p className="mt-4 text-slate-300">
+        <div className="prose max-w-none">
+          <h2 className="text-lg font-bold sm:text-xl">Pourquoi un test à blanc, ça change tout</h2>
+          <p className="mt-4 text-[var(--cc-text-muted)]">
             L'entretien d'assimilation, ça stresse. Faire le test plusieurs fois
             avant le jour J est la meilleure façon de relâcher la pression : vous
             voyez vos points faibles, vous fixez les bonnes réponses, et vous
             arrivez détendu en face de l'agent.
           </p>
-          <p className="mt-3 text-slate-300">
+          <p className="mt-3 text-[var(--cc-text-muted)]">
             Le test couvre les sept gros thèmes du Livret du citoyen : symboles,
             histoire, institutions, valeurs, vie quotidienne, culture, géographie.
             Chaque question est suivie d'une explication courte pour comprendre,
@@ -124,10 +124,10 @@ export default function TestNaturalisationPage() {
           { n: "02", t: "Mode chrono d'entraînement", d: "Disponible sur cap-citoyen.fr pour vous mettre en condition." },
           { n: "03", t: "Score et suivi", d: "Vous voyez vos points faibles, vous savez quoi réviser." },
         ].map((s) => (
-          <div key={s.n} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
-            <span className="text-xs font-bold text-blue-400">{s.n}</span>
-            <h3 className="mt-2 text-lg font-semibold text-white">{s.t}</h3>
-            <p className="mt-2 text-sm text-slate-400">{s.d}</p>
+          <div key={s.n} className="cc-card p-4 sm:p-5">
+            <span className="text-xs font-bold text-[var(--cc-primary)]">{s.n}</span>
+            <h3 className="mt-2 text-lg font-semibold">{s.t}</h3>
+            <p className="mt-2 text-sm text-[var(--cc-text-muted)]">{s.d}</p>
           </div>
         ))}
       </section>
@@ -169,10 +169,10 @@ export default function TestNaturalisationPage() {
             <Link
               key={c.href}
               href={c.href}
-              className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.3)] hover:border-blue-700/60"
+              className="cc-card p-4 sm:p-5 hover:border-blue-700/60"
             >
-              <h3 className="text-base font-semibold text-white">{c.t}</h3>
-              <p className="mt-2 text-sm text-slate-400">{c.d}</p>
+              <h3 className="text-base font-semibold">{c.t}</h3>
+              <p className="mt-2 text-sm text-[var(--cc-text-muted)]">{c.d}</p>
             </Link>
           ))}
         </div>

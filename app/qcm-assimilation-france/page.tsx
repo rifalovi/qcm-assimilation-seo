@@ -64,13 +64,13 @@ const grouped = {
 };
 
 const sectionMeta: Record<keyof typeof grouped, { label: string; color: string }> = {
-  symboles: { label: "Symboles de la République", color: "text-blue-300" },
-  histoire: { label: "Histoire de France", color: "text-red-300" },
-  institutions: { label: "Institutions", color: "text-blue-300" },
-  valeurs: { label: "Valeurs de la République", color: "text-slate-200" },
-  geographie: { label: "Géographie", color: "text-blue-300" },
-  culture: { label: "Culture française", color: "text-red-300" },
-  vie: { label: "Vie quotidienne", color: "text-slate-200" },
+  symboles: { label: "Symboles de la République", color: "text-[var(--cc-primary)]" },
+  histoire: { label: "Histoire de France", color: "text-[var(--cc-danger)]" },
+  institutions: { label: "Institutions", color: "text-[var(--cc-primary)]" },
+  valeurs: { label: "Valeurs de la République", color: "text-[var(--cc-text)]" },
+  geographie: { label: "Géographie", color: "text-[var(--cc-primary)]" },
+  culture: { label: "Culture française", color: "text-[var(--cc-danger)]" },
+  vie: { label: "Vie quotidienne", color: "text-[var(--cc-text)]" },
 };
 
 export default function QCMPage() {
@@ -114,14 +114,14 @@ export default function QCMPage() {
       <Differentiator />
 
       <section className="container-prose mt-8">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">À quoi ça sert ?</h2>
-          <p className="mt-4 text-slate-300">
+        <div className="prose max-w-none">
+          <h2 className="text-lg font-bold sm:text-xl">À quoi ça sert ?</h2>
+          <p className="mt-4 text-[var(--cc-text-muted)]">
             À réviser avant l'entretien, que ce soit pour la naturalisation, un
             titre de séjour pluriannuel, ou par simple curiosité. Les 50 questions
             ci-dessous sont toutes corrigées et expliquées en quelques mots.
           </p>
-          <p className="mt-3 text-slate-300">
+          <p className="mt-3 text-[var(--cc-text-muted)]">
             Faites-les dans l'ordre, ou directement par thème. L'objectif : répondre
             à 80 % des questions sans hésiter.
           </p>
@@ -139,9 +139,9 @@ export default function QCMPage() {
                 <p className={`text-xs font-bold uppercase tracking-wider ${meta.color}`}>
                   Thème
                 </p>
-                <h2 className="mt-1 text-lg font-bold text-white sm:text-xl">{meta.label}</h2>
+                <h2 className="mt-1 text-lg font-bold sm:text-xl">{meta.label}</h2>
               </div>
-              <span className="text-sm text-slate-500">{list.length} questions</span>
+              <span className="text-sm text-[var(--cc-text-disabled)]">{list.length} questions</span>
             </header>
             <div className="mt-6 grid gap-4 md:grid-cols-2">
               {list.map((q, i) => (

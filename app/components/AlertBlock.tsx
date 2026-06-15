@@ -7,18 +7,34 @@ export default function AlertBlock({
 }) {
   return (
     <section className="container-prose mt-6 sm:mt-8">
-      <div className="flex items-start gap-3 rounded-2xl border border-amber-400/30 bg-gradient-to-br from-amber-500/10 to-orange-500/5 p-4 shadow-[0_18px_45px_rgba(245,158,11,0.15)] sm:gap-4 sm:p-5">
+      <div
+        className="flex items-start gap-3 rounded-2xl p-4 sm:gap-4 sm:p-5"
+        style={{
+          border: "1px solid var(--cc-warning)",
+          background: "var(--cc-warning-soft)",
+        }}
+      >
         <span
           aria-hidden
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-amber-400/30 bg-amber-500/15 text-lg"
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-lg"
+          style={{
+            border: "1px solid var(--cc-warning)",
+            background: "var(--cc-surface)",
+          }}
         >
           ⚠️
         </span>
         <div>
-          <h2 className="text-sm font-bold text-amber-100 sm:text-base">
+          <h2
+            className="text-sm font-bold sm:text-base"
+            style={{ color: "var(--cc-text)" }}
+          >
             {title}
           </h2>
-          <p className="mt-1.5 text-sm leading-relaxed text-amber-50/80 text-justify hyphens-auto">
+          <p
+            className="mt-1.5 text-sm leading-relaxed text-justify hyphens-auto"
+            style={{ color: "var(--cc-text-muted)" }}
+          >
             {message}
           </p>
         </div>

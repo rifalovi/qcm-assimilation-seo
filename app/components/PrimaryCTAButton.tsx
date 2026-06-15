@@ -4,11 +4,6 @@ type Props = {
   className?: string;
 };
 
-/**
- * Bouton CTA principal réutilisable.
- * Marqué avec data-primary-cta pour que la barre sticky mobile
- * sache se cacher quand ce bouton est dans le viewport.
- */
 export default function PrimaryCTAButton({
   label = "Accéder au quiz, à l'assistant IA et au coaching",
   href = "https://cap-citoyen.fr/quiz",
@@ -20,15 +15,10 @@ export default function PrimaryCTAButton({
       target="_blank"
       rel="noopener"
       data-primary-cta=""
-      className={
-        "group inline-flex items-center justify-center gap-2.5 rounded-2xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 px-6 py-3.5 text-sm font-bold text-white shadow-[0_12px_32px_rgba(37,99,235,0.4)] transition hover:brightness-110 active:scale-[0.98] sm:text-base " +
-        className
-      }
+      className={`cc-btn cc-btn-primary cc-btn-lg ${className}`}
     >
       {label}
-      <span aria-hidden className="transition group-hover:translate-x-0.5">
-        →
-      </span>
+      <span aria-hidden>→</span>
     </a>
   );
 }

@@ -116,9 +116,9 @@ export default function SimulationPage() {
       <Differentiator />
 
       <section className="container-prose mt-8">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">Comment ça se passe le jour J</h2>
-          <p className="mt-4 text-slate-300">
+        <div className="prose max-w-none">
+          <h2 className="text-lg font-bold sm:text-xl">Comment ça se passe le jour J</h2>
+          <p className="mt-4 text-[var(--cc-text-muted)]">
             L'entretien se déroule en préfecture, dans un bureau, en face-à-face
             avec un agent. Il dure 30 minutes à 1 heure et passe par quatre
             grandes étapes. Notre simulation reproduit la troisième, celle qui
@@ -129,10 +129,10 @@ export default function SimulationPage() {
 
       <section className="container-prose mt-6 sm:mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {steps.map((s) => (
-          <div key={s.n} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]">
-            <span className="text-xs font-bold text-blue-400">Étape {s.n}</span>
-            <h3 className="mt-2 text-lg font-semibold text-white">{s.title}</h3>
-            <p className="mt-2 text-sm text-slate-400">{s.description}</p>
+          <div key={s.n} className="cc-card p-4 sm:p-5">
+            <span className="text-xs font-bold text-[var(--cc-primary)]">Étape {s.n}</span>
+            <h3 className="mt-2 text-lg font-semibold">{s.title}</h3>
+            <p className="mt-2 text-sm text-[var(--cc-text-muted)]">{s.description}</p>
           </div>
         ))}
       </section>
@@ -150,9 +150,9 @@ export default function SimulationPage() {
             { t: "Voir vos points faibles", d: "Le score détaillé vous dit exactement quoi réviser." },
             { t: "Gagner en aisance", d: "Vous apprenez à formuler des réponses claires et naturelles." },
           ].map((c) => (
-            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
-              <h3 className="text-base font-semibold text-white">{c.t}</h3>
-              <p className="mt-2 text-sm text-slate-400">{c.d}</p>
+            <div key={c.t} className="cc-card p-4 sm:p-5">
+              <h3 className="text-base font-semibold">{c.t}</h3>
+              <p className="mt-2 text-sm text-[var(--cc-text-muted)]">{c.d}</p>
             </div>
           ))}
         </div>

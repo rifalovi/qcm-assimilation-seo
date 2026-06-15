@@ -98,9 +98,9 @@ export default function ValeursPage() {
       />
 
       <section className="container-prose mt-8">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">Pourquoi les valeurs comptent autant</h2>
-          <p className="mt-4 text-slate-300">
+        <div className="prose max-w-none">
+          <h2 className="text-lg font-bold sm:text-xl">Pourquoi les valeurs comptent autant</h2>
+          <p className="mt-4 text-[var(--cc-text-muted)]">
             Devenir Français, c'est adhérer à un projet collectif. Ces valeurs ne
             sont pas des slogans : elles structurent les lois, l'école, la justice
             et la vie de tous les jours. L'agent vérifiera que vous les comprenez
@@ -112,8 +112,8 @@ export default function ValeursPage() {
       <section className="container-prose mt-6 sm:mt-8 grid gap-5 md:grid-cols-2">
         {principes.map((p) => (
           <div key={p.title} className={`rounded-2xl border p-4 sm:p-5 ${p.color}`}>
-            <h3 className="text-lg font-bold text-white sm:text-xl">{p.title}</h3>
-            <p className="mt-2 text-sm text-slate-200">{p.description}</p>
+            <h3 className="text-lg font-bold sm:text-xl">{p.title}</h3>
+            <p className="mt-2 text-sm">{p.description}</p>
           </div>
         ))}
       </section>

@@ -39,22 +39,26 @@ export default function CTA({
 
   return (
     <section className="container-prose mt-10 sm:mt-14">
-      <div className="relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-gradient-to-br from-slate-900/95 via-slate-900/92 to-slate-800/92 px-5 py-7 shadow-[0_25px_70px_rgba(2,8,23,0.42)] backdrop-blur-xl sm:rounded-[2rem] sm:px-8 sm:py-9">
+      <div
+        className="relative overflow-hidden rounded-[1.6rem] px-5 py-7 sm:rounded-[2rem] sm:px-8 sm:py-9"
+        style={{
+          border: "1px solid var(--cc-border)",
+          background: "var(--cc-primary-soft)",
+          boxShadow: "var(--cc-shadow-lg)",
+        }}
+      >
         <div className="absolute inset-x-0 top-0 h-0.5 gradient-tricolore" aria-hidden />
-        <div
-          className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-blue-600/20 blur-3xl"
-          aria-hidden
-        />
-        <div
-          className="pointer-events-none absolute -bottom-16 -left-16 h-48 w-48 rounded-full bg-red-600/15 blur-3xl"
-          aria-hidden
-        />
-
         <div className="relative text-center">
-          <h2 className="mx-auto max-w-xl text-xl font-extrabold leading-tight tracking-tight text-white sm:text-2xl lg:text-3xl">
+          <h2
+            className="mx-auto max-w-xl text-xl font-extrabold leading-tight tracking-tight sm:text-2xl lg:text-3xl"
+            style={{ color: "var(--cc-text)" }}
+          >
             {title ?? "Prêt à réussir votre entretien d'assimilation ?"}
           </h2>
-          <p className="mx-auto mt-3 max-w-lg text-sm leading-relaxed text-slate-400 sm:text-base">
+          <p
+            className="mx-auto mt-3 max-w-lg text-sm leading-relaxed sm:text-base"
+            style={{ color: "var(--cc-text-muted)" }}
+          >
             {subtitle ??
               "Inscription en 30 secondes. Testez votre niveau, suivez votre progression et accédez aux fiches du Livret du citoyen."}
           </p>
@@ -63,12 +67,12 @@ export default function CTA({
             target="_blank"
             rel="noopener"
             data-primary-cta=""
-            className="mx-auto mt-6 inline-flex w-full max-w-xs items-center justify-center gap-2.5 rounded-2xl border border-blue-400/30 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 px-6 py-3.5 text-sm font-bold text-white shadow-[0_12px_32px_rgba(37,99,235,0.4)] transition hover:brightness-110 active:scale-[0.98] sm:text-base"
+            className="cc-btn cc-btn-primary cc-btn-lg mx-auto mt-6 w-full max-w-xs"
           >
             {v.label}
             <span aria-hidden>→</span>
           </a>
-          <p className="mt-3 text-xs text-slate-500">{v.sub}</p>
+          <p className="mt-3 text-xs" style={{ color: "var(--cc-text-muted)" }}>{v.sub}</p>
         </div>
       </div>
     </section>

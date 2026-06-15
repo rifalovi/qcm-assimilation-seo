@@ -41,7 +41,10 @@ const sections: { title: string; links: FooterLink[] }[] = [
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-white/5 bg-slate-950 pb-24 sm:mt-20 lg:pb-0">
+    <footer
+      className="mt-16 pb-24 sm:mt-20 lg:pb-0"
+      style={{ borderTop: "1px solid var(--cc-border)", background: "var(--cc-surface-alt)" }}
+    >
       <div className="h-0.5 gradient-tricolore" aria-hidden />
       <div className="container-prose py-10 sm:py-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
@@ -49,20 +52,23 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2.5">
               <span
                 aria-hidden
-                className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-gradient-to-br from-blue-600 via-indigo-600 to-sky-500 text-sm font-black text-white shadow-[0_8px_24px_rgba(37,99,235,0.45)]"
+                className="flex h-9 w-9 items-center justify-center rounded-xl text-sm font-black text-white"
+                style={{ background: "var(--cc-primary)" }}
               >
                 Qa
               </span>
-              <span className="text-base font-bold text-white">QCM Assimilation</span>
+              <span className="text-base font-bold" style={{ color: "var(--cc-text)" }}>
+                QCM Assimilation
+              </span>
             </Link>
-            <p className="mt-4 text-sm leading-relaxed text-slate-400">
+            <p className="mt-4 text-sm leading-relaxed" style={{ color: "var(--cc-text-muted)" }}>
               Préparer l'examen civique, la naturalisation et mieux connaître la France.
             </p>
             <a
               href="https://cap-citoyen.fr/register"
               target="_blank"
               rel="noopener"
-              className="mt-5 inline-flex items-center gap-1.5 rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-blue-300 transition hover:bg-blue-500/20"
+              className="cc-badge cc-badge-info mt-5 inline-flex font-bold uppercase tracking-widest"
             >
               cap-citoyen.fr →
             </a>
@@ -70,10 +76,13 @@ export default function Footer() {
 
           {sections.map((section) => (
             <div key={section.title}>
-              <h3 className="text-xs font-bold uppercase tracking-widest text-blue-300">
+              <h3
+                className="text-xs font-bold uppercase tracking-widest"
+                style={{ color: "var(--cc-primary)" }}
+              >
                 {section.title}
               </h3>
-              <ul className="mt-5 space-y-3 text-sm text-slate-400">
+              <ul className="mt-5 space-y-3 text-sm">
                 {section.links.map((link) =>
                   link.external ? (
                     <li key={link.href}>
@@ -81,14 +90,14 @@ export default function Footer() {
                         href={link.href}
                         target="_blank"
                         rel="noopener"
-                        className="transition hover:text-white"
+                        className="cc-link-muted transition"
                       >
                         {link.label}
                       </a>
                     </li>
                   ) : (
                     <li key={link.href}>
-                      <Link href={link.href} className="transition hover:text-white">
+                      <Link href={link.href} className="cc-link-muted transition">
                         {link.label}
                       </Link>
                     </li>
@@ -99,7 +108,10 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-white/5 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center">
+        <div
+          className="mt-10 flex flex-col items-start justify-between gap-4 pt-6 text-xs sm:flex-row sm:items-center"
+          style={{ borderTop: "1px solid var(--cc-border)", color: "var(--cc-text-disabled)" }}
+        >
           <p>
             © {new Date().getFullYear()} QCM Assimilation. Site indépendant, sans
             lien officiel avec l'État français.
@@ -110,7 +122,7 @@ export default function Footer() {
               href="https://cap-citoyen.fr"
               target="_blank"
               rel="noopener"
-              className="font-semibold text-blue-400 hover:text-blue-300"
+              className="cc-link-primary font-semibold"
             >
               cap-citoyen.fr
             </a>

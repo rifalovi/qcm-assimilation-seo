@@ -84,19 +84,19 @@ const audiences = [
 
 const accentMap = {
   bleu: {
-    border: "hover:border-blue-400/30",
-    bar: "from-blue-500 to-indigo-500",
-    iconBg: "border-blue-400/30 bg-blue-500/15 text-blue-300",
+    border: "hover:border-[var(--cc-primary)]",
+    bar: "from-[var(--cc-primary)] to-[var(--cc-primary-hover)]",
+    iconBg: "border-[var(--cc-border)] bg-[var(--cc-primary-soft)] text-[var(--cc-primary)]",
   },
   blanc: {
-    border: "hover:border-white/30",
-    bar: "from-slate-200 to-slate-400",
-    iconBg: "border-white/20 bg-white/10 text-slate-100",
+    border: "hover:border-[var(--cc-border-strong)]",
+    bar: "from-[var(--cc-border)] to-[var(--cc-border-strong)]",
+    iconBg: "border-[var(--cc-border)] bg-[var(--cc-surface-alt)] text-[var(--cc-text-muted)]",
   },
   rouge: {
-    border: "hover:border-red-400/30",
-    bar: "from-red-500 to-rose-500",
-    iconBg: "border-red-400/30 bg-red-500/15 text-red-300",
+    border: "hover:border-[var(--cc-danger)]",
+    bar: "from-[var(--cc-danger)] to-[var(--cc-flag-red)]",
+    iconBg: "border-[var(--cc-border)] bg-[var(--cc-danger-soft)] text-[var(--cc-danger)]",
   },
 } as const;
 
@@ -179,18 +179,19 @@ export default function HomePage() {
           ].map((f) => (
             <div
               key={f.title}
-              className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 shadow-[0_18px_45px_rgba(2,8,23,0.3)] transition hover:border-blue-400/20 sm:p-5"
+              className="cc-card p-4 transition hover:shadow-md sm:p-5"
             >
               <span
                 aria-hidden
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-blue-400/30 bg-blue-500/15 text-xl"
+                className="flex h-10 w-10 items-center justify-center rounded-xl border text-xl"
+                style={{ borderColor: "var(--cc-border)", background: "var(--cc-primary-soft)" }}
               >
                 {f.icon}
               </span>
-              <h3 className="mt-3 text-sm font-bold text-white sm:text-[15px]">
+              <h3 className="mt-3 text-sm font-bold sm:text-[15px]" style={{ color: "var(--cc-text)" }}>
                 {f.title}
               </h3>
-              <p className="mt-1.5 text-[13px] leading-relaxed text-slate-400">
+              <p className="mt-1.5 text-[13px] leading-relaxed text-[var(--cc-text-muted)]">
                 {f.description}
               </p>
             </div>
@@ -201,7 +202,7 @@ export default function HomePage() {
             href="https://cap-citoyen.fr/quiz"
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center gap-2 text-sm font-bold text-blue-300 transition hover:text-blue-200"
+            className="cc-link-primary inline-flex items-center gap-2 text-sm font-bold transition"
           >
             Découvrir Cap Citoyen gratuitement <span aria-hidden>→</span>
           </a>
@@ -222,7 +223,7 @@ export default function HomePage() {
               <Link
                 key={a.title}
                 href={a.href}
-                className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-5 shadow-[0_18px_45px_rgba(2,8,23,0.35)] transition-all duration-300 ${acc.border}`}
+                className={`cc-card cc-card-interactive group relative overflow-hidden p-5 transition-all duration-300 ${acc.border}`}
               >
                 <div
                   className={`absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r ${acc.bar}`}
@@ -234,11 +235,11 @@ export default function HomePage() {
                 >
                   {a.icon}
                 </span>
-                <h3 className="mt-3 text-base font-bold text-white">{a.title}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-slate-400">
+                <h3 className="mt-3 text-base font-bold" style={{ color: "var(--cc-text)" }}>{a.title}</h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-[var(--cc-text-muted)]">
                   {a.description}
                 </p>
-                <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-blue-300 transition group-hover:gap-2 group-hover:text-blue-200">
+                <span className="cc-link-primary mt-3 inline-flex items-center gap-1.5 text-xs font-bold transition group-hover:gap-2">
                   S'entraîner <span aria-hidden>→</span>
                 </span>
               </Link>
@@ -258,15 +259,15 @@ export default function HomePage() {
           {features.map((f, i) => (
             <div
               key={f.title}
-              className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 shadow-[0_18px_45px_rgba(2,8,23,0.3)] transition hover:border-blue-400/20 sm:p-5"
+              className="cc-card p-4 transition hover:shadow-md sm:p-5"
             >
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-blue-400/30 bg-blue-500/15 text-[11px] font-bold text-blue-300">
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg border text-[11px] font-bold text-[var(--cc-primary)]" style={{ borderColor: "var(--cc-border)", background: "var(--cc-primary-soft)" }}>
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="mt-3 text-sm font-bold text-white sm:text-[15px]">
+              <h3 className="mt-3 text-sm font-bold sm:text-[15px]" style={{ color: "var(--cc-text)" }}>
                 {f.title}
               </h3>
-              <p className="mt-1.5 text-[13px] leading-relaxed text-slate-400">
+              <p className="mt-1.5 text-[13px] leading-relaxed text-[var(--cc-text-muted)]">
                 {f.description}
               </p>
             </div>
@@ -291,7 +292,7 @@ export default function HomePage() {
         <div className="mt-12 text-center">
           <Link
             href="/qcm-assimilation-france/"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-bold text-white backdrop-blur transition hover:border-blue-400/40 hover:bg-white/10 sm:w-auto sm:px-7 sm:py-4 sm:text-base"
+            className="cc-btn cc-btn-secondary cc-btn-lg w-full sm:w-auto"
           >
             Voir les 50 questions
             <span aria-hidden>→</span>

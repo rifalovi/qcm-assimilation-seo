@@ -83,9 +83,9 @@ export default function CultureFrancaisePage() {
       />
 
       <section className="container-prose mt-8">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">La culture française, un patrimoine vivant</h2>
-          <p className="mt-4 text-slate-300">
+        <div className="prose max-w-none">
+          <h2 className="text-lg font-bold sm:text-xl">La culture française, un patrimoine vivant</h2>
+          <p className="mt-4 text-[var(--cc-text-muted)]">
             La France a marqué le monde par sa littérature, ses arts, son cinéma,
             ses sciences et sa gastronomie. Connaître quelques grandes figures
             qui ont fait son histoire, c'est commencer à comprendre son âme.
@@ -100,10 +100,10 @@ export default function CultureFrancaisePage() {
         />
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {figures.map((f) => (
-            <div key={f.name} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
-              <h3 className="text-base font-semibold text-white">{f.name}</h3>
-              <p className="mt-1 text-xs text-blue-300">{f.role}</p>
-              <p className="mt-2 text-sm text-slate-400">{f.work}</p>
+            <div key={f.name} className="cc-card p-4 sm:p-5">
+              <h3 className="text-base font-semibold">{f.name}</h3>
+              <p className="mt-1 text-xs text-[var(--cc-primary)]">{f.role}</p>
+              <p className="mt-2 text-sm text-[var(--cc-text-muted)]">{f.work}</p>
             </div>
           ))}
         </div>

@@ -154,9 +154,9 @@ export default function LivretPage() {
       />
 
       <section className="container-prose mt-8">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">Pourquoi le maîtriser</h2>
-          <p className="mt-4 text-slate-300">
+        <div className="prose max-w-none">
+          <h2 className="text-lg font-bold sm:text-xl">Pourquoi le maîtriser</h2>
+          <p className="mt-4 text-[var(--cc-text-muted)]">
             C'est la base de l'entretien. Les agents en préfecture y piochent
             directement leurs questions. Le connaître, c'est savoir d'avance ce
             qu'on va vous demander, et surtout comprendre ce que la France attend
@@ -169,14 +169,14 @@ export default function LivretPage() {
         {chapters.map((c) => (
           <article
             key={c.title}
-            className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.4)]"
+            className="cc-card p-4 sm:p-5"
           >
-            <h2 className="text-lg font-bold text-white">{c.title}</h2>
-            <p className="mt-3 text-sm text-slate-300">{c.summary}</p>
-            <ul className="mt-4 space-y-2 text-sm text-slate-300">
+            <h2 className="text-lg font-bold">{c.title}</h2>
+            <p className="mt-3 text-sm text-[var(--cc-text-muted)]">{c.summary}</p>
+            <ul className="mt-4 space-y-2 text-sm text-[var(--cc-text-muted)]">
               {c.keypoints.map((kp) => (
                 <li key={kp} className="flex items-start gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-400" aria-hidden />
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--cc-primary)]" aria-hidden />
                   <span>{kp}</span>
                 </li>
               ))}

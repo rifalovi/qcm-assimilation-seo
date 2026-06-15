@@ -23,12 +23,12 @@ export default function ConfidentialitePage() {
       <Breadcrumb items={[{ href: "/politique-de-confidentialite/", label: "Confidentialité" }]} />
 
       <article className="container-prose py-12 sm:py-16">
-        <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">Politique de confidentialité</h1>
-        <p className="mt-3 text-sm text-slate-400">
+        <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Politique de confidentialité</h1>
+        <p className="mt-3 text-sm text-[var(--cc-text-muted)]">
           Dernière mise à jour : avril 2026
         </p>
 
-        <div className="prose prose-invert mt-10 max-w-none">
+        <div className="prose mt-10 max-w-none">
           <h2>Données collectées</h2>
           <p>
             QCM Assimilation est un site statique. Il ne vous demande aucune

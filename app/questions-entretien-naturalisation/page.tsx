@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const themes = [
   {
     title: "Sur vous-même",
-    color: "border-blue-700/40",
+    color: "border-[var(--cc-primary)]",
     questions: [
       "Pouvez-vous vous présenter en quelques phrases ?",
       "Depuis combien de temps vivez-vous en France ?",
@@ -32,7 +32,7 @@ const themes = [
   },
   {
     title: "Sur la France",
-    color: "border-slate-300/30",
+    color: "border-[var(--cc-border)]",
     questions: [
       "Quelle est la devise de la République ?",
       "Quels sont les symboles de la République française ?",
@@ -45,7 +45,7 @@ const themes = [
   },
   {
     title: "Sur les valeurs",
-    color: "border-red-700/40",
+    color: "border-[var(--cc-danger)]",
     questions: [
       "Que signifie pour vous « Liberté, Égalité, Fraternité » ?",
       "Que pensez-vous de l'égalité entre les femmes et les hommes ?",
@@ -56,7 +56,7 @@ const themes = [
   },
   {
     title: "Sur votre intégration",
-    color: "border-blue-700/40",
+    color: "border-[var(--cc-primary)]",
     questions: [
       "Avez-vous des amis français ?",
       "Participez-vous à la vie associative ou citoyenne ?",
@@ -126,15 +126,15 @@ export default function QuestionsEntretienPage() {
       />
 
       <section className="container-prose mt-8">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">À quoi vous attendre</h2>
-          <p className="mt-4 text-slate-300">
+        <div className="prose max-w-none">
+          <h2 className="text-lg font-bold sm:text-xl">À quoi vous attendre</h2>
+          <p className="mt-4 text-[var(--cc-text-muted)]">
             L'entretien, c'est surtout une discussion. L'agent ne cherche pas à
             vous piéger : il veut juste savoir si vous comprenez la France, si vous
             adhérez à ses valeurs, et si votre français tient la route. Notre
             conseil : restez sincère, gardez votre calme, et parlez posément.
           </p>
-          <p className="mt-3 text-slate-300">
+          <p className="mt-3 text-[var(--cc-text-muted)]">
             Les questions ci-dessous reviennent presque tout le temps. Préparez
             votre réponse à voix haute, avec vos mots à vous. Vous y gagnerez en
             confiance.
@@ -146,13 +146,13 @@ export default function QuestionsEntretienPage() {
         {themes.map((t) => (
           <div
             key={t.title}
-            className={`rounded-2xl border bg-slate-900/60 p-4 sm:p-5 ${t.color}`}
+            className={`rounded-2xl border bg-[var(--cc-surface-alt)] p-4 sm:p-5 ${t.color}`}
           >
-            <h3 className="text-xl font-bold text-white">{t.title}</h3>
-            <ul className="mt-4 space-y-2 text-sm text-slate-300">
+            <h3 className="text-xl font-bold">{t.title}</h3>
+            <ul className="mt-4 space-y-2 text-sm text-[var(--cc-text-muted)]">
               {t.questions.map((q) => (
                 <li key={q} className="flex items-start gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-400" aria-hidden />
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--cc-primary)]" aria-hidden />
                   <span>{q}</span>
                 </li>
               ))}
@@ -183,9 +183,9 @@ export default function QuestionsEntretienPage() {
               d: "Sur la laïcité ou l'égalité, soyez clair et net. Pas de demi-réponse.",
             },
           ].map((c) => (
-            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
-              <h3 className="text-base font-semibold text-white">{c.t}</h3>
-              <p className="mt-2 text-sm text-slate-400">{c.d}</p>
+            <div key={c.t} className="cc-card p-4 sm:p-5">
+              <h3 className="text-base font-semibold">{c.t}</h3>
+              <p className="mt-2 text-sm text-[var(--cc-text-muted)]">{c.d}</p>
             </div>
           ))}
         </div>

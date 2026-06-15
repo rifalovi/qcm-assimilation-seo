@@ -23,12 +23,12 @@ export default function MentionsLegalesPage() {
       <Breadcrumb items={[{ href: "/mentions-legales/", label: "Mentions légales" }]} />
 
       <article className="container-prose py-12 sm:py-16">
-        <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">Mentions légales</h1>
-        <p className="mt-3 text-sm text-slate-400">
+        <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Mentions légales</h1>
+        <p className="mt-3 text-sm text-[var(--cc-text-muted)]">
           Dernière mise à jour : avril 2026
         </p>
 
-        <div className="prose prose-invert mt-10 max-w-none">
+        <div className="prose mt-10 max-w-none">
           <h2>Éditeur du site</h2>
           <p>
             <strong>HOUNSINOU VIGNON CARLOS</strong><br />

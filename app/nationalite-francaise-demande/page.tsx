@@ -86,15 +86,15 @@ export default function DemandeNationalitePage() {
       />
 
       <section className="container-prose mt-8">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">Cinq conditions à cocher</h2>
+        <div className="prose max-w-none">
+          <h2 className="text-lg font-bold sm:text-xl">Cinq conditions à cocher</h2>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {conditions.map((c, i) => (
-            <div key={c.t} className="rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 sm:p-5 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
-              <span className="text-xs font-bold text-blue-400">0{i + 1}</span>
-              <h3 className="mt-1 text-base font-semibold text-white">{c.t}</h3>
-              <p className="mt-2 text-sm text-slate-400">{c.d}</p>
+            <div key={c.t} className="cc-card p-4 sm:p-5">
+              <span className="text-xs font-bold text-[var(--cc-primary)]">0{i + 1}</span>
+              <h3 className="mt-1 text-base font-semibold">{c.t}</h3>
+              <p className="mt-2 text-sm text-[var(--cc-text-muted)]">{c.d}</p>
             </div>
           ))}
         </div>
@@ -110,9 +110,9 @@ export default function DemandeNationalitePage() {
           {documents.map((d) => (
             <li
               key={d}
-              className="flex items-start gap-3 rounded-xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 text-sm text-slate-200 shadow-[0_8px_22px_rgba(2,8,23,0.3)]"
+              className="cc-card flex items-start gap-3 p-4 text-sm"
             >
-              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-700/30 text-xs text-blue-200">
+              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue-700/30 text-xs text-[var(--cc-primary)]">
                 ✓
               </span>
               {d}
@@ -134,11 +134,11 @@ export default function DemandeNationalitePage() {
             "Attendre l'avis favorable de la préfecture, transmis au ministère de l'Intérieur.",
             "Recevoir le décret de naturalisation publié au Journal officiel.",
           ].map((step, i) => (
-            <li key={step} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-gradient-to-b from-slate-800/95 to-slate-900/95 p-4 shadow-[0_18px_45px_rgba(2,8,23,0.3)]">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-700 text-sm font-bold text-white">
+            <li key={step} className="cc-card flex items-start gap-3 p-4">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-700 text-sm font-bold">
                 {i + 1}
               </span>
-              <p className="text-sm text-slate-200">{step}</p>
+              <p className="text-sm">{step}</p>
             </li>
           ))}
         </ol>

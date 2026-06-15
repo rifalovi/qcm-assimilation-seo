@@ -2,12 +2,6 @@
 
 import { useEffect, useState } from "react";
 
-/**
- * Barre sticky en bas d'écran sur mobile.
- * Se cache automatiquement quand un bouton portant
- * data-primary-cta est visible dans le viewport.
- * Utilise IntersectionObserver, sans re-render coûteux.
- */
 export default function StickyMobileCTA() {
   const [hidden, setHidden] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -21,7 +15,6 @@ export default function StickyMobileCTA() {
 
     if (targets.length === 0) return;
 
-    // Track which targets are currently in view
     const visible = new Set<Element>();
 
     const observer = new IntersectionObserver(
@@ -57,17 +50,21 @@ export default function StickyMobileCTA() {
         href="https://cap-citoyen.fr/quiz"
         target="_blank"
         rel="noopener"
-        className="group flex w-full items-center justify-center gap-2.5 rounded-2xl border border-blue-400/40 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 px-5 py-3 text-sm font-bold text-white shadow-[0_-8px_32px_rgba(37,99,235,0.45)] backdrop-blur transition hover:brightness-110 active:scale-[0.98]"
+        className="flex w-full items-center justify-center gap-2.5 rounded-2xl px-5 py-3 text-sm font-bold text-white transition"
+        style={{
+          background: "var(--cc-primary)",
+          boxShadow: "0 -4px 20px rgba(27, 82, 153, 0.35)",
+        }}
+        onMouseEnter={(e) => (e.currentTarget.style.background = "var(--cc-primary-hover)")}
+        onMouseLeave={(e) => (e.currentTarget.style.background = "var(--cc-primary)")}
       >
         <span className="flex flex-col items-center leading-tight">
-          <span className="text-[11px] font-medium text-blue-100/90">
+          <span className="text-[11px] font-medium text-white/80">
             Sur cap-citoyen.fr
           </span>
           <span className="flex items-center gap-1.5">
             Quiz, coaching IA et assistant démarches
-            <span aria-hidden className="transition group-hover:translate-x-0.5">
-              →
-            </span>
+            <span aria-hidden>→</span>
           </span>
         </span>
       </a>

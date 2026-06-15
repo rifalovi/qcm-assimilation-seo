@@ -88,9 +88,9 @@ export default function HistoirePage() {
       />
 
       <section className="container-prose mt-8">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">La France à travers son histoire</h2>
-          <p className="mt-4 text-slate-300">
+        <div className="prose max-w-none">
+          <h2 className="text-lg font-bold sm:text-xl">La France à travers son histoire</h2>
+          <p className="mt-4 text-[var(--cc-text-muted)]">
             On ne devient pas Français sans connaître les grandes étapes qui ont
             façonné le pays. De la Gaule romaine à la République actuelle, voilà
             la colonne vertébrale à retenir.
@@ -100,14 +100,14 @@ export default function HistoirePage() {
 
       <section className="container-prose mt-6 sm:mt-8">
         <SectionTitle eyebrow="Frise" title="17 dates à retenir" />
-        <ol className="mt-8 relative border-l border-blue-400/20 pl-6 sm:pl-8">
+        <ol className="mt-8 relative border-l border-[var(--cc-border)] pl-6 sm:pl-8">
           {dates.map((d) => (
             <li key={d.y} className="relative mb-7 last:mb-0">
-              <span className="absolute -left-[31px] top-1 flex h-4 w-4 items-center justify-center rounded-full border-2 border-slate-950 bg-blue-500 shadow-[0_0_12px_rgba(96,165,250,0.5)] sm:-left-[37px]">
+              <span className="absolute -left-[31px] top-1 flex h-4 w-4 items-center justify-center rounded-full bg-[var(--cc-primary)] sm:-left-[37px]">
                 <span className="h-1 w-1 rounded-full bg-white" aria-hidden />
               </span>
-              <h3 className="text-sm font-bold text-blue-300">{d.y}</h3>
-              <p className="mt-1 text-sm text-slate-300 sm:text-base">{d.e}</p>
+              <h3 className="text-sm font-bold text-[var(--cc-primary)]">{d.y}</h3>
+              <p className="mt-1 text-sm sm:text-base" style={{ color: "var(--cc-text-muted)" }}>{d.e}</p>
             </li>
           ))}
         </ol>

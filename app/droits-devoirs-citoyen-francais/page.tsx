@@ -79,9 +79,9 @@ export default function DroitsDevoirsPage() {
       />
 
       <section className="container-prose mt-8">
-        <div className="prose prose-invert max-w-none">
-          <h2 className="text-lg font-bold text-white sm:text-xl">Un statut, deux faces</h2>
-          <p className="mt-4 text-slate-300">
+        <div className="prose max-w-none">
+          <h2 className="text-lg font-bold sm:text-xl">Un statut, deux faces</h2>
+          <p className="mt-4 text-[var(--cc-text-muted)]">
             La citoyenneté française, c'est un équilibre. La République garantit
             vos droits, et vous acceptez des devoirs envers la collectivité.
             C'est ce contrat que vous signez en devenant Français.
@@ -90,24 +90,24 @@ export default function DroitsDevoirsPage() {
       </section>
 
       <section className="container-prose mt-6 sm:mt-8 grid gap-4 md:grid-cols-2">
-        <div className="rounded-2xl border border-blue-700/40 bg-blue-700/5 p-5">
-          <h3 className="text-xl font-bold text-white">Vos droits</h3>
+        <div className="rounded-2xl border border-[var(--cc-primary)] bg-[var(--cc-primary-soft)] p-5">
+          <h3 className="text-xl font-bold">Vos droits</h3>
           <ul className="mt-4 space-y-3">
             {droits.map((d) => (
               <li key={d.t}>
-                <p className="text-sm font-semibold text-blue-200">{d.t}</p>
-                <p className="text-sm text-slate-300">{d.d}</p>
+                <p className="text-sm font-semibold text-[var(--cc-primary)]">{d.t}</p>
+                <p className="text-sm text-[var(--cc-text-muted)]">{d.d}</p>
               </li>
             ))}
           </ul>
         </div>
-        <div className="rounded-2xl border border-red-700/40 bg-red-700/5 p-5">
-          <h3 className="text-xl font-bold text-white">Vos devoirs</h3>
+        <div className="rounded-2xl border border-[var(--cc-danger)] bg-[var(--cc-danger-soft)] p-5">
+          <h3 className="text-xl font-bold">Vos devoirs</h3>
           <ul className="mt-4 space-y-3">
             {devoirs.map((d) => (
               <li key={d.t}>
-                <p className="text-sm font-semibold text-red-200">{d.t}</p>
-                <p className="text-sm text-slate-300">{d.d}</p>
+                <p className="text-sm font-semibold text-[var(--cc-danger)]">{d.t}</p>
+                <p className="text-sm text-[var(--cc-text-muted)]">{d.d}</p>
               </li>
             ))}
           </ul>
